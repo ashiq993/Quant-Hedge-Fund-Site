@@ -1,0 +1,13 @@
+{
+  "name": "hedge-fund-website",
+  "version": "1.0.0",
+  "description": "Institutional Quantitative Hedge Fund Website",
+  "main": "dev-server.js",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "node dev-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
