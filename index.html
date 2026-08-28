@@ -1,1554 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-        <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Gramentheme">
-        <meta name="description" content="Brevon - Multipurpose Business HTML Template">
-        <!-- ======== Page title ============ -->
-        <title>Brevon - Multipurpose Business HTML Template</title>
-        <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< All Min Css >>-->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-        <!--<< Dark Mode.css >>-->
-        <link rel="stylesheet" href="assets/css/dark-mode.css">
-        <!--<< RTL.css >>-->
-        <link rel="stylesheet" href="assets/css/rtl.css">
-    </head>
-    <body>
+<!--<< Header Area >>-->
 
-        <div class="page-wrapper">
-            <!-- Preloader Start -->
-            <div id="preloader" class="preloader">
-                <div class="animation-preloader">
-                    <div class="spinner">                
-                    </div>
-                    <div class="txt-loading">
-                        <span data-text-preloader="B" class="letters-loading">
-                            B
-                        </span>
-                        <span data-text-preloader="R" class="letters-loading">
-                            R
-                        </span>
-                        <span data-text-preloader="E" class="letters-loading">
-                            E
-                        </span>
-                        <span data-text-preloader="V" class="letters-loading">
-                            V
-                        </span>
-                        <span data-text-preloader="O" class="letters-loading">
-                            O
-                        </span>
-                        <span data-text-preloader="N" class="letters-loading">
-                            N
-                        </span>
-                    </div>
-                    <p class="text-center">Loading</p>
-                </div>
-                <div class="loader">
-                    <div class="row">
-                        <div class="col-3 loader-section section-left">
-                            <div class="bg"></div>
-                        </div>
-                        <div class="col-3 loader-section section-left">
-                            <div class="bg"></div>
-                        </div>
-                        <div class="col-3 loader-section section-right">
-                            <div class="bg"></div>
-                        </div>
-                        <div class="col-3 loader-section section-right">
-                            <div class="bg"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adople AI">
+    <meta name="description" content="Adople AI — Quantitative Investment & Enterprise AI Platform">
+    <!-- ======== Page title ============ -->
+    <title>Adople AI — Quantitative Intelligence & Technology Platform</title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--<< Institutional Theme.css >>-->
+    <link rel="stylesheet" href="assets/css/institutional-theme.css">
 
-            <!-- ==== color switcher start ==== -->
-            <div class="color-palate">
-                <button class="color-trigger">
-                    <i class="fa-solid fa-gear"></i>
-                </button>
-                <button class="close-color-trigger">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <div class="color-palate-inner">
-                    <a href="index.html" class="palate-logo mb-4 d-block">
-                        <img src="assets/img/logo/black-logo.svg" alt="img">
-                    </a>
-                    <h6>Dark Verion</h6>
-                        <ul class="dark-version box-version option-box">
-                        <li class="box">Dark Mode</li>
-                        <li>Light Mode</li>
-                    </ul>
-                </div>
-            </div>
-            
+    <style>
+        /* Two Sigma Benchmark Landing Styles */
+        .ts-landing-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            padding-top: 84px;
+        }
 
-            <!-- Back To Top Start -->
-            <button id="back-top" class="back-to-top">
-                <i class="fa-regular fa-arrow-up"></i>
-            </button>
+        .ts-grid-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            pointer-events: none;
+            z-index: 1;
+        }
 
-            <!-- GT MouseCursor Start -->
-            <div class="mouseCursor cursor-outer"></div>
-            <div class="mouseCursor cursor-inner"></div>
+        .ts-grid-col {
+            flex: 1;
+            border-right: 1px solid rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
 
-            <!-- Offcanvas Area Start -->
-            <div class="fix-area">
-                <div class="offcanvas__info">
-                    <div class="offcanvas__wrapper">
-                        <div class="offcanvas__content">
-                            <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                                <div class="offcanvas__logo">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img">
-                                    </a>
-                                </div>
-                                <div class="offcanvas__close">
-                                    <button>
-                                    <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <p class="text d-none d-xl-block">
-                                Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
-                            </p>
-                            <div class="mobile-menu fix mb-3"></div>
-                            <div class="offcanvas__contact">
-                                <h4>Contact Info</h4>
-                                <ul>
-                                    <li class="d-flex align-items-center">
-                                        <div class="offcanvas__contact-icon">
-                                            <i class="fal fa-map-marker-alt"></i>
-                                        </div>
-                                        <div class="offcanvas__contact-text">
-                                            <a target="_blank" href="index.html#">Main Street, Melbourne, Australia</a>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="offcanvas__contact-icon mr-15">
-                                            <i class="fal fa-envelope"></i>
-                                        </div>
-                                        <div class="offcanvas__contact-text">
-                                            <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="offcanvas__contact-icon mr-15">
-                                            <i class="fal fa-clock"></i>
-                                        </div>
-                                        <div class="offcanvas__contact-text">
-                                            <a target="_blank" href="index.html#">Mod-friday, 09am -05pm</a>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <div class="offcanvas__contact-icon mr-15">
-                                            <i class="far fa-phone"></i>
-                                        </div>
-                                        <div class="offcanvas__contact-text">
-                                            <a href="tel:+11002345909">+11002345909</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <a href="contact.html" class="theme-btn mt-4">
-                                    <div class="btn_inner">
-                                        <div class="btn_icon">
-                                        <span>
-                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                        </span>
-                                        </div>
-                                        <div class="btn_text">
-                                        <span>Contact us</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="social-icon d-flex align-items-center">
-                                    <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="index.html#"><i class="fab fa-twitter"></i></a>
-                                    <a href="index.html#"><i class="fab fa-youtube"></i></a>
-                                    <a href="index.html#"><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas__overlay"></div>
+        .ts-grid-col:last-child {
+            border-right: none;
+        }
 
-            <!-- Header Section Start -->
-            <header id="header-sticky" class="header-1">
-                <div class="container">
-                    <div class="mega-menu-wrapper">
-                        <div class="header-main">
-                            <a href="index.html" class="logo">
-                                <img src="assets/img/logo/white-logo.svg" alt="img">
-                            </a>
-                            <div class="mean__menu-wrapper">
-                                    <div class="main-menu">
-                                         <nav id="mobile-menu">
-                                            <ul>
-                                                <li class="active">
-                                                    <a href="index.html">Home</a>
-                                                </li>
-                                                <li>
-                                                    <a href="about.html">About</a>
-                                                </li>
-                                                <li class="has-dropdown">
-                                                    <a href="javascript:void(0)">
-                                                        Pages
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="service.html">Strategies</a></li>
-                                                        <li><a href="project.html">Research</a></li>
-                                                        <li><a href="technology.html">Technology</a></li>
-                                                        <li><a href="careers.html">Careers</a></li>
-                                                        <li class="has-dropdown">
-                                                            <a href="javascript:void(0)">
-                                                                Legal & Disclosures Hub
-                                                                <i class="fa-solid fa-chevron-right"></i>
-                                                            </a>
-                                                            <ul class="submenu">
-                                                                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                                                <li><a href="legal.html">Privacy Policy</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="pricing.html">Pricing</a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">Contact</a>
-                                                </li>
-                                            </ul>
-                                         </nav>
-                                    </div>
-                                    <a href="index.html#" class="main-header__search search-toggler d-none d-xxl-block">
-                                        <i class="fa-regular fa-magnifying-glass"></i>
-                                    </a>
-                                </div>
-                            <div class="header-right d-flex justify-content-end align-items-center">
-                                <a href="index.html#" class="main-header__search search-toggler d-xxl-none">
-                                    <i class="fa-regular fa-magnifying-glass"></i>
-                                </a>
-                                <a href="tel:+86661233562" class="theme-btn d-none d-xxl-block">
-                                    <div class="btn_inner">
-                                        <div class="btn_icon">
-                                        <span>
-                                            <img src="assets/img/call.svg" alt="">
-                                            <img src="assets/img/call.svg" alt="">
-                                        </span>
-                                        </div>
-                                        <div class="btn_text">
-                                        <span>+8 (666) 123-3562</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="header__hamburger d-xl-none my-auto">
-                                    <div class="sidebar__toggle">
-                                        <i class="fa-regular fa-bars"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+        .ts-hero-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 48vh;
+            min-height: 340px;
+            background: radial-gradient(ellipse 110% 75% at 50% 100%, #001224 0%, #002244 28%, #0052cc 58%, rgba(0, 204, 255, 0.5) 78%, rgba(255, 255, 255, 0) 100%);
+            pointer-events: none;
+            z-index: 2;
+            opacity: 0.95;
+        }
 
-            <!-- Search Start -->
-            <div class="search-popup">
-                <div class="search-popup__overlay search-toggler"></div>
-                <div class="search-popup__content">
-                    <form role="search" method="get" class="search-popup__form" action="index.html#">
-                        <input type="text" id="search" name="search" placeholder="Search Here...">
-                        <button type="submit" aria-label="search submit" class="search-btn">
-                            <span><i class="fa-regular fa-magnifying-glass"></i></span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-       
-            <div id="smooth-wrapper">
-                <div id="smooth-content">
+        .ts-hero-content {
+            position: relative;
+            z-index: 5;
+            padding: 100px 20px 60px;
+            text-align: center;
+            margin: auto 0;
+        }
 
-                    <!-- Hero Section Start -->
-                    <section class="hero-section hero-1 fix  bg-cover" style="background-image: url('assets/img/home-1/hero/hero-bg.jpg');">
-                        <div class="brevon-text">
-                            <img src="assets/img/home-1/hero/brevon-text.png" alt="img">
-                        </div>
-                        <div class="light-bg">
-                            <img src="assets/img/home-1/hero/light-bg.png" alt="img">
-                        </div>
-                        <div class="container">
-                            <div class="row g-4 align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="hero-content">
-                                        <h6 class="wow fadeInUp">
-                                             <span>Empirical</span>
-                                             Research & Technology
-                                         </h6>
-                                         <h1 class="text-anim">
-                                             Empirical Research. Sub-Microsecond Execution. <span>Systematic Alpha.</span>
-                                         </h1>
-                                         <p class="wow fadeInUp" data-wow-delay=".3s">We combine high-frequency market-microstructure research, distributed low-latency engineering, and strict systematic risk management to extract persistent, non-correlated statistical alpha across global liquid electronic markets.</p>
-                                         <a href="service.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
-                                             <div class="btn_inner">
-                                                 <div class="btn_icon">
-                                                 <span>
-                                                 <i class="fa-solid fa-arrow-up-right"></i>
-                                                 <i class="fa-solid fa-arrow-up-right"></i>
-                                                 </span>
-                                                 </div>
-                                                 <div class="btn_text">
-                                                 <span>Explore Our Research</span>
-                                                 </div>
-                                             </div>
-                                         </a>
-                                         <div class="hero-info wow fadeInUp" data-wow-delay=".7s">
-                                             <div class="info-image">
-                                                 <img src="assets/img/home-1/hero/client-img.png" alt="imgt">
-                                             </div>
-                                             <div class="info-content">
-                                                 <h3><span class="count">640</span>+ PB</h3>
-                                                 <p>empirical data processed.</p>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="col-lg-6">
-                                    <div class="hero-image">
-                                        <img src="assets/img/home-1/hero/hero-1.png" alt="img">
-                                        <div class="box-1 float-bob-y">
-                                            <img src="assets/img/home-1/hero/box1.png" alt="img">
-                                        </div>
-                                        <div class="box-2 float-bob-x">
-                                            <img src="assets/img/home-1/hero/box2.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+        .ts-hero-title {
+            font-family: var(--font-primary);
+            font-size: 88px;
+            line-height: 1.05;
+            font-weight: 800;
+            letter-spacing: -3px;
+            color: #001A33;
+            margin-bottom: 24px;
+        }
+
+        .ts-hero-subtitle {
+            font-size: 20px;
+            line-height: 1.65;
+            color: #374151;
+            max-width: 720px;
+            margin: 0 auto 36px;
+            font-weight: 400;
+        }
+
+        .ts-scroll-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            background: #FFFFFF;
+            color: #001A33;
+            border: 1px solid #E5E7EB;
+            border-radius: 50% !important;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06) !important;
+            transition: all 0.2s ease;
+            position: relative;
+            z-index: 10;
+            margin-bottom: 40px;
+        }
+
+        .ts-scroll-btn:hover {
+            transform: translateY(4px);
+            background: #001A33;
+            color: #FFFFFF;
+            border-color: #001A33;
+        }
+
+        /* Search Pill in Header */
+        .ts-header-search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            padding: 8px 18px;
+            border-radius: 30px !important;
+            color: #6B7280;
+            font-size: 14px;
+            font-family: var(--font-primary);
+            cursor: pointer;
+            transition: border-color 0.2s ease;
+        }
+
+        .ts-header-search:hover {
+            border-color: #001A33;
+            color: #001A33;
+        }
+
+        @media (max-width: 991px) {
+            .ts-hero-title {
+                font-size: 56px;
+                letter-spacing: -1.8px;
+            }
+            .ts-hero-subtitle {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .ts-hero-title {
+                font-size: 40px;
+                letter-spacing: -1.2px;
+            }
+            .ts-hero-subtitle {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- Preloader Start -->
         
-                    <!-- Brand Section Start -->
-                    <div class="brand-section">
-                        <div class="swiper brand-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="brand-box-1">
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-1.png" alt="img">
-                                    </span>
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-1.png" alt="img">
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brand-box-1">
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-2.png" alt="img">
-                                    </span>
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-2.png" alt="img">
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brand-box-1">
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-3.png" alt="img">
-                                    </span>
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-3.png" alt="img">
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brand-box-1">
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-4.png" alt="img">
-                                    </span>
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-4.png" alt="img">
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brand-box-1">
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-5.png" alt="img">
-                                    </span>
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-5.png" alt="img">
-                                    </span>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="brand-box-1">
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-6.png" alt="img">
-                                    </span>
-                                    <span class="brand-img-1">
-                                        <img src="assets/img/home-1/brand/brand-6.png" alt="img">
-                                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Technology & Infrastructure Section Start -->
-                    <section class="service-section fix section-padding">
-                        <div class="container">
-                            <div class="section-title text-center">
-                                <h6 class="sub-title wow fadeInUp">
-                                    <img src="assets/img/home-1/star.svg" alt="img"> CORE CAPABILITIES
-                                </h6>
-                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                Systematic Trading Framework & <br> <span>Operational Rigor.</span>
-                                </h2>
-                                <p class="mt-3 wow fadeInUp" data-wow-delay=".3s">
-                                    We approach liquid electronic markets through mathematical modeling and proprietary high-performance computing.
-                                </p>
-                            </div>
-                            <div class="row advance-wrap justify-content-center">
-                                <div class="col-xl-3 col-lg-4 col-md-6 advance-item">
-                                    <div class="service-card-item text-center" style="padding: 40px 30px;">
-                                        <div class="icon mb-3">
-                                            <img src="assets/img/home-1/icon/icon1.svg" alt="The Research Platform">
-                                        </div>
-                                        <div class="content">
-                                            <h3>
-                                                Research Rigor
-                                            </h3>
-                                            <p>
-                                                Every trading hypothesis is mathematically validated, backtested on tick-level data, and peer-reviewed.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-4 col-md-6 advance-item">
-                                    <div class="service-card-item text-center" style="padding: 40px 30px;">
-                                        <div class="icon mb-3">
-                                            <img src="assets/img/home-1/icon/icon2.svg" alt="Trading Systems">
-                                        </div>
-                                        <div class="content">
-                                            <h3>
-                                            Engineering Depth
-                                            </h3>
-                                            <p>
-                                                We design, own, and optimize our end-to-end technical infrastructure to ensure optimal signal delivery.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-4 col-md-6 advance-item">
-                                    <div class="service-card-item text-center" style="padding: 40px 30px;">
-                                        <div class="icon mb-3">
-                                            <img src="assets/img/home-1/icon/icon3.svg" alt="Engineering Edge">
-                                        </div>
-                                        <div class="content">
-                                            <h3>
-                                                Risk Discipline
-                                            </h3>
-                                            <p>
-                                                Independent real-time risk controls and circuit breakers are embedded strictly outside execution paths.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-4 col-md-6 advance-item">
-                                    <div class="service-card-item">
-                                        <div class="icon">
-                                            <img src="assets/img/home-1/icon/icon4.svg" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <h3>
-                                                Global Reach
-                                            </h3>
-                                            <p>
-                                                Our algorithms route orders across global liquid venues and asset classes with minimal market impact.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <!-- Service Section Start -->
-                    <section class="about-section section-bg">
-                        <div class="about-wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-xl-5">
-                                    <div class="about-image fix">
-                                        <img data-speed=".8" src="assets/img/home-1/about/about-image.jpg" alt="img">
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 mt-4 mt-xl-0">
-                                    <div class="about-content">
-                                        <div class="section-title mb-0">
-                                            <h6 class="sub-title wow fadeInUp">
-                                                <img src="assets/img/home-1/star.svg" alt="img"> COMPANY OVERVIEW
-                                            </h6>
-                                            <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                            Operating at the intersection of high-performance <br> computing and empirical finance to design systematic <br> trading programs.
-                                            </h2>
-                                        </div>
-                                        <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">
-                                            <div class="btn_inner">
-                                                <div class="btn_icon">
-                                                <span>
-                                                <i class="fa-solid fa-arrow-up-right"></i>
-                                                <i class="fa-solid fa-arrow-up-right"></i>
-                                                </span>
-                                                </div>
-                                                <div class="btn_text">
-                                                <span>Read Our Story</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <div class="about-conter-items">
-                                            <div class="counter-box wow fadeInUp" data-wow-delay=".3s">
-                                                <h6>Trading Venues</h6>
-                                                <h2><span class="count">120</span>+</h2>
-                                                <p>
-                                                    Connected liquid electronic venues globally.
-                                                </p>
-                                            </div>
-                                            <div class="counter-box wow fadeInUp" data-wow-delay=".5s">
-                                                <h6>Systematic Execution</h6>
-                                                <h2><span class="count">100</span>%</h2>
-                                                <p>
-                                                    Algorithmic execution with zero discretionary bias.
-                                                </p>
-                                            </div>
-                                            <div class="about-vide-bg wow fadeInUp" data-wow-delay=".7s">
-                                                <img src="assets/img/home-1/about/about-video.jpg" alt="img">
-                                                <a href="https://www.youtube.com/watch?v=R0mku_PtK1E" class="video-btn video-popup">
-                                                    <i class="fas fa-play"></i>
+        <!-- Back To Top Start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #E5E7EB; position: fixed; top: 0; width: 100%; z-index: 1000;">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main" style="height: 84px; display: flex; align-items: center; justify-content: space-between;">
+                        
+                        <!-- Quantitative Brand Logo -->
+                        <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
+                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
+                                2σ
+                            </span>
+                            <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
+                                ADOPLE <span style="color: #0052CC;">AI</span>
+                            </span>
+                        </a>
+
+                        <!-- Navigation Bar -->
+                        <div class="header-left">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul style="display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0;">
+                                            <li>
+                                                <a href="about.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">About</a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
+                                                    Business
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Service Section Start -->
-                    <section class="feature-section section-padding fix">
-                        <div class="container">
-                            <div class="section-title-area">
-                                <div class="section-title">
-                                    <h6 class="sub-title wow fadeInUp">
-                                        <img src="assets/img/home-1/star.svg" alt="img"> SYSTEMATIC STRATEGIES
-                                    </h6>
-                                    <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                    Rigorous Scientific Inquiry & <br> <span>Advanced Quantitative Models.</span>
-                                    </h2>
-                                </div>
-                                <div class="array-button wow fadeInUp" data-wow-delay=".3s">
-                                    <button class="array-prev"><i class="fa-solid fa-chevron-left"></i></button>
-                                    <div class="swiper-dot">
-                                        <div class="dot"></div>
-                                    </div>
-                                    <button class="array-next"><i class="fa-solid fa-chevron-right"></i></button>
-                                </div>
-                            </div>
-                            <div class="feature-wrapper">
-                                <div class="swiper feature-box-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="feature-box-items">
-                                                <h6>001.</h6>
-                                                <h3>
-                                                <a href="service.html"> Statistical <span class="d-block">Arbitrage</span></a>
-                                                </h3>
-                                                <p>
-                                                    Exploiting high-frequency mean-reverting patterns and mathematical anomalies across global liquid assets.
-                                                </p>
-                                                <div class="feature-info-box">
-                                                    <ul>
-                                                        <li>
-                                                            Identify
-                                                        </li>
-                                                        <li>
-                                                            Backtest
-                                                        </li>
-                                                        <li>
-                                                            Execute
-                                                        </li>
-                                                    </ul>
-                                                    <a href="service.html" class="icon">
-                                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="feature-box-items">
-                                                <h6>002.</h6>
-                                                <h3>
-                                                    <a href="service.html">Systematic <span class="d-block">Macro</span></a>
-                                                </h3>
-                                                <p>
-                                                    Distilling global macroeconomic indicators and fundamental data into non-correlated directional signals.
-                                                </p>
-                                                <div class="feature-info-box">
-                                                    <ul>
-                                                        <li>
-                                                            Identify
-                                                        </li>
-                                                        <li>
-                                                            Backtest
-                                                        </li>
-                                                        <li>
-                                                            Execute
-                                                        </li>
-                                                    </ul>
-                                                    <a href="service.html" class="icon">
-                                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="feature-box-items">
-                                                <h6>003.</h6>
-                                                <h3>
-                                                <a href="service.html">Equity Market <span class="d-block">Neutral</span></a>
-                                                </h3>
-                                                <p>
-                                                    Employing beta-hedged long and short quantitative equity strategies to isolate clean statistical alpha.
-                                                </p>
-                                                <div class="feature-info-box">
-                                                    <ul>
-                                                        <li>
-                                                            Identify
-                                                        </li>
-                                                        <li>
-                                                            Backtest
-                                                        </li>
-                                                        <li>
-                                                            Execute
-                                                        </li>
-                                                    </ul>
-                                                    <a href="service.html" class="icon">
-                                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="feature-box-items">
-                                                <h6>004.</h6>
-                                                <h3>
-                                                    <a href="service.html">Machine Learning <span class="d-block">Alpha</span></a>
-                                                </h3>
-                                                <p>
-                                                    Applying advanced deep learning and non-linear models to identify complex patterns in vast datasets.
-                                                </p>
-                                                <div class="feature-info-box">
-                                                    <ul>
-                                                        <li>
-                                                            Identify
-                                                        </li>
-                                                        <li>
-                                                            Backtest
-                                                        </li>
-                                                        <li>
-                                                            Execute
-                                                        </li>
-                                                    </ul>
-                                                    <a href="service.html" class="icon">
-                                                        <i class="fa-solid fa-arrow-up-right"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Project Section Start -->
-                    <section class="project-section tp-project-5-2-area fix section-padding section-bg-2">
-                        <div class="marquee-section">
-                            <div class="marquee tp-project-5-2-title">
-                                <div class="marquee-group">
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                </div>
-                                <div class="marquee-group">
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                </div>
-                                <div class="marquee-group">
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                </div>
-                                <div class="marquee-group">
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                    <div class="text"><span>[</span> INFRASTRUCTURE <span>]</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="project-box-area des-portfolio-wrap">
-                                <div class="project-box-items des-portfolio-panel">
-                                    <div class="content">
-                                        <span>[COMPUTE]</span>
-                                        <h3>
-                                            <a href="project-details.html">High-Throughput Simulation Cluster with over 25,000 GPUs.</a>
-                                        </h3>
-                                        <a href="project-details.html" class="icon">
-                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                        </a>
-                                        <span class="number">
-                                            01
-                                        </span>
-                                    </div>
-                                    <div class="thumb">
-                                        <img src="assets/img/home-1/project/project-1.jpg" alt="img">
-                                    </div>
-                                </div>
-                                <div class="project-box-items des-portfolio-panel">
-                                    <div class="content">
-                                        <span>[LATENCY]</span>
-                                        <h3>
-                                            <a href="project-details.html">Proprietary low-latency FPGA & kernel-bypass order routing.</a>
-                                        </h3>
-                                        <a href="project-details.html" class="icon">
-                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                        </a>
-                                        <span class="number">
-                                            02
-                                        </span>
-                                    </div>
-                                    <div class="thumb">
-                                        <img src="assets/img/home-1/project/project-2.jpg" alt="img">
-                                    </div>
-                                </div>
-                                <div class="project-box-items mb-0 des-portfolio-panel">
-                                    <div class="content">
-                                        <span>[DATA LAKE]</span>
-                                        <h3>
-                                            <a href="project-details.html">Distributed exabyte-scale feature store & historical data lake.</a>
-                                        </h3>
-                                        <a href="project-details.html" class="icon">
-                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                        </a>
-                                        <span class="number">
-                                            03
-                                        </span>
-                                    </div>
-                                    <div class="thumb">
-                                        <img src="assets/img/home-1/project/project-3.jpg" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Testimonial Section Start -->
-                    <section class="testimonial-section section-padding">
-                        <div class="container">
-                            <div class="section-title text-center">
-                                <h6 class="sub-title wow fadeInUp">
-                                    <img src="assets/img/home-1/star.svg" alt="img"> CLIENT TESTIMONIALS
-                                </h6>
-                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                    Client Experiences Inspire  <br> <span>Business Trust.</span>
-                                </h2>
-                            </div>
-                            <div class="testimonial-warpper">
-                                <div class="testi-client">
-                                    <div class="swiper testimonial-thumbs">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="client-img">
-                                                    <img src="assets/img/home-1/testimonial/client-1.png" alt="img">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="client-img">
-                                                    <img src="assets/img/home-1/testimonial/client-2.png" alt="img">
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="client-img">
-                                                    <img src="assets/img/home-1/testimonial/client-3.png" alt="img">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper testimonial-slider-content">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-content-1">
-                                                <h3>
-                                                    Provide data-driven strategie to help companies identify opportunities, reduce risks, and achieve. Provide data-driven strategie to help companies identify opportunities, reduce risks, and achieve long-term of our growth.
-                                                </h3>
-                                                <div class="testi-info">
-                                                    <h4>
-                                                        Ellen Dezonee
-                                                    </h4>
-                                                    <p>Consultant</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-content-1">
-                                                <h3>
-                                                    Provide data-driven strategie to help companies identify opportunities, reduce risks, and achieve. Provide data-driven strategie to help companies identify opportunities, reduce risks, and achieve long-term of our growth.
-                                                </h3>
-                                                <div class="testi-info">
-                                                    <h4>
-                                                        Ellen Dezonee
-                                                    </h4>
-                                                    <p>Consultant</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-content-1">
-                                                <h3>
-                                                    Provide data-driven strategie to help companies identify opportunities, reduce risks, and achieve. Provide data-driven strategie to help companies identify opportunities, reduce risks, and achieve long-term of our growth.
-                                                </h3>
-                                                <div class="testi-info">
-                                                    <h4>
-                                                        Ellen Dezonee
-                                                    </h4>
-                                                    <p>Consultant</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-dot text-center mt-4">
-                                        <div class="dot2"></div>
-                                    </div>
-                                </div>
-                                <div class="array-button">
-                                    <button class="array-prev"><i class="fa-solid fa-chevron-left"></i></button>
-                                    <button class="array-next"><i class="fa-solid fa-chevron-right"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Faq Section Start -->
-                    <section class="faq-section fix">
-                        <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="faq-image-1 fix wow fadeInUp" data-wow-delay=".3s">
-                                        <img data-speed=".8" src="assets/img/home-1/faq-image.jpg" alt="img">
-                                        <div class="incrase-box float-bob-y">
-                                            <h6>Research Compute</h6>
-                                            <h3>25K</h3>
-                                            <img src="assets/img/home-1/increase.png" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="faq-content-1 section-padding">
-                                        <div class="section-title mb-0">
-                                            <h6 class="sub-title wow fadeInUp">
-                                                <img src="assets/img/home-1/star.svg" alt="img"> CAREERS & TALENT PIPELINE
-                                            </h6>
-                                            <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                                Rigorous Multi-Phase <br> <span>Interview Process.</span>
-                                            </h2>
-                                        </div>
-                                        <ul class="accordion-box">
-                                            <!--Block-->
-                                            <li class="accordion block active-block wow fadeInUp">
-                                                <div class="acc-btn active">
-                                                    <span class="number">01.</span>
-                                                    Technical Screen
-                                                    <div class="icon fa-solid fa-arrow-down"></div>
-                                                </div>
-                                                <div class="acc-content current">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            A 45-minute technical phone screen focused on fundamental algorithms, low-latency structures, and core data systems.
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="service.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Our Solutions</a></li>
+                                                    <li><a href="securities.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Securities</a></li>
+                                                </ul>
                                             </li>
-                                            <!--Block-->
-                                            <li class="accordion block wow fadeInUp" data-wow-delay=".2s">
-                                                <div class="acc-btn">
-                                             <span class="number">02.</span>
-                                                The Take-Home Challenge
-                                                    <div class="icon fa-solid fa-arrow-down"></div>
-                                                </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                     <div class="text">
-                                                            A timed coding challenge evaluating practical problem-solving, pipeline design, or quantitative math puzzles.
-                                                         </div>
-                                                     </div>
-                                                </div>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)">
+                                                    Insights
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </a>
+                                                <ul class="submenu">
+                                                    <li><a href="data-science-engineering.html">Data Science & Engineering</a></li>
+                                                    <li><a href="academic-partnership.html">Academic Partnership</a></li>
+                                                    <li><a href="market-security.html">Market Security</a></li>
+                                                </ul>
                                             </li>
-                                            <!--Block-->
-                                            <li class="accordion block wow fadeInUp" data-wow-delay=".4s">
-                                                <div class="acc-btn">
-                                                <span class="number">03.</span>
-                                                    On-Site Design
-                                                    <div class="icon fa-solid fa-arrow-down"></div>
-                                                </div>
-                                                <div class="acc-content">
-                                                    <div class="content">
-                                                        <div class="text">
-                                                            System design whiteboarding, compiler hacking discussions, and a research presentation with our core research teams.
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
+                                                    Pages
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+                                                </a>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="project.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Research</a></li>
+                                                    <li><a href="technology.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Technology</a></li>
+                                                    <li><a href="careers.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Careers</a></li>
+                                                    <li class="has-dropdown">
+                                                        <a href="javascript:void(0)" style="color: #001A33; padding: 10px 24px; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
+                                                            Legal & Disclosures Hub
+                                                            <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                                                        </a>
+                                                        <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                            <li><a href="terms-and-conditions.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Terms & Conditions</a></li>
+                                                            <li><a href="legal.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Privacy Policy</a></li>
+                                                            <li><a href="client-portals.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Client Portals & Deployment</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="pricing.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Contact</a>
                                             </li>
                                         </ul>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-
-                    <!-- Pricing Section Start -->
-                    <section class="pricing-section fix section-padding">
-                        <div class="container">
-                            <div class="section-title-area align-items-end">
-                                <div class="section-title">
-                                    <h6 class="sub-title wow fadeInUp">
-                                        <img src="assets/img/home-1/star.svg" alt="img"> OUR PRICING PLANS
-                                    </h6>
-                                    <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                        Explore Our Business <br> <span> Pricing Options.</span>
-                                    </h2>
-                                </div>
-                                <div class="pricing-toggle-wrapper text-center">
-                                    <span class="toggle-label monthly-label active">Monthly</span>
-                                    <span class="toggle-label yearly-label">Yearly</span>
-                                </div>
-                            </div>
-                           <div class="row pricing-row">
-                                <div class="col-xl-4 col-lg-6 col-md-6">
-                                    <div class="pricing-box-items">
-                                        <div class="pricing-header">
-                                            <span>Basic</span>
-                                            <h3 class="price" data-monthly="29" data-yearly="129">$29<sub>/ months</sub></h3>
-                                            <p>
-                                                Perfect for Small Teams, Startups, and Growing Corporate of Businesses
-                                            </p>
-                                        </div>
-                                        <a href="contact.html" class="pricing-btn">
-                                            <span class="content-wrap">
-                                                <span class="default-content">
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                                    <span>Chose package</span>
-                                                </span>
-
-                                                <span class="hover-content">
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                                    <span>Chose package</span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <div class="pricing-list">
-                                            <h5>Features:</h5>
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Basic financial analytics tools
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Up to 3 user accounts
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Real-time exchange rate monitoring
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Monthly financial reports
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Up to 3 user accounts
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Email support
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6">
-                                    <div class="pricing-box-items active">
-                                        <div class="pricing-header">
-                                            <span>Business</span>
-                                            <h3 class="price" data-monthly="59" data-yearly="159">$59<sub>/ months</sub></h3>
-                                            <p>
-                                                Perfect for Small Teams, Startups, and Growing Corporate of Businesses
-                                            </p>
-                                        </div>
-                                         <a href="contact.html" class="pricing-btn">
-                                            <span class="content-wrap">
-                                                <span class="default-content">
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                                    <span>Chose package</span>
-                                                </span>
-
-                                                <span class="hover-content">
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                                    <span>Chose package</span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <div class="pricing-list">
-                                            <h5>Features:</h5>
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Basic financial analytics tools
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Up to 3 user accounts
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Real-time exchange rate monitoring
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Monthly financial reports
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Up to 3 user accounts
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Email support
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6">
-                                    <div class="pricing-box-items">
-                                        <div class="pricing-header">
-                                            <span>Enterprise</span>
-                                            <h3 class="price" data-monthly="99" data-yearly="199">$99<sub>/ months</sub></h3>
-                                            <p>
-                                                Perfect for Small Teams, Startups, and Growing Corporate of Businesses
-                                            </p>
-                                        </div>
-                                        <a href="contact.html" class="pricing-btn">
-                                            <span class="content-wrap">
-                                                <span class="default-content">
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                                    <span>Chose package</span>
-                                                </span>
-
-                                                <span class="hover-content">
-                                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                                    <span>Chose package</span>
-                                                </span>
-                                            </span>
-                                        </a>
-
-                                        <div class="pricing-list">
-                                            <h5>Features:</h5>
-                                            <ul>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Basic financial analytics tools
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Up to 3 user accounts
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Real-time exchange rate monitoring
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Monthly financial reports
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                    Up to 3 user accounts
-                                                </li>
-                                                <li>
-                                                    <i class="fa-solid fa-circle-check"></i>
-                                                Email support
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
-                    </section>
 
-                    <!-- Marquee Section Start -->
-                    <div class="marquee-section2">
-                        <div class="marquee style-2 mb-0">
-                            <div class="marquee-group">
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Growth
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Success
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Leadership
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Trust
-                                </div>
+                        <!-- Right Search & Portal -->
+                        <div class="header-right d-flex align-items-center gap-3">
+                            <div class="ts-header-search search-toggler d-none d-lg-flex">
+                                <i class="fa-regular fa-magnifying-glass"></i>
+                                <span>Search</span>
                             </div>
-                            <div class="marquee-group">
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Growth
+                            <a href="contact.html" class="theme-btn d-none d-xxl-block" style="background: #001A33; color: #FFFFFF; border: 1px solid #001A33; padding: 10px 20px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+                                <div class="btn_inner" style="display: flex; align-items: center; gap: 8px;">
+                                    <div class="btn_text">
+                                        <span>Investor Hub</span>
+                                    </div>
+                                    <div class="btn_icon">
+                                        <i class="fa-solid fa-arrow-right" style="font-size: 10px;"></i>
+                                    </div>
                                 </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Success
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Leadership
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Trust
-                                </div>
-                            </div>
-                            <div class="marquee-group">
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Growth
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Success
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Leadership
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Trust
-                                </div>
-                            </div>
-                            <div class="marquee-group">
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Growth
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Success
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Leadership
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Trust
-                                </div>
-                            </div>
-                            <div class="marquee-group">
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Growth
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Success
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Leadership
-                                </div>
-                                <div class="text">
-                                    <img src="assets/img/home-1/star2.svg" alt="img">
-                                    Trust
+                            </a>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fa-regular fa-bars" style="color: #001A33; font-size: 20px;"></i>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-
-                    <!-- News Section Start -->
-                    <section class="news-section section-padding">
-                        <div class="container">
-                            <div class="section-title text-center">
-                                <h6 class="sub-title wow fadeInUp">
-                                    <img src="assets/img/home-1/star.svg" alt="img"> RESEARCH & INSIGHTS
-                                </h6>
-                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                    Whitepapers & Empirical <br> <span>Systematic Publications.</span>
-                                </h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="news-box-items">
-                                        <div class="thumb">
-                                            <img src="assets/img/home-1/news/news-01.jpg" alt="img">
-                                            <img src="assets/img/home-1/news/news-01.jpg" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <ul>
-                                                <li>
-                                                    <a href="news.html">Microstructure</a>
-                                                </li>
-                                                <li>
-                                                    <span>Aug, 2026</span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <a href="news-details.html">Empirical Evaluation of Market Microstructure and Limit Order Book Dynamics.</a>
-                                            </h3>
-                                            <div class="news-bottom">
-                                                <a href="news-details.html" class="link-btn">
-                                                    <span class="content-wrap">
-                                                        <span class="default-content">
-                                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                                            <span>Read Abstract</span>
-                                                        </span>
-                                                        <span class="hover-content">
-                                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                                            <span>Read Abstract</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                                <p>PDF (2.4 MB)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                                    <div class="news-box-items">
-                                        <div class="thumb">
-                                            <img src="assets/img/home-1/news/news-02.jpg" alt="img">
-                                            <img src="assets/img/home-1/news/news-02.jpg" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <ul>
-                                                <li>
-                                                    <a href="news.html">Computation</a>
-                                                </li>
-                                                <li>
-                                                    <span>Jul, 2026</span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <a href="news-details.html">Simulation of Multi-Asset Systematic Execution Pipelines on GPU Clusters.</a>
-                                            </h3>
-                                            <div class="news-bottom">
-                                                <a href="news-details.html" class="link-btn">
-                                                    <span class="content-wrap">
-                                                        <span class="default-content">
-                                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                                            <span>Read Abstract</span>
-                                                        </span>
-                                                        <span class="hover-content">
-                                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                                            <span>Read Abstract</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                                <p>PDF (1.8 MB)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                                    <div class="news-box-items">
-                                        <div class="thumb">
-                                            <img src="assets/img/home-1/news/news-03.jpg" alt="img">
-                                            <img src="assets/img/home-1/news/news-03.jpg" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <ul>
-                                                <li>
-                                                    <a href="news.html">Machine Learning</a>
-                                                </li>
-                                                <li>
-                                                    <span>May, 2026</span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <a href="news-details.html">Deep Non-Linear Representations of Liquid Electronic Market Regimes.</a>
-                                            </h3>
-                                            <div class="news-bottom">
-                                                <a href="news-details.html" class="link-btn">
-                                                    <span class="content-wrap">
-                                                        <span class="default-content">
-                                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                                            <span>Read Abstract</span>
-                                                        </span>
-                                                        <span class="hover-content">
-                                                            <i class="fa-solid fa-arrow-up-right"></i>
-                                                            <span>Read Abstract</span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                                <p>PDF (3.1 MB)</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Cta Newsletter Section Start -->
-                    <section class="cta-newsletter-section bg-cover" style="background-image: url('assets/img/home-1/cta-newsletter.jpg');">
-                        <div class="container">
-                            <div class="cta-newsletter-wrapper">
-                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                    Institutional Gated <br> <span>Portal Gateway.</span>
-                                </h2>
-                                <div class="newsletter-form wow fadeInUp" data-wow-delay=".3s">
-                                    <p>
-                                        Qualified allocators may request portal credentials:
-                                    </p>
-                                    <form action="index.html#">
-                                        <input type="text" placeholder="Enter institutional email...">
-                                        <button class="email-btn" type="submit">
-                                            <i class="fa-solid fa-envelope"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Footer Section Start -->
-                    <footer class="footer-section">
-                        <div class="footer-area">
-                            <div class="container">
-                                <div class="footer-widget-wrapper">
-                                    <div class="row justify-content-between">
-                                        <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                            <div class="footer-widget-items">
-                                                <div class="widget-head">
-                                                    <a href="index.html" class="footer-logo">
-                                                        <img src="assets/img/logo/white-logo.svg" alt="img">
-                                                    </a>
-                                                </div>
-                                                <div class="footer-content">
-                                                    <p>
-                                                        Under no circumstances should any information presented on this website be construed as an offer to sell, or a solicitation of any offer to purchase, any securities or other investments.
-                                                    </p>
-                                                    <a href="contact.html" class="footer-btn">
-                                                        <span class="icon"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                                        Inquire
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                            <div class="footer-widget-items">
-                                                <div class="widget-head">
-                                                    <h3>Quick links</h3>
-                                                </div>
-                                                <ul class="gt-list-area">
-                                                    <li>
-                                                        <a href="about.html">
-                                                            About Us
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="service.html">
-                                                            Strategies
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="contact.html">
-                                                        Contact
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="news.html">
-                                                        Research
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                            <div class="footer-widget-items">
-                                                <div class="widget-head">
-                                                    <h3>Strategies</h3>
-                                                </div>
-                                                <ul class="gt-list-area">
-                                                    <li>
-                                                        <a href="service.html">
-                                                            Statistical Arbitrage
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="service.html">
-                                                        Systematic Macro
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="service.html">
-                                                            Equity Market Neutral
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="service.html">
-                                                        Machine Learning Alpha
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                            <div class="footer-widget-items">
-                                                <div class="widget-head">
-                                                    <h3>Get in touch</h3>
-                                                </div>
-                                                <ul class="contact-list">
-                                                    <li>
-                                                        United States — <br>
-                                                        350 Fifth Avenue, 21st Floor New York, NY 10118
-                                                    </li>
-                                                    <li>
-                                                        <a href="tel:+86661233562">+8 (666) 123-3562</a>
-                                                    </li>
-                                                    <li>
-                                                        Mon-Fri 9:00am - 5:00pm
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer-bottom">
-                                <div class="container">
-                                    <div class="footer-bottom-wrapper">
-                                        <p class="wow fadeInUp" data-wow-delay=".3s">
-                                            © 2025 <b>Brevon.</b> All rights reserved.
-                                        </p>
-                                        <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
-                                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
-                                            <a href="index.html#"><i class="fab fa-twitter"></i></a>
-                                            <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
-                                            <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                        <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
-                                            <li>
-                                                <a href="legal.html">Privacy Policy</a>
-                                            </li>
-                                            <li>|</li>
-                                            <li>
-                                                <a href="legal.html">Terms of Service</a>
-                                            </li>
-                                            <li>|</li>
-                                            <li>
-                                                <a href="legal.html">Legal & Disclosures</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
                 </div>
+            </div>
+        </header>
+
+        <!-- Search Popup Start -->
+        <div class="search-popup">
+            <div class="search-popup__overlay search-toggler"></div>
+            <div class="search-popup__content">
+                <form role="search" method="get" class="search-popup__form" action="index.html#">
+                    <input type="text" id="search" name="search" placeholder="Search research, strategies, disclosures...">
+                    <button type="submit" aria-label="search submit" class="search-btn">
+                        <span><i class="fa-regular fa-magnifying-glass"></i></span>
+                    </button>
+                </form>
             </div>
         </div>
 
-    
-        <!--<< All JS Plugins >>-->
-        <script src="assets/js/jquery-3.7.1.min.js"></script>
-        <!--<< Viewport Js >>-->
-        <script src="assets/js/viewport.jquery.js"></script>
-        <!--<< Bootstrap Js >>-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!--<< Gsap Min Js >>-->
-        <script src="assets/js/gsap.min.js"></script>
-        <!--<< ScrollTrigger Min Js >>-->
-        <script src="assets/js/ScrollTrigger.min.js"></script>
-        <!--<< ScrollSmoother Min Js >>-->
-        <script src="assets/js/ScrollSmoother.min.js"></script>
-        <!--<< ScrollToPlugin Min Js >>-->
-        <script src="assets/js/ScrollToPlugin.min.js"></script>
-        <!--<< SplitText Min Js >>-->
-        <script src="assets/js/SplitText.min.js"></script>
-        <!--<< TextPlugin Min Js >>-->
-        <script src="assets/js/TextPlugin.js"></script>
-         <!--<< Chroma Min Js >>-->
-        <script src="assets/js/chroma.min.js"></script>
-        <!--<< nice-selec Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!--<< Waypoints Js >>-->
-        <script src="assets/js/jquery.waypoints.js"></script>
-        <!--<< Counterup Js >>-->
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--<< MeanMenu Js >>-->
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!--<< Parallaxie Js >>-->
-        <script src="assets/js/parallaxie.js"></script>
-        <!--<< Magnific Popup Js >>-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!--<< Wow Animation Js >>-->
-        <script src="assets/js/wow.min.js"></script>
-        <!--<< Main.js >>-->
-        <script src="assets/js/custom.js"></script>
-        <!--<< Main.js >>-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- ==========================================
+                     TWO SIGMA BENCHMARK DEDICATED LANDING HERO
+                     ========================================== -->
+                <section class="ts-landing-hero">
+                    <!-- Subtle Editorial Grid Overlay -->
+                    <div class="ts-grid-lines">
+                        <div class="ts-grid-col"></div>
+                        <div class="ts-grid-col"></div>
+                        <div class="ts-grid-col"></div>
+                        <div class="ts-grid-col"></div>
+                        <div class="ts-grid-col"></div>
+                        <div class="ts-grid-col"></div>
+                    </div>
+
+                    <!-- Ambient Glowing Wave Curve -->
+                    <div class="ts-hero-wave"></div>
+
+                    <!-- Centered Hypothesis Headline & Subtext -->
+                    <div class="ts-hero-content container">
+                        <h1 class="ts-hero-title wow fadeInUp" data-wow-delay=".2s">
+                            It starts with<br>a hypothesis
+                        </h1>
+                        <p class="ts-hero-subtitle wow fadeInUp" data-wow-delay=".3s">
+                            Adople AI is a quantitative investment and technology firm that applies rigorous scientific inquiry and multi-agent systems to uncover value others can’t.
+                        </p>
+                        
+                        <!-- Scroll Down Circular Indicator -->
+                        <div class="wow fadeInUp" data-wow-delay=".4s">
+                            <a href="#intro-overview" class="ts-scroll-btn" aria-label="Scroll to Overview">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     PLATFORM OVERVIEW & CAPABILITIES
+                     ========================================== -->
+                <section id="intro-overview" class="service-section fix section-padding" style="background: #FFFFFF; border-top: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB; padding: 120px 0;">
+                    <div class="container">
+                        <div class="section-title text-center" style="margin-bottom: 64px;">
+                            <h6 class="sub-title wow fadeInUp">
+                                ARCHITECTURE & CAPABILITIES
+                            </h6>
+                            <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #001A33; letter-spacing: -1.2px;">
+                                Platform Overview
+                            </h2>
+                        </div>
+                        
+                        <div class="row g-4">
+                            <!-- Feature 1 -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="service-card-item" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div>
+                                        <div class="mb-4" style="overflow: hidden; height: 180px; border: 1px solid #E5E7EB; background: #F3F4F6;">
+                                            <img src="assets/img/inner-page/project-details-02.jpg" alt="Multi-Agent Systems & Orchestration" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                        <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITY 01</h6>
+                                        <h3 style="font-size: 22px; font-weight: 700; color: #001A33; margin-bottom: 16px; line-height: 1.3;">
+                                            Multi-Agent Systems & Orchestration
+                                        </h3>
+                                        <p style="font-size: 16px; line-height: 1.7; color: #4B5563; margin: 0;">
+                                            Enterprise workflows are rarely linear. We design and deploy intelligent, autonomous multi-agent systems that communicate seamlessly to execute multi-step processes. By bridging disparate data structures, our AI orchestration layer acts as the connective tissue for complex enterprise operations, reducing manual overhead and minimizing error rates.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="service-card-item" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div>
+                                        <div class="mb-4" style="overflow: hidden; height: 180px; border: 1px solid #E5E7EB; background: #F3F4F6;">
+                                            <img src="assets/img/inner-page/project-details-03.jpg" alt="Generative AI & Conversational Chatbots" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                        <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITY 02</h6>
+                                        <h3 style="font-size: 22px; font-weight: 700; color: #001A33; margin-bottom: 16px; line-height: 1.3;">
+                                            Generative AI & Conversational Chatbots
+                                        </h3>
+                                        <p style="font-size: 16px; line-height: 1.7; color: #4B5563; margin: 0;">
+                                            Transforming user interaction requires more than basic scripts. We develop advanced chatbots powered by generative AI that understand deep context and intent. Whether it is secure clinical data intake or financial decision-support interfaces, our models provide human-like, accurate, and compliant responses tailored specifically to specialized industry knowledge.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="service-card-item" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div>
+                                        <div class="mb-4" style="overflow: hidden; height: 180px; border: 1px solid #E5E7EB; background: #F3F4F6;">
+                                            <img src="assets/img/inner-page/project-details-04.jpg" alt="Uncompromising Enterprise Security & Forensics" style="width: 100%; height: 100%; object-fit: cover;">
+                                        </div>
+                                        <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITY 03</h6>
+                                        <h3 style="font-size: 22px; font-weight: 700; color: #001A33; margin-bottom: 16px; line-height: 1.3;">
+                                            Uncompromising Enterprise Security & Forensics
+                                        </h3>
+                                        <p style="font-size: 16px; line-height: 1.7; color: #4B5563; margin: 0;">
+                                            Innovation cannot come at the expense of security. Our platforms are built on rigorous enterprise security protocols, incorporating proactive vulnerability scanning, advanced threat detection, and robust security forensics. We ensure that data integrity is maintained at every layer, providing peace of mind for organizations operating in highly targeted sectors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     FIRM STATISTICS
+                     ========================================== -->
+                <section class="counter-section fix section-padding" style="background: #F8F9FA; border-bottom: 1px solid #E5E7EB; padding: 100px 0;">
+                    <div class="container">
+                        <div class="section-title text-center" style="margin-bottom: 64px;">
+                            <h6 class="sub-title wow fadeInUp">
+                                INSTITUTIONAL METRICS
+                            </h6>
+                            <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #001A33; letter-spacing: -1.2px;">
+                                Firm Statistics
+                            </h2>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                    <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">HERITAGE</h6>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">2016</h2>
+                                    <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
+                                        <strong>Heritage:</strong> Established in 2016 (LLPIN: ACM-6072) with a proven foundation in secure architecture.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                    <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">MARKETS</h6>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">US</h2>
+                                    <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
+                                        <strong>Target Markets:</strong> Dedicated to resolving high-stakes challenges in US Healthcare & Financial Enterprises.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                    <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">COMPLIANCE</h6>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">HIPAA</h2>
+                                    <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
+                                        <strong>Compliance Posture:</strong> Engineered from the ground up for HIPAA and SOC2 alignment.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                    <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITIES</h6>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">Core AI</h2>
+                                    <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
+                                        <strong>Core Capabilities:</strong> Deep Learning, Generative AI, Python/Java Enterprise Integration, and Enterprise Security Forensics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     CULTURE SECTION
+                     ========================================== -->
+                <section class="about-section fix section-padding" style="background: #FFFFFF; border-bottom: 1px solid #E5E7EB; padding: 100px 0;">
+                    <div class="container">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="about-image wow fadeInUp" data-wow-delay=".2s" style="border: 1px solid #E5E7EB; background: #FFFFFF; padding: 20px;">
+                                    <img src="assets/img/inner-page/careers-banner.jpg" alt="Precision, Privacy, and Relentless Innovation" class="img-fluid" style="width: 100%; height: auto; object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-content">
+                                    <div class="section-title mb-4">
+                                        <h6 class="sub-title wow fadeInUp">
+                                            ENGINEERING CULTURE
+                                        </h6>
+                                        <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 42px; line-height: 1.15; letter-spacing: -1.5px; font-weight: 700; color: #001A33;">
+                                            Precision, Privacy, and Relentless Innovation.
+                                        </h2>
+                                    </div>
+                                    <p class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 18px; line-height: 1.8; color: #4B5563; margin-bottom: 32px;">
+                                        At Adople AI, our engineering culture operates at the intersection of advanced data science and rigorous system security. We are a team of passionate technologists who thrive on solving hard problems. By treating data integrity as our highest priority, we foster an environment of continuous learning, rigorous testing, and collaborative research to build the next generation of AI tools.
+                                    </p>
+                                    <a href="careers.html" class="theme-btn wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="btn_inner">
+                                            <div class="btn_text">
+                                                <span>Explore Careers</span>
+                                            </div>
+                                            <div class="btn_icon">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ==========================================
+                     GLOBAL FOOTER
+                     ========================================== -->
+                                <!-- ==========================================
+                     GLOBAL FOOTER (EXACTLY MATCHING HOME PAGE)
+                     ========================================== -->
+                <footer class="footer-section">
+                    <div class="footer-area">
+                        <div class="container">
+                            <div class="footer-widget-wrapper">
+                                <div class="row g-4">
+                                    <div class="col-xl-4 col-lg-6 col-md-6">
+                                        <div class="footer-widget-items">
+                                            <div class="widget-head" style="margin-bottom: 20px;">
+                                                <span style="font-family: var(--font-primary); font-size: 22px; font-weight: 800; letter-spacing: -0.8px; color: #001A33; text-transform: uppercase;">
+                                                    ADOPLE <span style="color: #0052CC;">AI</span>
+                                                </span>
+                                            </div>
+                                            <div class="footer-content">
+                                                <p style="color: #9CA3AF; font-size: 15px; line-height: 1.7;">
+                                                    Production-grade, highly secure artificial intelligence systems and enterprise multi-agent orchestration for US healthcare and financial enterprises.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-6 col-md-6">
+                                        <div class="footer-widget-items">
+                                            <div class="widget-head">
+                                                <h3>Navigation</h3>
+                                            </div>
+                                            <ul class="footer-list">
+                                                <li><a href="home.html">Home</a></li>
+                                                <li><a href="about.html">About Firm</a></li>
+                                                <li><a href="service.html">Our Solutions</a></li>
+                                                <li><a href="securities.html">Securities</a></li>
+                                                <li><a href="project.html">Research</a></li>
+                                                <li><a href="technology.html">Technology</a></li>
+                                                <li><a href="careers.html">Careers</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-6 col-md-6">
+                                        <div class="footer-widget-items">
+                                            <div class="widget-head">
+                                                <h3>Capabilities</h3>
+                                            </div>
+                                            <ul class="footer-list">
+                                                <li><a href="technology.html">Multi-Agent Systems</a></li>
+                                                <li><a href="technology.html">Generative AI Models</a></li>
+                                                <li><a href="technology.html">Enterprise Security & Forensics</a></li>
+                                                <li><a href="technology.html">HIPAA & SOC2 Security</a></li>
+                                                <li><a href="service.html">Enterprise Integration</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-6 col-md-6">
+                                        <div class="footer-widget-items">
+                                            <div class="widget-head">
+                                                <h3>Get in touch</h3>
+                                            </div>
+                                            <ul class="contact-list">
+                                                <li>
+                                                    United States — <br>
+                                                    350 Fifth Avenue, 21st Floor New York, NY 10118
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+86661233562">+8 (666) 123-3562</a>
+                                                </li>
+                                                <li>
+                                                    Mon-Fri 9:00am - 5:00pm
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="container">
+                                <div class="footer-bottom-wrapper d-flex justify-content-between align-items-center flex-wrap gap-3">
+                                    <p style="color: #9CA3AF; font-size: 13px; font-family: var(--font-mono); margin: 0;">
+                                        © 2025 <b>Adople AI.</b> All rights reserved.
+                                    </p>
+                                    <ul class="footer-list d-flex align-items-center gap-3">
+                                        <li>
+                                            <a href="legal.html">Privacy Policy</a>
+                                        </li>
+                                        <li>|</li>
+                                        <li>
+                                            <a href="terms-and-conditions.html">Terms of Service</a>
+                                        </li>
+                                        <li>|</li>
+                                        <li>
+                                            <a href="terms-and-conditions.html">Legal & Disclosures Hub</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+        <!-- ==========================================
+             COOKIE & PRIVACY BANNER WITH CLOSE SYMBOL
+             ========================================== -->
+        <div id="cookie-banner" style="position: fixed; bottom: 24px; left: 24px; right: 24px; max-width: 860px; margin: 0 auto; background: #001A33; color: #FFFFFF; border: 1px solid #2D3748; padding: 24px 32px; z-index: 99999; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+            <div style="flex: 1; min-width: 280px; position: relative;">
+                <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #9CA3AF; margin-bottom: 6px;">
+                    COOKIE & PRIVACY NOTICE
+                </h6>
+                <p style="font-size: 14px; line-height: 1.6; color: #E5E7EB; margin: 0;">
+                    Adople AI leverages secure tracking technologies to optimize our enterprise platform and ensure strict compliance with global data privacy standards. By proceeding, you agree to our <a href="legal.html" style="color: #60A5FA; text-decoration: underline;">Privacy Policy</a>, which is tailored for enterprise-grade security and confidentiality.
+                </p>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: center;">
+                <button onclick="dismissCookieBanner()" style="background: #FFFFFF; color: #001A33; border: 1px solid #FFFFFF; padding: 10px 24px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: all 0.2s;">
+                    Accept & Proceed
+                </button>
+                <button onclick="dismissCookieBanner()" aria-label="Close Cookie Banner" style="background: transparent; border: none; color: #9CA3AF; font-size: 22px; cursor: pointer; padding: 4px 8px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: color 0.2s;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function dismissCookieBanner() {
+            var banner = document.getElementById('cookie-banner');
+            if (banner) {
+                banner.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
 </html>
