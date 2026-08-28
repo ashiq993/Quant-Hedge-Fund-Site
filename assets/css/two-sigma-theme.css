@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   Two Sigma Brand Colors & Variables
+   ========================================== */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-teal-500: #00a5bd;
+  --color-surface-subtle-light: #f3f6f6;
+  --color-surface-subtle-dark: #161c20;
+  --color-border-default-light: #e5eaea;
+  --color-border-default-dark: rgba(255, 255, 255, 0.08);
+  --color-background-brand: #0d1114; /* Deep Two Sigma dark theme core */
+  --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  --shadow-card-elevated: 0px 16px 32px rgba(0, 0, 0, 0.08);
+  
+  /* Overwrite template default theme blue with Two Sigma brand teal */
+  --theme: var(--color-teal-500) !important;
+}
+
+/* Exclude the custom mouse cursor from the color change, keeping its original blue color */
+.cursor-outer {
+  border-color: #3b82f6 !important;
+  background-color: #3b82f6 !important;
+}
+.cursor-inner {
+  background-color: #3b82f6 !important;
+}
+
+/* ==========================================
+   Global Typography Overrides
+   ========================================== */
+body, 
+p, 
+span, 
+a, 
+li, 
+h1, h2, h3, h4, h5, h6,
+.letters-loading,
+.letters-loading::before {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+body p, 
+.text, 
+p {
+  font-weight: 300 !important;
+  font-size: 16.5px !important;
+  line-height: 1.75 !important;
+  letter-spacing: 0.2px !important;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.sec_title, 
+.tx-title {
+  font-weight: 700 !important;
+  letter-spacing: -1px !important;
+}
+
+/* Accent texts */
+.section-title h2 span,
+.sec-title h2 span,
+.hero-content h1 span,
+.breadcrumb-sub-title span,
+.section-title h6 span,
+.sub-title span,
+.hero-info h3 span {
+  color: var(--color-teal-500) !important;
+}
+
+/* Ensure the button text is always white and visible for all theme-btns (phone pill, hero buttons, etc.) */
+.theme-btn .btn_text span,
+.theme-btn .btn_inner .btn_text span,
+.theme-btn .btn_inner .btn_text > span,
+.theme-btn:hover .btn_text span,
+.theme-btn:hover .btn_inner .btn_text > span {
+  color: #ffffff !important;
+}
+
+/* ==========================================
+   Hero & Header Navigation Fixes
+   ========================================== */
+.hero-content h1, 
+.hero-content p, 
+.hero-content h6,
+.hero-content h3 {
+  color: var(--color-black) !important;
+}
+
+.dark-body .hero-content h1, 
+.dark-body .hero-content p, 
+.dark-body .hero-content h6,
+.dark-body .hero-content h3 {
+  color: var(--color-white) !important;
+}
+
+/* Header Navigation Bar Outline */
+#header-sticky,
+.header-1,
+.header-main {
+  background-color: var(--color-white) !important;
+  border-bottom: 1px solid var(--color-border-default-light) !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.02) !important;
+}
+
+.dark-body #header-sticky,
+.dark-body .header-1,
+.dark-body .header-main {
+  background-color: var(--color-background-brand) !important;
+  border-bottom: 1px solid var(--color-border-default-dark) !important;
+  box-shadow: none !important;
+}
+
+/* Navigation Link Colors (Fix Invisible Links) */
+.main-menu ul li a {
+  color: var(--color-black) !important;
+}
+
+.dark-body .main-menu ul li a {
+  color: var(--color-white) !important;
+}
+
+/* Maintain active link style */
+.main-menu ul li.active a,
+.main-menu ul li a:hover {
+  color: var(--color-teal-500) !important;
+}
+
+/* ==========================================
+   Global Theme Colors & Dark Mode
+   ========================================== */
+/* Light Mode Backgrounds */
+body, 
+.page-wrapper {
+  background-color: var(--color-white);
+}
+
+.section-bg {
+  background-color: var(--color-surface-subtle-light) !important;
+}
+
+/* Dark Mode Overrides */
+.dark-body,
+.dark-body .page-wrapper,
+.dark-body .section-bg,
+.dark-body .breadcrumb-wrapper,
+.dark-body .footer-section,
+.dark-body #preloader {
+  background: var(--color-background-brand) !important;
+}
+
+.dark-body .service-card-item,
+.dark-body .feature-box-items,
+.dark-body .faq-content-1,
+.dark-body .testimonial-warpper::before,
+.dark-body .project-card-item,
+.dark-body .pricing-card-item,
+.dark-body .news-card-item,
+.dark-body .offcanvas__wrapper {
+  background: var(--color-surface-subtle-dark) !important;
+}
+
+.dark-body p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ==========================================
+   Shapes & Rounding (Buttons, Inputs, Cards)
+   ========================================== */
+/* Pill Shapes for interactive items */
+.theme-btn,
+.back-to-top,
+.array-prev,
+.array-next,
+.social-icon a,
+.color-trigger,
+.close-color-trigger,
+.meanmenu-reveal,
+.nice-select,
+.search-toggler,
+.scroll-to-top {
+  border-radius: 9999px !important;
+}
+
+/* Ensure inner structures of the button don't overflow */
+.theme-btn .btn_inner,
+.theme-btn .btn_inner span,
+.theme-btn .btn_inner .btn_icon,
+.theme-btn .btn_inner .btn_text {
+  border-radius: 9999px !important;
+}
+
+/* Card Geometry (16px cards, 24px large containers) */
+.service-card-item,
+.feature-box-items,
+.project-card-item,
+.pricing-card-item,
+.news-card-item,
+.testimonial-card,
+.faq-content-1,
+.about-image img,
+.hero-image img,
+.project-image img,
+.team-card-item,
+.news-image img {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+/* Large containers */
+.cta-wrapper,
+.contact-wrapper-area,
+.pricing-section .container,
+.terms-conditions-section .container {
+  border-radius: 24px !important;
+}
+
+/* ==========================================
+   Shadows & Elevation
+   ========================================== */
+.service-card-item,
+.feature-box-items,
+.project-card-item,
+.pricing-card-item,
+.news-card-item,
+.team-card-item {
+  box-shadow: var(--shadow-card) !important;
+  border: 1px solid var(--color-border-default-light) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.dark-body .service-card-item,
+.dark-body .feature-box-items,
+.dark-body .project-card-item,
+.dark-body .pricing-card-item,
+.dark-body .news-card-item,
+.dark-body .team-card-item {
+  border: 1px solid var(--color-border-default-dark) !important;
+}
+
+/* Hover elevation */
+.service-card-item:hover,
+.feature-box-items:hover,
+.project-card-item:hover,
+.pricing-card-item:hover,
+.news-card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-elevated) !important;
+  border-color: var(--color-teal-500) !important;
+}
+
+/* ==========================================
+   Brand Accent Colors & Interactive Fills
+   ========================================== */
+/* Navigation links & hovers */
+.main-menu ul li.active a,
+.main-menu ul li a:hover,
+.submenu li a:hover {
+  color: var(--color-teal-500) !important;
+}
+
+/* Scroll-to-top button & list arrows */
+.back-to-top,
+.array-button .array-prev:hover,
+.array-button .array-next:hover,
+.social-icon a:hover {
+  background-color: var(--color-teal-500) !important;
+  border-color: var(--color-teal-500) !important;
+}
+
+/* Preloader spinner */
+.spinner {
+  border-top-color: var(--color-teal-500) !important;
+}
+
+/* Primary Button color styling override */
+.theme-btn {
+  background-color: var(--color-teal-500) !important;
+  border: 1px solid var(--color-teal-500) !important;
+  color: var(--color-white) !important;
+}
+
+.theme-btn:hover {
+  background-color: #008fa4 !important; /* Slightly darker teal for contrast */
+}
+
+/* List Checkmarks & Icons */
+ul.list-items li i,
+.contact-icon i,
+.offcanvas__contact-icon i,
+.service-card-item .icon img,
+.feature-box-items .icon img {
+  filter: hue-rotate(145deg) saturate(2); /* Automatically turn typical brand blues/yellows into teal */
+}
+
+.incrase-box img {
+  filter: hue-rotate(-25deg) saturate(2) brightness(0.9) !important; /* Precision shift from blue to Two Sigma teal */
+}
+
+/* ==========================================
+   Full-Bleed Gradient Hero / Breadcrumbs
+   ========================================== */
+.breadcrumb-wrapper {
+  background: linear-gradient(135deg, var(--color-teal-500) 0%, #1e1335 100%) !important;
+}
+
+.breadcrumb-wrapper::before {
+  display: none !important; /* Hide standard color overlays so gradient shines */
+}
+
+/* Hero Background styling */
+.hero-section {
+  background-image: none !important;
+}
+
+.dark-body .hero-section {
+  background: linear-gradient(135deg, var(--color-background-brand) 40%, #062b32 100%) !important;
+}
+
+/* Adjust general hover styling */
+a:hover {
+  color: var(--color-teal-500);
+}
+
+/* ==========================================
+   Two Sigma Home Page Specific Layouts
+   ========================================== */
+
+/* 1. Hero Glow Background and Vertical Lines */
+.hero-section {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 165, 189, 0.16) 0%, rgba(123, 44, 191, 0.04) 40%, #ffffff 80%) !important;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100px !important; /* Add spacing so hero content does not get cut off */
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 25% 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 2. Opportunities Callout Banner */
+.twosigma-banner {
+  background: linear-gradient(135deg, #00a5bd 0%, #7b2cbf 100%) !important;
+  border-radius: 16px !important;
+  padding: 50px 60px !important;
+  color: #ffffff !important;
+  position: relative;
+  overflow: hidden;
+  margin-top: -50px;
+  z-index: 99 !important; /* Render on top of the hero section (z-index 9) to prevent clipping */
+  box-shadow: 0px 12px 30px rgba(0, 165, 189, 0.25) !important;
+}
+
+.twosigma-banner h2 {
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  margin-bottom: 20px;
+}
+
+.twosigma-banner p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 16px !important;
+  max-width: 600px;
+  margin-bottom: 30px !important;
+}
+
+.twosigma-banner-btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 14px 28px !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.twosigma-banner-btn:hover {
+  background: #f0f4f5 !important;
+  transform: translateY(-2px);
+}
+
+/* 3. Capabilities Section & Cards */
+.twosigma-capabilities-sec {
+  background: #ffffff !important;
+}
+
+.twosigma-card {
+  background: #f3f6f6 !important;
+  border: 1px solid #e5eaea !important;
+  border-radius: 20px !important;
+  padding: 50px 40px !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.twosigma-card h3 {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  color: #000000 !important;
+  margin-bottom: 50px;
+}
+
+.twosigma-card-btn {
+  width: 44px;
+  height: 44px;
+  background: #000000 !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.twosigma-card:hover {
+  transform: translateY(-5px);
+  background: #ebf0f0 !important;
+  border-color: #00a5bd !important;
+}
+
+.twosigma-card:hover .twosigma-card-btn {
+  background: #00a5bd !important;
+}
+
+/* 4. Stats Section */
+.twosigma-stats-section {
+  padding: 80px 0;
+  border-top: 1px solid #e5eaea;
+  border-bottom: 1px solid #e5eaea;
+  background: #ffffff !important;
+}
+
+.twosigma-stat-item h2 {
+  font-size: 58px !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin-bottom: 10px;
+}
+
+.twosigma-stat-item p {
+  color: #555555 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+
+/* 5. Team Section & 3x3 Grid */
+.twosigma-team-section {
+  background: #ffffff !important;
+  padding: 100px 0;
+}
+
+.twosigma-quote-card {
+  background: #ffffff !important;
+  border: 1px solid #e5eaea !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.twosigma-quote-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.twosigma-quote-content {
+  padding: 30px !important;
+}
+
+.twosigma-quote-content p {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #00a5bd !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  margin-bottom: 20px !important;
+}
+
+.twosigma-quote-author {
+  font-weight: 700 !important;
+  color: #000000 !important;
+  font-size: 16px;
+}
+
+/* 3x3 Photo Grid */
+.twosigma-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  height: 100%;
+}
+
+.twosigma-grid-item {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.twosigma-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.twosigma-grid-teal { background-color: #00a5bd; }
+.twosigma-grid-cyan { background-color: #e0f2f1; }
+.twosigma-grid-purple { background-color: #7b2cbf; }
+
+/* 6. Insights Gradient Banner */
+.twosigma-insights-section {
+  background: linear-gradient(180deg, #16405b 0%, #007a8c 100%) !important;
+  padding: 120px 0;
+}
+
+.twosigma-insights-section h2,
+.twosigma-insights-section h6 {
+  color: #ffffff !important;
+}
+
+.twosigma-insights-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.twosigma-insights-card .thumb {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.twosigma-insights-card .thumb img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.twosigma-insights-card:hover .thumb img {
+  transform: scale(1.05);
+}
+
+.twosigma-insights-card .category {
+  color: #00d2f1 !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.twosigma-insights-card h3 a {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  font-weight: 700 !important;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.twosigma-insights-card h3 a:hover {
+  color: #00d2f1 !important;
+  text-decoration: underline;
+}
+
+.twosigma-insights-footer-btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 14px 28px !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.twosigma-insights-footer-btn:hover {
+  background: #e0f2f1 !important;
+}
+
+/* Preloader custom style */
+.preloader {
+  background-color: #ffffff !important;
+}
+
+.letters-loading {
+  color: #000000 !important;
+}
+
+/* ==========================================
+   Two Sigma Testimonials Panel Styles
+   ========================================== */
+.testimonialsPanel__layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  .testimonialsPanel__layout {
+    flex-direction: column;
+  }
+}
+
+.testimonialsPanel__card {
+  flex: 1.2;
+  background: #ffffff;
+  border: 1px solid #e5eaea;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.testimonialsPanel__cardPhoto {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.testimonialsPanel__cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialsPanel__cardBody {
+  padding: 40px !important;
+  position: relative;
+}
+
+.testimonialsPanel__quoteIcon {
+  color: var(--color-teal-500);
+  margin-bottom: 20px;
+}
+
+.testimonialsPanel__quoteText {
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #000000 !important;
+  font-weight: 300 !important;
+  margin-bottom: 25px !important;
+}
+
+.testimonialsPanel__authorName {
+  font-weight: 700 !important;
+  color: #000000 !important;
+  font-size: 17px !important;
+  margin-bottom: 2px !important;
+}
+
+.testimonialsPanel__authorTitle {
+  font-size: 14px !important;
+  color: #666666 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 4x4 Grid styling */
+.testimonialsPanel__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.testimonialsPanel__gridCell {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+}
+
+button.testimonialsPanel__gridCell {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.testimonialsPanel__gridCell:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button.testimonialsPanel__gridCell.is-selected {
+  outline: 4px solid var(--color-teal-500);
+  outline-offset: 3px;
+  z-index: 10;
+}
+
+.testimonialsPanel__gridThumbWrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.testimonialsPanel__gridThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialsPanel__gridCell--filled {
+  background-color: var(--color-teal-500);
+}
+
+.testimonialsPanel__gridCell--empty {
+  background-color: transparent;
+}
+
+/* Alternate cell coloring similar to Two Sigma grid layout */
+.testimonialsPanel__gridCell:nth-child(2) {
+  background-color: var(--color-teal-500);
+}
+
+.testimonialsPanel__gridCell:nth-child(8) {
+  background-color: #7b2cbf; /* Purple */
+}
+
+.testimonialsPanel__gridCell:nth-child(10) {
+  background-color: var(--color-teal-500);
+}
+
+.testimonialsPanel__gridCell:nth-child(14) {
+  background-color: #e0f2f1; /* Light cyan */
+}
+
+/* Hide navigation dots default */
+.testimonialsPanel__dots {
+  display: none !important;
+}
+
+/* Global Logo Resizing (Header, Sticky Nav, Footer, and Sidebar) */
+.logo img,
+.header-logo img,
+.footer-logo img,
+.offcanvas__logo img {
+  max-height: 45px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+/* Custom Header & Footer logo text style */
+.logo-text {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  color: var(--color-black) !important;
+  white-space: nowrap;
+}
+
+.dark-body .logo-text {
+  color: var(--color-white) !important;
+}
+
+.footer-logo .logo-text {
+  color: var(--color-white) !important;
+}
+
+/* Move the logo container in the header right a little bit */
+.header-main .logo {
+  margin-left: 40px !important; /* Move logo to the right */
+}
+
+/* Testimonial slider same-height alignment (stretches cards to match tallest card) */
+.testimonial-slider-3,
+.testimonial-slider-3 .swiper-wrapper {
+  align-items: stretch !important;
+}
+
+.testimonial-slider-3 .swiper-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+.testimonial-box-items-3 {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.testimonial-box-items-3 h4 {
+  flex-grow: 1 !important; /* Forces the quote text area to expand and push author info to the bottom */
+  margin-bottom: 20px !important;
+}
