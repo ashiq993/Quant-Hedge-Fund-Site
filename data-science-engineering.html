@@ -11,7 +11,7 @@
         <!-- ======== Page title ============ -->
         <title>Data Science & Engineering — Insights | Adople AI</title>
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="shortcut icon" href="assets/img/favicon.webp">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< All Min Css >>-->
@@ -28,8 +28,12 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Dark Mode.css >>-->
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
+        <!--<< RTL.css >>-->
+        <link rel="stylesheet" href="assets/css/rtl.css">
         <!--<< Institutional Quant Theme >>-->
-        <link rel="stylesheet" href="assets/css/institutional-theme.css">
+        <link rel="stylesheet" href="assets/css/two-sigma-theme.css">
     </head>
     <body class="body-bg">
 
@@ -39,24 +43,15 @@
                 <div class="spinner">
                 </div>
                 <div class="txt-loading">
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-                    <span data-text-preloader="D" class="letters-loading">
-                        D
-                    </span>
-                    <span data-text-preloader="O" class="letters-loading">
-                        O
-                    </span>
-                    <span data-text-preloader="P" class="letters-loading">
-                        P
-                    </span>
-                    <span data-text-preloader="L" class="letters-loading">
-                        L
-                    </span>
-                    <span data-text-preloader="E" class="letters-loading">
-                        E
-                    </span>
+                    <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="D" class="letters-loading">D</span>
+                    <span data-text-preloader="O" class="letters-loading">O</span>
+                    <span data-text-preloader="P" class="letters-loading">P</span>
+                    <span data-text-preloader="L" class="letters-loading">L</span>
+                    <span data-text-preloader="E" class="letters-loading">E</span>
+                    <span data-text-preloader="&nbsp;" class="letters-loading">&nbsp;</span>
+                    <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="I" class="letters-loading">I</span>
                 </div>
                 <p class="text-center">QUANTITATIVE PLATFORM</p>
             </div>
@@ -90,14 +85,10 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                        2σ
-                                    </span>
-                                    <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                        ADOPLE <span style="color: #0052CC;">AI</span>
-                                    </span>
-                                </a>
+                                <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
                             </div>
                             <div class="offcanvas__close">
                                 <button>
@@ -151,95 +142,99 @@
 
         <!-- Header Section Start -->
         <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                2σ
-                            </span>
-                            <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                ADOPLE <span style="color: #0052CC;">AI</span>
-                            </span>
-                        </a>
-                        <div class="header-left">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
                             <div class="mean__menu-wrapper">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
+                                    <div class="main-menu">
+                                         <nav id="mobile-menu">
+                                        <ul style="display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0;">
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="about.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">About</a>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Business
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="service.html">Our Solutions</a></li>
-                                                    <li><a href="securities.html">Securities</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="service.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Our Solutions</a></li>
+                                                    <li><a href="securities.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Securities</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Insights
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="data-science-engineering.html">Data Science & Engineering</a></li>
-                                                    <li><a href="academic-partnership.html">Academic Partnership</a></li>
-                                                    <li><a href="market-security.html">Market Security</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="data-science-engineering.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Data Science & Engineering</a></li>
+                                                    <li><a href="academic-partnership.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Academic Partnership</a></li>
+                                                    <li><a href="market-security.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Market Security</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Pages
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="project.html">Research</a></li>
-                                                    <li><a href="technology.html">Technology</a></li>
-                                                    <li><a href="careers.html">Careers</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="project.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Research</a></li>
+                                                    <li><a href="technology.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Technology</a></li>
+                                                    <li><a href="careers.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Careers</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
+                                                        <a href="javascript:void(0)" style="color: #001A33; padding: 10px 24px; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
                                                             Legal & Disclosures Hub
-                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                            <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
                                                         </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                                            <li><a href="legal.html">Privacy Policy</a></li>
-                                                            <li><a href="client-portals.html">Client Portals & Deployment</a></li>
+                                                        <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                            <li><a href="terms-and-conditions.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Terms & Conditions</a></li>
+                                                            <li><a href="legal.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Privacy Policy</a></li>
+                                                            <li><a href="client-portals.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Client Portals & Deployment</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="pricing.html">Pricing</a>
+                                                <a href="pricing.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Pricing</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="contact.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex align-items-center">
-                            <div class="header-btn">
-                                <a href="contact.html" class="theme-btn">
-                                    <span>Gated Portal<i class="fa-solid fa-arrow-right-long"></i></span>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                
+                                <a href="tel:+86661233562" class="theme-btn d-none d-xxl-block">
+                                    <div class="btn_inner">
+                                        <div class="btn_icon">
+                                        <span>
+                                            <img src="assets/img/call.svg" alt="">
+                                            <img src="assets/img/call.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="btn_text">
+                                        <span>+8 (666) 123-3562</span>
+                                        </div>
+                                    </div>
                                 </a>
-                            </div>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fa-regular fa-bars"></i>
+                                <div class="header__hamburger d-xl-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fa-regular fa-bars"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
         <!-- Smooth Wrapper Start -->
         <div id="smooth-wrapper">
@@ -267,288 +262,59 @@
                     </div>
                 </div>
 
-                <!-- Main Content Section Start -->
-                <section class="service-details-section fix section-padding" style="background: #FFFFFF;">
-                    <div class="container" style="max-width: 1080px !important;">
-                        
-                        <!-- Header Intro Block -->
-                        <div class="mb-5">
-                            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #0052CC; letter-spacing: 1.5px; text-transform: uppercase;">
-                                TECHNICAL INSIGHTS & ENGINEERING SPECIFICATIONS
-                            </span>
-                            <h2 class="mt-2" style="font-size: 40px; font-weight: 800; color: #001A33; letter-spacing: -1.2px; line-height: 1.25;">
-                                Data Science & Distributed Engineering
-                            </h2>
-                            <p class="mt-3" style="font-size: 18px; line-height: 1.8; color: #4B5563;">
-                                Deep dives into asynchronous Python orchestration, zero-retention HIPAA conversational AI pipelines, and latency-optimized financial data structures.
-                            </p>
-                            <div style="width: 60px; height: 3px; background: #001A33; margin: 24px 0 40px;"></div>
-                        </div>
-
-                        <!-- 1. Scaling Python Architectures for Multi-Agent AI Workflows -->
-                        <div class="insight-paper-block mb-5 pb-5" style="border-bottom: 1px solid #E5E7EB;">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="badge" style="background: #EBF3FF; color: #0052CC; font-family: var(--font-mono); font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 3px;">
-                                    Category: Systems Architecture & Distributed Computing
-                                </span>
+                <!-- Service Details Section Start -->
+                <section class="service-details-section fix section-padding">
+                    <div class="container">
+                        <div class="service-details-wrapper">
+                            <div class="service-top-img fix">
+                                <img data-speed=".8" src="assets/img/inner-page/project-05.jpg" alt="img">
                             </div>
-                            <h3 class="mt-2 mb-4" style="font-size: 30px; font-weight: 800; color: #001A33; letter-spacing: -0.6px; line-height: 1.3;">
-                                1. Scaling Python Architectures for Multi-Agent AI Workflows
-                            </h3>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="service-details-content">
+                                        
+                                        <h2>Scaling Python Architectures for Multi-Agent AI Workflows.</h2>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            As modern enterprise workflows evolve beyond single-prompt Large Language Models (LLMs), multi-agent architectures have become essential for orchestrating distributed, autonomous decision-making. However, deploying multi-agent systems at scale introduces significant technical bottlenecks: concurrency management, asynchronous state persistence, and inter-agent serialization overhead.
+                                        </p>
+                                        
+                                        <h3>Architectural Breakdown</h3>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Asynchronous Event Loops & Concurrency:</strong> Utilizing asynchronous runtimes (such as Python’s asyncio ecosystem) coupled with lightweight task workers to handle simultaneous agent execution without blocking core I/O channels.
+                                        </p>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Decoupled State Management:</strong> Implementing distributed message brokers and in-memory key-value stores to preserve agent memory, message queues, and context windows across ephemeral compute instances.
+                                        </p>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Deterministic Routing & Fault Tolerance:</strong> Engineering strict fallback mechanisms, dynamic task retries, and finite state machines (FSMs) to ensure agent swarms converge reliably on high-accuracy outputs rather than entering infinite execution loops.
+                                        </p>
 
-                            <!-- Abstract Box -->
-                            <div class="p-4 mb-4" style="background: #F8F9FA; border-left: 4px solid #001A33; border-top: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #001A33; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Abstract
-                                </h5>
-                                <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                    As modern enterprise workflows evolve beyond single-prompt Large Language Models (LLMs), multi-agent architectures have become essential for orchestrating distributed, autonomous decision-making. However, deploying multi-agent systems at scale introduces significant technical bottlenecks: concurrency management, asynchronous state persistence, and inter-agent serialization overhead.
-                                </p>
-                            </div>
+                                        <h3>Enterprise Impact</h3>
+                                        <p class="mt-3" style="letter-spacing: 0.3px; line-height: 1.8; color: #555;">
+                                            By implementing a highly concurrent, asynchronous execution framework, enterprises can scale their multi-agent workflows to handle thousands of concurrent queries. This technical architecture reduces latency, optimizes compute resource utilization, and guarantees state consistency across complex, multi-step transaction pipelines.
+                                        </p>
 
-                            <!-- Architectural Breakdown -->
-                            <div class="mb-4">
-                                <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 16px;">
-                                    Architectural Breakdown:
-                                </h4>
-                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Asynchronous Event Loops & Concurrency:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Utilizing asynchronous runtimes (such as Python’s asyncio ecosystem) coupled with lightweight task workers to handle simultaneous agent execution without blocking core I/O channels.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Decoupled State Management:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Implementing distributed message brokers and in-memory key-value stores to preserve agent memory, message queues, and context windows across ephemeral compute instances.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Deterministic Routing & Fault Tolerance:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Engineering strict fallback mechanisms, dynamic task retries, and finite state machines (FSMs) to ensure agent swarms converge reliably on high-accuracy outputs rather than entering infinite execution loops.
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <hr style="margin: 40px 0; border-top: 1px solid #E5E7EB;">
 
-                            <!-- Enterprise Impact -->
-                            <div class="p-4" style="background: #001A33; color: #FFFFFF;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #60A5FA; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Enterprise Impact
-                                </h5>
-                                <p style="font-size: 16px; line-height: 1.8; color: #E5E7EB; margin: 0;">
-                                    By structuring Python backends with asynchronous orchestration layers, organizations can run dozens of cooperating agents—handling data retrieval, validation, synthesis, and reporting—with minimal compute overhead, low latency, and predictable operational costs.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- 2. Designing Conversational Chatbots for HIPAA-Compliant Applications -->
-                        <div class="insight-paper-block mb-5 pb-5" style="border-bottom: 1px solid #E5E7EB;">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="badge" style="background: #EBF3FF; color: #0052CC; font-family: var(--font-mono); font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 3px;">
-                                    Category: Natural Language Processing & Healthcare Compliance
-                                </span>
-                            </div>
-                            <h3 class="mt-2 mb-4" style="font-size: 30px; font-weight: 800; color: #001A33; letter-spacing: -0.6px; line-height: 1.3;">
-                                2. Designing Conversational Chatbots for HIPAA-Compliant Applications
-                            </h3>
-
-                            <!-- Abstract Box -->
-                            <div class="p-4 mb-4" style="background: #F8F9FA; border-left: 4px solid #001A33; border-top: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #001A33; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Abstract
-                                </h5>
-                                <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                    Deploying conversational AI in clinical environments offers immense potential to streamline patient intake and clinical decision support. However, healthcare institutions operate under the strict mandates of the Health Insurance Portability and Accountability Act (HIPAA), requiring strict privacy standards that standard generative AI APIs cannot meet out of the box.
-                                </p>
-                            </div>
-
-                            <!-- Architectural Breakdown -->
-                            <div class="mb-4">
-                                <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 16px;">
-                                    Architectural Breakdown:
-                                </h4>
-                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Zero-Data Retention Pipelines:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Constructing isolated inference pipelines that process natural language queries in-memory, ensuring that Protected Health Information (PHI) is never stored, cached, or used for model retraining.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Automated PHI De-Identification:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Integrating deterministic entity recognition layers that redact direct and indirect patient identifiers (names, dates, geographic data, medical record numbers) prior to vector embedding generation.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Encrypted Retrieval-Augmented Generation (RAG):
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Housing clinical knowledge bases within encrypted, role-based vector databases protected by strict zero-trust identity verification and granular audit logging.
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Enterprise Impact -->
-                            <div class="p-4" style="background: #001A33; color: #FFFFFF;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #60A5FA; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Enterprise Impact
-                                </h5>
-                                <p style="font-size: 16px; line-height: 1.8; color: #E5E7EB; margin: 0;">
-                                    Healthcare organizations achieve the speed and context-awareness of modern conversational AI without compromising regulatory compliance, ensuring patient confidentiality while dramatically reducing administrative burdens for medical staff.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- 3. Optimizing Data Structures for Real-Time Financial Decisioning -->
-                        <div class="insight-paper-block mb-4">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="badge" style="background: #EBF3FF; color: #0052CC; font-family: var(--font-mono); font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 3px;">
-                                    Category: Algorithmic Performance & Quantitative Engineering
-                                </span>
-                            </div>
-                            <h3 class="mt-2 mb-4" style="font-size: 30px; font-weight: 800; color: #001A33; letter-spacing: -0.6px; line-height: 1.3;">
-                                3. Optimizing Data Structures for Real-Time Financial Decisioning
-                            </h3>
-
-                            <!-- Abstract Box -->
-                            <div class="p-4 mb-4" style="background: #F8F9FA; border-left: 4px solid #001A33; border-top: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #001A33; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Abstract
-                                </h5>
-                                <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                    In high-stakes financial operations—ranging from algorithmic risk scoring to high-frequency fraud detection—computational latency directly dictates operational risk. Sub-millisecond decisioning requires selecting and optimizing memory-efficient, cache-friendly data structures that eliminate computation bottlenecks.
-                                </p>
-                            </div>
-
-                            <!-- Architectural Breakdown -->
-                            <div class="mb-4">
-                                <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 16px;">
-                                    Architectural Breakdown:
-                                </h4>
-                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Cache-Conscious Memory Layouts:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Structuring arrays and contiguous memory blocks to minimize CPU cache misses during high-throughput order book or transaction scanning.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Lock-Free Concurrent Queues:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Utilizing atomic operations and non-blocking circular buffers to pass streaming market telemetry between ingestion threads and decision engines without thread contention.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Optimized Tree & Graph Structures:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Implementing balanced search trees and directed acyclic graphs (DAGs) optimized for rapid dependency resolution and real-time portfolio risk aggregation.
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Enterprise Impact -->
-                            <div class="p-4" style="background: #001A33; color: #FFFFFF;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #60A5FA; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Enterprise Impact
-                                </h5>
-                                <p style="font-size: 16px; line-height: 1.8; color: #E5E7EB; margin: 0;">
-                                    Optimizing the foundational data structures allows risk models and evaluation systems to operate at microsecond intervals, enabling financial institutions to detect exposure spikes and fraudulent activity before transactions settle.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Global Footer -->
-                <footer class="footer-section">
-                    <div class="footer-area">
-                        <div class="container">
-                            <div class="footer-widget-wrapper">
-                                <div class="row g-4">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head" style="margin-bottom: 20px;">
-                                                <span style="font-family: var(--font-primary); font-size: 22px; font-weight: 800; letter-spacing: -0.8px; color: #001A33; text-transform: uppercase;">
-                                                    ADOPLE <span style="color: #0052CC;">AI</span>
-                                                </span>
-                                            </div>
-                                            <div class="footer-content">
-                                                <p style="color: #9CA3AF; font-size: 15px; line-height: 1.7;">
-                                                    Production-grade, highly secure artificial intelligence systems and enterprise multi-agent orchestration for US healthcare and financial enterprises.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Navigation</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Firm</a></li>
-                                                <li><a href="service.html">Our Solutions</a></li>
-                                                <li><a href="securities.html">Securities</a></li>
-                                                <li><a href="project.html">Research</a></li>
-                                                <li><a href="technology.html">Technology</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Capabilities</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="technology.html">Multi-Agent Systems</a></li>
-                                                <li><a href="technology.html">Generative AI Models</a></li>
-                                                <li><a href="technology.html">Enterprise Security & Forensics</a></li>
-                                                <li><a href="technology.html">HIPAA & SOC2 Security</a></li>
-                                                <li><a href="service.html">Enterprise Integration</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Get in touch</h3>
-                                            </div>
-                                            <ul class="contact-list">
-                                                <li>
-                                                    United States — <br>
-                                                    350 Fifth Avenue, 21st Floor New York, NY 10118
+                                        <h2>Advanced Time-Series Modeling for Market Microstructure.</h2>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            Predicting price moves and order book dynamics in high-frequency trading environments requires sophisticated time-series modeling. We process and analyze raw tick-level market data to extract actionable signals for systematic execution.
+                                        </p>
+                                        
+                                        <h3>Technical Pillars</h3>
+                                        <div class="service-list-items mt-3">
+                                            <ul>
+                                                <li style="letter-spacing: 0.2px;">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <strong style="color: #111;">Order Book Dynamics:</strong> Analyzing L1/L2/L3 tick feeds to model supply-demand imbalances in micro-second intervals.
                                                 </li>
-                                                <li>
-                                                    Engineering Hubs — <br>
-                                                    Bengaluru & Salem, India
+                                                <li style="letter-spacing: 0.2px;">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <strong style="color: #111;">High-Throughput Backtesting:</strong> Simulation engines running on GPU clusters to validate predictive signals against historical books.
                                                 </li>
-                                                <li>
-                                                    <a href="mailto:institutional@adople.ai" class="link">institutional@adople.ai</a>
+                                                <li style="letter-spacing: 0.2px;">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <strong style="color: #111;">Latency-Optimal Execution:</strong> Real-time feature extraction and prediction loops executing in sub-microseconds.
                                                 </li>
                                             </ul>
                                         </div>
@@ -557,20 +323,142 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-bottom">
-                        <div class="container">
-                            <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                                <p class="wow fadeInLeft" data-wow-delay=".3s">
-                                    © 2026 <b>ADOPLE AI</b> (LLPIN: ACM-6072). All Institutional Rights Reserved.
-                                </p>
-                                <p class="wow fadeInRight" data-wow-delay=".5s">
-                                    <a href="terms-and-conditions.html" style="color: #9CA3AF; margin-right: 15px;">Terms</a>
-                                    <a href="legal.html" style="color: #9CA3AF;">Privacy</a>
-                                </p>
+                </section>
+
+                <footer class="footer-section">
+                        <div class="footer-area">
+                            <div class="container">
+                                <div class="footer-widget-wrapper">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <a href="index.html" class="footer-logo d-inline-flex align-items-center">
+                                                        <img src="assets/img/logo/logo.webp" alt="img">
+                                                        <span class="logo-text ms-2">Adople AI</span>
+                                                    </a>
+                                                </div>
+                                                <div class="footer-content">
+                                                    <p>
+                                                        Under no circumstances should any information presented on this website be construed as an offer to sell, or a solicitation of any offer to purchase, any securities or other investments.
+                                                    </p>
+                                                    <a href="contact.html" class="footer-btn">
+                                                        <span class="icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                                        Inquire
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Quick links</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="about.html">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Strategies
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">
+                                                        Contact
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="news.html">
+                                                        Research
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Strategies</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Statistical Arbitrage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Systematic Macro
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Equity Market Neutral
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Machine Learning Alpha
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Get in touch</h3>
+                                                </div>
+                                                <ul class="contact-list">
+                                                    <li>
+                                                        United States — <br>
+                                                        350 Fifth Avenue, 21st Floor New York, NY 10118
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:+86661233562">+8 (666) 123-3562</a>
+                                                    </li>
+                                                    <li>
+                                                        Mon-Fri 9:00am - 5:00pm
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <div class="container">
+                                    <div class="footer-bottom-wrapper">
+                                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                                            © 2025 <b>Adople AI.</b> All rights reserved.
+                                        </p>
+                                        <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                        <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                            <li>
+                                                <a href="legal.html">Privacy Policy</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Terms of Service</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Legal & Disclosures</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
 
             </div>
         </div>

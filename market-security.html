@@ -11,7 +11,7 @@
         <!-- ======== Page title ============ -->
         <title>Market Security — Insights | Adople AI</title>
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="shortcut icon" href="assets/img/favicon.webp">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< All Min Css >>-->
@@ -28,8 +28,12 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Dark Mode.css >>-->
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
+        <!--<< RTL.css >>-->
+        <link rel="stylesheet" href="assets/css/rtl.css">
         <!--<< Institutional Quant Theme >>-->
-        <link rel="stylesheet" href="assets/css/institutional-theme.css">
+        <link rel="stylesheet" href="assets/css/two-sigma-theme.css">
     </head>
     <body class="body-bg">
 
@@ -39,24 +43,15 @@
                 <div class="spinner">
                 </div>
                 <div class="txt-loading">
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-                    <span data-text-preloader="D" class="letters-loading">
-                        D
-                    </span>
-                    <span data-text-preloader="O" class="letters-loading">
-                        O
-                    </span>
-                    <span data-text-preloader="P" class="letters-loading">
-                        P
-                    </span>
-                    <span data-text-preloader="L" class="letters-loading">
-                        L
-                    </span>
-                    <span data-text-preloader="E" class="letters-loading">
-                        E
-                    </span>
+                    <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="D" class="letters-loading">D</span>
+                    <span data-text-preloader="O" class="letters-loading">O</span>
+                    <span data-text-preloader="P" class="letters-loading">P</span>
+                    <span data-text-preloader="L" class="letters-loading">L</span>
+                    <span data-text-preloader="E" class="letters-loading">E</span>
+                    <span data-text-preloader="&nbsp;" class="letters-loading">&nbsp;</span>
+                    <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="I" class="letters-loading">I</span>
                 </div>
                 <p class="text-center">QUANTITATIVE PLATFORM</p>
             </div>
@@ -90,14 +85,10 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                        2σ
-                                    </span>
-                                    <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                        ADOPLE <span style="color: #0052CC;">AI</span>
-                                    </span>
-                                </a>
+                                <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
                             </div>
                             <div class="offcanvas__close">
                                 <button>
@@ -151,95 +142,99 @@
 
         <!-- Header Section Start -->
         <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                2σ
-                            </span>
-                            <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                ADOPLE <span style="color: #0052CC;">AI</span>
-                            </span>
-                        </a>
-                        <div class="header-left">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
                             <div class="mean__menu-wrapper">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
+                                    <div class="main-menu">
+                                         <nav id="mobile-menu">
+                                        <ul style="display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0;">
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="about.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">About</a>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Business
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="service.html">Our Solutions</a></li>
-                                                    <li><a href="securities.html">Securities</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="service.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Our Solutions</a></li>
+                                                    <li><a href="securities.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Securities</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Insights
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="data-science-engineering.html">Data Science & Engineering</a></li>
-                                                    <li><a href="academic-partnership.html">Academic Partnership</a></li>
-                                                    <li><a href="market-security.html">Market Security</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="data-science-engineering.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Data Science & Engineering</a></li>
+                                                    <li><a href="academic-partnership.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Academic Partnership</a></li>
+                                                    <li><a href="market-security.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Market Security</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Pages
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="project.html">Research</a></li>
-                                                    <li><a href="technology.html">Technology</a></li>
-                                                    <li><a href="careers.html">Careers</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="project.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Research</a></li>
+                                                    <li><a href="technology.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Technology</a></li>
+                                                    <li><a href="careers.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Careers</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
+                                                        <a href="javascript:void(0)" style="color: #001A33; padding: 10px 24px; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
                                                             Legal & Disclosures Hub
-                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                            <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
                                                         </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                                            <li><a href="legal.html">Privacy Policy</a></li>
-                                                            <li><a href="client-portals.html">Client Portals & Deployment</a></li>
+                                                        <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                            <li><a href="terms-and-conditions.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Terms & Conditions</a></li>
+                                                            <li><a href="legal.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Privacy Policy</a></li>
+                                                            <li><a href="client-portals.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Client Portals & Deployment</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="pricing.html">Pricing</a>
+                                                <a href="pricing.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Pricing</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="contact.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex align-items-center">
-                            <div class="header-btn">
-                                <a href="contact.html" class="theme-btn">
-                                    <span>Gated Portal<i class="fa-solid fa-arrow-right-long"></i></span>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                
+                                <a href="tel:+86661233562" class="theme-btn d-none d-xxl-block">
+                                    <div class="btn_inner">
+                                        <div class="btn_icon">
+                                        <span>
+                                            <img src="assets/img/call.svg" alt="">
+                                            <img src="assets/img/call.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="btn_text">
+                                        <span>+8 (666) 123-3562</span>
+                                        </div>
+                                    </div>
                                 </a>
-                            </div>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fa-regular fa-bars"></i>
+                                <div class="header__hamburger d-xl-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fa-regular fa-bars"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
         <!-- Smooth Wrapper Start -->
         <div id="smooth-wrapper">
@@ -267,245 +262,178 @@
                     </div>
                 </div>
 
-                <!-- Main Content Section Start -->
-                <section class="service-details-section fix section-padding" style="background: #FFFFFF;">
-                    <div class="container" style="max-width: 1080px !important;">
-                        
-                        <!-- Header Intro Block -->
-                        <div class="mb-5">
-                            <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #0052CC; letter-spacing: 1.5px; text-transform: uppercase;">
-                                ENTERPRISE GOVERNANCE & CYBER FORENSICS
-                            </span>
-                            <h2 class="mt-2" style="font-size: 40px; font-weight: 800; color: #001A33; letter-spacing: -1.2px; line-height: 1.25;">
-                                Market Security & Enterprise Governance
-                            </h2>
-                            <p class="mt-3" style="font-size: 18px; line-height: 1.8; color: #4B5563;">
-                                Advanced architectural frameworks covering AI-driven proactive threat hunting, cyber forensic reconstruction, and strict SOC2 generative AI compliance.
-                            </p>
-                            <div style="width: 60px; height: 3px; background: #001A33; margin: 24px 0 40px;"></div>
-                        </div>
-
-                        <!-- 1. The Intersection of AI and Cybersecurity: Proactive Threat Hunting -->
-                        <div class="insight-paper-block mb-5 pb-5" style="border-bottom: 1px solid #E5E7EB;">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="badge" style="background: #EBF3FF; color: #0052CC; font-family: var(--font-mono); font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 3px;">
-                                    Category: Cyber Forensics & Threat Intelligence
-                                </span>
+                <!-- Service Details Section Start -->
+                <section class="service-details-section fix section-padding">
+                    <div class="container">
+                        <div class="service-details-wrapper">
+                            <div class="service-top-img fix">
+                                <img data-speed=".8" src="assets/img/inner-page/project-06.jpg" alt="img">
                             </div>
-                            <h3 class="mt-2 mb-4" style="font-size: 30px; font-weight: 800; color: #001A33; letter-spacing: -0.6px; line-height: 1.3;">
-                                1. The Intersection of AI and Cybersecurity: Proactive Threat Hunting
-                            </h3>
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="service-details-content">
+                                        
+                                        <h2>The Intersection of AI and Enterprise Security: Proactive Threat Hunting.</h2>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            Traditional enterprise enterprise security models rely on reactive, signature-based detection mechanisms that trigger alerts only after a perimeter breach occurs. As adversarial tactics evolve to incorporate automated probing and evasion techniques, security teams must adopt proactive, AI-assisted threat hunting methodologies to secure enterprise networks.
+                                        </p>
+                                        
+                                        <h3>Technical Framework</h3>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Behavioral Anomaly Detection:</strong> Applying unsupervised machine learning models to analyze distributed network logs, endpoint telemetry, and authentication patterns in real time, detecting anomalies that deviate from standard operational baselines.
+                                        </p>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Automated Forensics & Incident Reconstruction:</strong> Utilizing multi-layered cyber forensic tools to rapidly reconstruct attack vectors, map unauthorized lateral movements, and identify compromised credentials across cloud environments.
+                                        </p>
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Zero-Trust Integration:</strong> Structuring digital platforms where every microservice and agent operates under least-privilege access, ensuring that an anomaly within one container cannot compromise the wider system architecture.
+                                        </p>
 
-                            <!-- Abstract Box -->
-                            <div class="p-4 mb-4" style="background: #F8F9FA; border-left: 4px solid #001A33; border-top: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #001A33; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Abstract
-                                </h5>
-                                <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                    Traditional enterprise cybersecurity models rely on reactive, signature-based detection mechanisms that trigger alerts only after a perimeter breach occurs. As adversarial tactics evolve to incorporate automated probing and evasion techniques, security teams must adopt proactive, AI-assisted threat hunting methodologies to secure enterprise networks.
-                                </p>
-                            </div>
-
-                            <!-- Technical Framework -->
-                            <div class="mb-4">
-                                <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 16px;">
-                                    Technical Framework
-                                </h4>
-                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Behavioral Anomaly Detection:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Applying unsupervised machine learning models to analyze distributed network logs, endpoint telemetry, and authentication patterns in real time, detecting anomalies that deviate from standard operational baselines.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Automated Forensics & Incident Reconstruction:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Utilizing multi-layered cyber forensic tools to rapidly reconstruct attack vectors, map unauthorized lateral movements, and identify compromised credentials across cloud environments.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Zero-Trust Integration:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Structuring digital platforms where every microservice and agent operates under least-privilege access, ensuring that an anomaly within one container cannot compromise the wider system architecture.
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Enterprise Impact -->
-                            <div class="p-4" style="background: #001A33; color: #FFFFFF;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #60A5FA; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Enterprise Impact
-                                </h5>
-                                <p style="font-size: 16px; line-height: 1.8; color: #E5E7EB; margin: 0;">
-                                    Shifting from reactive alerting to proactive threat hunting shortens the Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR), allowing security teams to neutralize targeted intrusion attempts before data exfiltration occurs.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- 2. Why US Enterprises Require SOC2-Secure Generative AI -->
-                        <div class="insight-paper-block mb-4">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <span class="badge" style="background: #EBF3FF; color: #0052CC; font-family: var(--font-mono); font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 3px;">
-                                    Category: Enterprise Governance & Regulatory Compliance
-                                </span>
-                            </div>
-                            <h3 class="mt-2 mb-4" style="font-size: 30px; font-weight: 800; color: #001A33; letter-spacing: -0.6px; line-height: 1.3;">
-                                2. Why US Enterprises Require SOC2-Secure Generative AI
-                            </h3>
-
-                            <!-- Abstract Box -->
-                            <div class="p-4 mb-4" style="background: #F8F9FA; border-left: 4px solid #001A33; border-top: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #001A33; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Abstract
-                                </h5>
-                                <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                    As corporate adoption of Generative AI accelerates, Chief Information Security Officers (CISOs) and enterprise risk committees face a complex governance challenge: deploying generative tools while adhering to Service Organization Control (SOC) 2 Trust Services Criteria—specifically Security, Availability, Processing Integrity, and Confidentiality.
-                                </p>
-                            </div>
-
-                            <!-- Governance & Technical Imperatives -->
-                            <div class="mb-4">
-                                <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 16px;">
-                                    Governance & Technical Imperatives
-                                </h4>
-                                <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Tenant Isolation & Data Lineage:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Ensuring that multi-tenant AI deployments maintain absolute data segregation, with cryptographic verification that client data never leaks across tenant boundaries.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Deterministic Processing Integrity:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Implementing automated validation layers to monitor generative outputs for consistency, factual grounding, and alignment with internal compliance guidelines.
-                                        </span>
-                                    </li>
-                                    <li style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 20px 24px; border-left: 3px solid #0052CC;">
-                                        <strong style="color: #001A33; font-size: 16.5px; display: block; margin-bottom: 6px;">
-                                            Immutable Audit Logging:
-                                        </strong>
-                                        <span style="font-size: 15.5px; line-height: 1.75; color: #4B5563;">
-                                            Recording every model query, retrieval source, system prompt modification, and user interaction in tamper-evident, append-only logging pipelines to satisfy third-party compliance audits.
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Enterprise Impact -->
-                            <div class="p-4" style="background: #001A33; color: #FFFFFF;">
-                                <h5 style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #60A5FA; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">
-                                    Enterprise Impact
-                                </h5>
-                                <p style="font-size: 16px; line-height: 1.8; color: #E5E7EB; margin: 0;">
-                                    Deploying Generative AI within a certified SOC2 framework enables enterprise leadership to adopt productivity-enhancing AI tools with full institutional confidence, meeting the rigorous third-party vendor risk standards mandated by institutional clients, partners, and regulators.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Global Footer -->
-                <footer class="footer-section">
-                    <div class="footer-area">
-                        <div class="container">
-                            <div class="footer-widget-wrapper">
-                                <div class="row g-4">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head" style="margin-bottom: 20px;">
-                                                <span style="font-family: var(--font-primary); font-size: 22px; font-weight: 800; letter-spacing: -0.8px; color: #001A33; text-transform: uppercase;">
-                                                    ADOPLE <span style="color: #0052CC;">AI</span>
-                                                </span>
-                                            </div>
-                                            <div class="footer-content">
-                                                <p style="color: #9CA3AF; font-size: 15px; line-height: 1.7;">
-                                                    Production-grade, highly secure artificial intelligence systems and enterprise multi-agent orchestration for US healthcare and financial enterprises.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Navigation</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Firm</a></li>
-                                                <li><a href="service.html">Our Solutions</a></li>
-                                                <li><a href="securities.html">Securities</a></li>
-                                                <li><a href="project.html">Research</a></li>
-                                                <li><a href="technology.html">Technology</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Capabilities</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="technology.html">Multi-Agent Systems</a></li>
-                                                <li><a href="technology.html">Generative AI Models</a></li>
-                                                <li><a href="technology.html">Enterprise Security & Forensics</a></li>
-                                                <li><a href="technology.html">HIPAA & SOC2 Security</a></li>
-                                                <li><a href="service.html">Enterprise Integration</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Get in touch</h3>
-                                            </div>
-                                            <ul class="contact-list">
-                                                <li>
-                                                    United States — <br>
-                                                    350 Fifth Avenue, 21st Floor New York, NY 10118
-                                                </li>
-                                                <li>
-                                                    Engineering Hubs — <br>
-                                                    Bengaluru & Salem, India
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:institutional@adople.ai" class="link">institutional@adople.ai</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                        <h3>Enterprise Impact</h3>
+                                        <p class="mt-3" style="letter-spacing: 0.3px; line-height: 1.8; color: #555;">
+                                            Deploying automated threat hunting models reduces Mean Time to Detect (MTTD) from months to minutes, preventing lateral threat propagation and safeguarding sensitive corporate assets without requiring continuous human oversight.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-bottom">
-                        <div class="container">
-                            <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                                <p class="wow fadeInLeft" data-wow-delay=".3s">
-                                    © 2026 <b>ADOPLE AI</b> (LLPIN: ACM-6072). All Institutional Rights Reserved.
-                                </p>
-                                <p class="wow fadeInRight" data-wow-delay=".5s">
-                                    <a href="terms-and-conditions.html" style="color: #9CA3AF; margin-right: 15px;">Terms</a>
-                                    <a href="legal.html" style="color: #9CA3AF;">Privacy</a>
-                                </p>
+                </section>
+
+                <footer class="footer-section">
+                        <div class="footer-area">
+                            <div class="container">
+                                <div class="footer-widget-wrapper">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <a href="index.html" class="footer-logo d-inline-flex align-items-center">
+                                                        <img src="assets/img/logo/logo.webp" alt="img">
+                                                        <span class="logo-text ms-2">Adople AI</span>
+                                                    </a>
+                                                </div>
+                                                <div class="footer-content">
+                                                    <p>
+                                                        Under no circumstances should any information presented on this website be construed as an offer to sell, or a solicitation of any offer to purchase, any securities or other investments.
+                                                    </p>
+                                                    <a href="contact.html" class="footer-btn">
+                                                        <span class="icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                                        Inquire
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Quick links</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="about.html">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Strategies
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">
+                                                        Contact
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="news.html">
+                                                        Research
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Strategies</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Statistical Arbitrage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Systematic Macro
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Equity Market Neutral
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Machine Learning Alpha
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Get in touch</h3>
+                                                </div>
+                                                <ul class="contact-list">
+                                                    <li>
+                                                        United States — <br>
+                                                        350 Fifth Avenue, 21st Floor New York, NY 10118
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:+86661233562">+8 (666) 123-3562</a>
+                                                    </li>
+                                                    <li>
+                                                        Mon-Fri 9:00am - 5:00pm
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <div class="container">
+                                    <div class="footer-bottom-wrapper">
+                                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                                            © 2025 <b>Adople AI.</b> All rights reserved.
+                                        </p>
+                                        <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                        <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                            <li>
+                                                <a href="legal.html">Privacy Policy</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Terms of Service</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Legal & Disclosures</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
 
             </div>
         </div>

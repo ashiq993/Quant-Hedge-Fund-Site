@@ -11,7 +11,7 @@
         <!-- ======== Page title ============ -->
         <title>Securities — Adople AI</title>
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="shortcut icon" href="assets/img/favicon.webp">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< All Min Css >>-->
@@ -28,8 +28,12 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Dark Mode.css >>-->
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
+        <!--<< RTL.css >>-->
+        <link rel="stylesheet" href="assets/css/rtl.css">
         <!--<< Institutional Quant Theme >>-->
-        <link rel="stylesheet" href="assets/css/institutional-theme.css">
+        <link rel="stylesheet" href="assets/css/two-sigma-theme.css">
     </head>
     <body class="body-bg">
 
@@ -151,95 +155,99 @@
 
         <!-- Header Section Start -->
         <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                2σ
-                            </span>
-                            <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                ADOPLE <span style="color: #0052CC;">AI</span>
-                            </span>
-                        </a>
-                        <div class="header-left">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
                             <div class="mean__menu-wrapper">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
+                                    <div class="main-menu">
+                                         <nav id="mobile-menu">
+                                        <ul style="display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0;">
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="about.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">About</a>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Business
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="service.html">Our Solutions</a></li>
-                                                    <li><a href="securities.html">Securities</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="service.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Our Solutions</a></li>
+                                                    <li><a href="securities.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Securities</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Insights
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="data-science-engineering.html">Data Science & Engineering</a></li>
-                                                    <li><a href="academic-partnership.html">Academic Partnership</a></li>
-                                                    <li><a href="market-security.html">Market Security</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="data-science-engineering.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Data Science & Engineering</a></li>
+                                                    <li><a href="academic-partnership.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Academic Partnership</a></li>
+                                                    <li><a href="market-security.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Market Security</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Pages
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="project.html">Research</a></li>
-                                                    <li><a href="technology.html">Technology</a></li>
-                                                    <li><a href="careers.html">Careers</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="project.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Research</a></li>
+                                                    <li><a href="technology.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Technology</a></li>
+                                                    <li><a href="careers.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Careers</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
+                                                        <a href="javascript:void(0)" style="color: #001A33; padding: 10px 24px; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
                                                             Legal & Disclosures Hub
-                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                            <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
                                                         </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                                            <li><a href="legal.html">Privacy Policy</a></li>
-                                                            <li><a href="client-portals.html">Client Portals & Deployment</a></li>
+                                                        <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                            <li><a href="terms-and-conditions.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Terms & Conditions</a></li>
+                                                            <li><a href="legal.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Privacy Policy</a></li>
+                                                            <li><a href="client-portals.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Client Portals & Deployment</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="pricing.html">Pricing</a>
+                                                <a href="pricing.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Pricing</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="contact.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex align-items-center">
-                            <div class="header-btn">
-                                <a href="contact.html" class="theme-btn">
-                                    <span>Gated Portal<i class="fa-solid fa-arrow-right-long"></i></span>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                
+                                <a href="tel:+86661233562" class="theme-btn d-none d-xxl-block">
+                                    <div class="btn_inner">
+                                        <div class="btn_icon">
+                                        <span>
+                                            <img src="assets/img/call.svg" alt="">
+                                            <img src="assets/img/call.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="btn_text">
+                                        <span>+8 (666) 123-3562</span>
+                                        </div>
+                                    </div>
                                 </a>
-                            </div>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fa-regular fa-bars"></i>
+                                <div class="header__hamburger d-xl-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fa-regular fa-bars"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
         <!-- Smooth Wrapper Start -->
         <div id="smooth-wrapper">
@@ -259,15 +267,7 @@
                                     </a>
                                 </li>
                                 <li>/</li>
-                                <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
-                                                    Business
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="securities.html">Securities</a></li>
-                                                </ul>
-                                            </li>
+                                <li>Business</li>
                                 <li>/</li>
                                 <li>Securities</li>
                             </ul>
@@ -275,290 +275,219 @@
                     </div>
                 </div>
 
-                <!-- Securities Main Section Start -->
-                <section class="service-details-section fix section-padding" style="background: #FFFFFF;">
-                    <div class="container" style="max-width: 1080px !important;">
-                        
-                        <!-- Hero Banner & Subtitle Header -->
-                        <div class="service-details-wrapper mb-5">
-                            <div class="mb-4">
-                                <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: #0052CC; letter-spacing: 1.5px; text-transform: uppercase;">
-                                    QUANTITATIVE TRADING & LIQUIDITY INFRASTRUCTURE
-                                </span>
-                                <h2 class="mt-2" style="font-size: 42px; font-weight: 800; color: #001A33; letter-spacing: -1.2px; line-height: 1.2;">
-                                    Adople AI Securities: Precision Engineering for Modern Markets
-                                </h2>
-                                <div style="width: 60px; height: 3px; background: #001A33; margin: 24px 0 32px;"></div>
+                <!-- Service Details Section (Securities) Start -->
+                <section class="service-details-section fix section-padding">
+                    <div class="container">
+                        <div class="service-details-wrapper">
+                            <div class="service-top-img fix">
+                                <img data-speed=".8" src="assets/img/inner-page/service-details-01.jpg" alt="img">
                             </div>
-
-                            <!-- Suitable Professional Image -->
-                            <div class="service-top-img fix mb-5" style="border: 1px solid #E5E7EB; background: #F8F9FA;">
-                                <img src="assets/img/inner-page/securities-banner.jpg" alt="Adople AI Securities Precision Engineering" class="img-fluid" style="width: 100%; height: auto; max-height: 520px; object-fit: cover;">
-                            </div>
-
-                            <!-- Hero Introduction -->
-                            <div class="hero-intro-box p-4 p-md-5 mb-5" style="background: #F8F9FA; border-left: 4px solid #0052CC; border-top: 1px solid #E5E7EB; border-right: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB;">
-                                <h4 style="font-family: var(--font-mono); font-size: 14px; font-weight: 700; color: #0052CC; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px;">
-                                    HERO INTRODUCTION
-                                </h4>
-                                <p style="font-size: 19px; line-height: 1.85; color: #1F2937; margin: 0; font-weight: 400;">
-                                    Adople AI Securities operates at the intersection of advanced data science, low-latency engineering, and quantitative trading. We design and deploy autonomous, systematic trading models that provide liquidity, optimize execution, and navigate the complexities of global financial markets. Our approach removes human bias, relying entirely on rigorous algorithmic logic and enterprise-grade infrastructure.
-                                </p>
-                            </div>
-
-                            <!-- 1. Core Operations -->
-                            <div class="securities-section-block mb-5 pb-4" style="border-bottom: 1px solid #E5E7EB;">
-                                <div class="d-flex align-items-center gap-3 mb-4">
-                                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">
-                                        01
-                                    </span>
-                                    <h3 style="font-size: 32px; font-weight: 800; color: #001A33; letter-spacing: -0.8px; margin: 0;">
-                                        Core Operations
-                                    </h3>
-                                </div>
-
-                                <div class="row g-4 mt-2">
-                                    <!-- 1.1 Quantitative Market Making -->
-                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                        <div style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 32px 26px; height: 100%;">
-                                            <div class="mb-3" style="color: #0052CC; font-size: 24px;">
-                                                <i class="fa-solid fa-chart-candlestick"></i>
-                                            </div>
-                                            <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 14px; line-height: 1.3;">
-                                                Quantitative Market Making
-                                            </h4>
-                                            <p style="font-size: 15.5px; line-height: 1.75; color: #4B5563; margin: 0;">
-                                                We provide consistent liquidity to digital and traditional asset markets. By utilizing deep learning models, we analyze order book dynamics in micro-seconds to tighten spreads and ensure market efficiency.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 1.2 Algorithmic Execution -->
-                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 32px 26px; height: 100%;">
-                                            <div class="mb-3" style="color: #0052CC; font-size: 24px;">
-                                                <i class="fa-solid fa-microchip"></i>
-                                            </div>
-                                            <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 14px; line-height: 1.3;">
-                                                Algorithmic Execution
-                                            </h4>
-                                            <p style="font-size: 15.5px; line-height: 1.75; color: #4B5563; margin: 0;">
-                                                Navigating volatile markets requires execution precision. Our multi-agent trading algorithms dynamically adjust to market micro-structure, minimizing market impact and optimizing trade routing for institutional-scale execution.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 1.3 Real-Time Risk Management -->
-                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 32px 26px; height: 100%;">
-                                            <div class="mb-3" style="color: #0052CC; font-size: 24px;">
-                                                <i class="fa-solid fa-shield-check"></i>
-                                            </div>
-                                            <h4 style="font-size: 20px; font-weight: 700; color: #001A33; margin-bottom: 14px; line-height: 1.3;">
-                                                Real-Time Risk Management
-                                            </h4>
-                                            <p style="font-size: 15.5px; line-height: 1.75; color: #4B5563; margin: 0;">
-                                                Risk is monitored and mitigated continuously. Our AI agents simulate thousands of market scenarios in real-time, instantly adjusting exposure limits and hedging positions before volatility spikes occur.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 2. The Technology Backbone -->
-                            <div class="securities-section-block mb-5 pb-4" style="border-bottom: 1px solid #E5E7EB;">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">
-                                        02
-                                    </span>
-                                    <h3 style="font-size: 32px; font-weight: 800; color: #001A33; letter-spacing: -0.8px; margin: 0;">
-                                        The Technology Backbone
-                                    </h3>
-                                </div>
-                                <p style="font-size: 18px; line-height: 1.8; color: #4B5563; margin-bottom: 32px; font-style: italic;">
-                                    To compete in securities and high-frequency environments, infrastructure is just as critical as the trading strategy.
-                                </p>
-
-                                <div class="editorial-tech-stack">
-                                    <!-- Low-Latency Architecture -->
-                                    <div class="tech-item-row p-4 mb-3" style="background: #F8F9FA; border: 1px solid #E5E7EB; border-left: 3px solid #001A33;">
-                                        <h4 style="font-size: 21px; font-weight: 700; color: #001A33; margin-bottom: 10px;">
-                                            Low-Latency Architecture
-                                        </h4>
-                                        <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                            Speed and reliability are non-negotiable. Our core execution engines are built on high-performance Java enterprise architectures, ensuring ultra-low latency and high-throughput transaction processing without system degradation.
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="service-details-content">
+                                        <!-- Core Narrative Section with refined letter-spacing -->
+                                        <h2 style="letter-spacing: -0.5px; font-weight: 700; line-height: 1.25;">
+                                            Adople AI Securities: Precision Engineering for Modern Markets.
+                                        </h2>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            Adople AI Securities operates at the intersection of advanced data science, low-latency engineering, and quantitative trading. We design and deploy autonomous, systematic trading models that provide liquidity, optimize execution, and navigate the complexities of global financial markets. Our approach removes human bias, relying entirely on rigorous algorithmic logic and enterprise-grade infrastructure.
                                         </p>
-                                    </div>
 
-                                    <!-- Advanced Data Modeling -->
-                                    <div class="tech-item-row p-4 mb-3" style="background: #F8F9FA; border: 1px solid #E5E7EB; border-left: 3px solid #0052CC;">
-                                        <h4 style="font-size: 21px; font-weight: 700; color: #001A33; margin-bottom: 10px;">
-                                            Advanced Data Modeling
-                                        </h4>
-                                        <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                            We process terabytes of alternative and historical market data daily. Utilizing robust Python-based data pipelines, our quantitative researchers continuously backtest and refine our predictive models to identify fleeting market inefficiencies.
+                                        <!-- Core Operations -->
+                                        <h3 class="mt-5" style="letter-spacing: -0.5px; font-weight: 700;">Core Operations</h3>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Quantitative Market Making:</strong> We provide consistent liquidity to digital and traditional asset markets. By utilizing deep learning models, we analyze order book dynamics in micro-seconds to tighten spreads and ensure market efficiency.
                                         </p>
-                                    </div>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Algorithmic Execution:</strong> Navigating volatile markets requires execution precision. Our multi-agent trading algorithms dynamically adjust to market micro-structure, minimizing market impact and optimizing trade routing for institutional-scale execution.
+                                        </p>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Real-Time Risk Management:</strong> Risk is monitored and mitigated continuously. Our AI agents simulate thousands of market scenarios in real-time, instantly adjusting exposure limits and hedging positions before volatility spikes occur.
+                                        </p>
 
-                                    <!-- Proactive Security & Compliance -->
-                                    <div class="tech-item-row p-4 mb-3" style="background: #F8F9FA; border: 1px solid #E5E7EB; border-left: 3px solid #001A33;">
-                                        <h4 style="font-size: 21px; font-weight: 700; color: #001A33; margin-bottom: 10px;">
-                                            Proactive Security & Compliance
-                                        </h4>
-                                        <p style="font-size: 16.5px; line-height: 1.8; color: #374151; margin: 0;">
-                                            Operating in the securities space requires airtight security. Our trading infrastructure is fortified with continuous, proactive vulnerability scanning and deep security forensic protocols. By maintaining a strict SOC2-compliant environment, we ensure that our proprietary algorithms, trade secrets, and transactional data are entirely shielded from external threats.
+                                        <!-- The Technology Backbone -->
+                                        <h3 class="mt-5" style="letter-spacing: -0.5px; font-weight: 700;">The Technology Backbone</h3>
+                                        <p class="mt-3" style="letter-spacing: 0.3px; line-height: 1.8; color: #555; font-style: italic;">
+                                            To compete in securities and high-frequency environments, infrastructure is just as critical as the trading strategy.
                                         </p>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Low-Latency Architecture:</strong> Speed and reliability are non-negotiable. Our core execution engines are built on high-performance Java enterprise architectures, ensuring ultra-low latency and high-throughput transaction processing without system degradation.
+                                        </p>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Advanced Data Modeling:</strong> We process terabytes of alternative and historical market data daily. Utilizing robust Python-based data pipelines, our quantitative researchers continuously backtest and refine our predictive models to identify fleeting market inefficiencies.
+                                        </p>
+                                        
+                                        <p class="mt-4" style="letter-spacing: 0.4px; line-height: 1.85; font-size: 16px; color: #444;">
+                                            <strong style="color: #111;">Proactive Security & Compliance:</strong> Operating in the securities space requires airtight security. Our trading infrastructure is fortified with continuous, proactive vulnerability scanning and deep security forensic protocols. By maintaining a strict SOC2-compliant environment, we ensure that our proprietary algorithms, trade secrets, and transactional data are entirely shielded from external threats.
+                                        </p>
+
+                                        <!-- Why Adople AI Securities -->
+                                        <h3 class="mt-5" style="letter-spacing: -0.5px; font-weight: 700;">Why Adople AI Securities?</h3>
+                                        
+                                        <div class="service-list-items mt-3">
+                                            <ul>
+                                                <li style="letter-spacing: 0.2px;">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <strong style="color: #111;">Systematic Discipline:</strong> Every trade is driven by rigorously tested data, not intuition.
+                                                </li>
+                                                <li style="letter-spacing: 0.2px;">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <strong style="color: #111;">Scalable Compute:</strong> Cloud-native architecture capable of scaling instantly during peak market hours.
+                                                </li>
+                                                <li style="letter-spacing: 0.2px;">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <strong style="color: #111;">Uncompromised Security:</strong> Built defensively to withstand the highest levels of cyber-attacks while maintaining uninterrupted trading flow.
+                                                </li>
+                                            </ul>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- 3. Why Adople AI Securities? -->
-                            <div class="securities-section-block mb-4">
-                                <div class="d-flex align-items-center gap-3 mb-4">
-                                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">
-                                        03
-                                    </span>
-                                    <h3 style="font-size: 32px; font-weight: 800; color: #001A33; letter-spacing: -0.8px; margin: 0;">
-                                        Why Adople AI Securities?
-                                    </h3>
-                                </div>
-
-                                <div class="row g-4">
-                                    <!-- Pillar 1 -->
-                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                        <div style="background: #001A33; color: #FFFFFF; padding: 36px 28px; height: 100%;">
-                                            <span style="font-family: var(--font-mono); font-size: 12px; color: #9CA3AF; letter-spacing: 1.5px; display: block; margin-bottom: 12px;">PILLAR 01</span>
-                                            <h4 style="font-size: 22px; font-weight: 700; color: #FFFFFF; margin-bottom: 14px;">
-                                                Systematic Discipline
-                                            </h4>
-                                            <p style="font-size: 16px; line-height: 1.75; color: #D1D5DB; margin: 0;">
-                                                Every trade is driven by rigorously tested data, not intuition.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Pillar 2 -->
-                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                                        <div style="background: #001A33; color: #FFFFFF; padding: 36px 28px; height: 100%;">
-                                            <span style="font-family: var(--font-mono); font-size: 12px; color: #9CA3AF; letter-spacing: 1.5px; display: block; margin-bottom: 12px;">PILLAR 02</span>
-                                            <h4 style="font-size: 22px; font-weight: 700; color: #FFFFFF; margin-bottom: 14px;">
-                                                Scalable Compute
-                                            </h4>
-                                            <p style="font-size: 16px; line-height: 1.75; color: #D1D5DB; margin: 0;">
-                                                Cloud-native architecture capable of scaling instantly during peak market hours.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- Pillar 3 -->
-                                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div style="background: #001A33; color: #FFFFFF; padding: 36px 28px; height: 100%;">
-                                            <span style="font-family: var(--font-mono); font-size: 12px; color: #9CA3AF; letter-spacing: 1.5px; display: block; margin-bottom: 12px;">PILLAR 03</span>
-                                            <h4 style="font-size: 22px; font-weight: 700; color: #FFFFFF; margin-bottom: 14px;">
-                                                Uncompromised Security
-                                            </h4>
-                                            <p style="font-size: 16px; line-height: 1.75; color: #D1D5DB; margin: 0;">
-                                                Built defensively to withstand the highest levels of cyber-attacks while maintaining uninterrupted trading flow.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </section>
 
-                <!-- ==========================================
-                     GLOBAL FOOTER (EXACTLY MATCHING HOME PAGE)
-                     ========================================== -->
                 <footer class="footer-section">
-                    <div class="footer-area">
-                        <div class="container">
-                            <div class="footer-widget-wrapper">
-                                <div class="row g-4">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head" style="margin-bottom: 20px;">
-                                                <span style="font-family: var(--font-primary); font-size: 22px; font-weight: 800; letter-spacing: -0.8px; color: #001A33; text-transform: uppercase;">
-                                                    ADOPLE <span style="color: #0052CC;">AI</span>
-                                                </span>
-                                            </div>
-                                            <div class="footer-content">
-                                                <p style="color: #9CA3AF; font-size: 15px; line-height: 1.7;">
-                                                    Production-grade, highly secure artificial intelligence systems and enterprise multi-agent orchestration for US healthcare and financial enterprises.
-                                                </p>
+                        <div class="footer-area">
+                            <div class="container">
+                                <div class="footer-widget-wrapper">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <a href="index.html" class="footer-logo d-inline-flex align-items-center">
+                                                        <img src="assets/img/logo/logo.webp" alt="img">
+                                                        <span class="logo-text ms-2">Adople AI</span>
+                                                    </a>
+                                                </div>
+                                                <div class="footer-content">
+                                                    <p>
+                                                        Under no circumstances should any information presented on this website be construed as an offer to sell, or a solicitation of any offer to purchase, any securities or other investments.
+                                                    </p>
+                                                    <a href="contact.html" class="footer-btn">
+                                                        <span class="icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                                        Inquire
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-2 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Navigation</h3>
+                                        <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Quick links</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="about.html">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Strategies
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">
+                                                        Contact
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="news.html">
+                                                        Research
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <ul class="footer-list">
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Firm</a></li>
-                                                <li><a href="service.html">Our Solutions</a></li>
-                                                <li><a href="securities.html">Securities</a></li>
-                                                <li><a href="project.html">Research</a></li>
-                                                <li><a href="technology.html">Technology</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                            </ul>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Capabilities</h3>
+                                        <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Strategies</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Statistical Arbitrage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Systematic Macro
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Equity Market Neutral
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Machine Learning Alpha
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <ul class="footer-list">
-                                                <li><a href="technology.html">Multi-Agent Systems</a></li>
-                                                <li><a href="technology.html">Generative AI Models</a></li>
-                                                <li><a href="technology.html">Enterprise Security & Forensics</a></li>
-                                                <li><a href="technology.html">HIPAA & SOC2 Security</a></li>
-                                                <li><a href="service.html">Enterprise Integration</a></li>
-                                            </ul>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Get in touch</h3>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Get in touch</h3>
+                                                </div>
+                                                <ul class="contact-list">
+                                                    <li>
+                                                        United States — <br>
+                                                        350 Fifth Avenue, 21st Floor New York, NY 10118
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:+86661233562">+8 (666) 123-3562</a>
+                                                    </li>
+                                                    <li>
+                                                        Mon-Fri 9:00am - 5:00pm
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <ul class="contact-list">
-                                                <li>
-                                                    United States — <br>
-                                                    350 Fifth Avenue, 21st Floor New York, NY 10118
-                                                </li>
-                                                <li>
-                                                    Engineering Hubs — <br>
-                                                    Bengaluru & Salem, India
-                                                </li>
-                                                <li>
-                                                    <a href="mailto:institutional@adople.ai" class="link">institutional@adople.ai</a>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="container">
-                            <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                                <p class="wow fadeInLeft" data-wow-delay=".3s">
-                                    © 2026 <b>ADOPLE AI</b> (LLPIN: ACM-6072). All Institutional Rights Reserved.
-                                </p>
-                                <p class="wow fadeInRight" data-wow-delay=".5s">
-                                    <a href="terms-and-conditions.html" style="color: #9CA3AF; margin-right: 15px;">Terms</a>
-                                    <a href="legal.html" style="color: #9CA3AF;">Privacy</a>
-                                </p>
+                            <div class="footer-bottom">
+                                <div class="container">
+                                    <div class="footer-bottom-wrapper">
+                                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                                            © 2025 <b>Adople AI.</b> All rights reserved.
+                                        </p>
+                                        <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                        <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                            <li>
+                                                <a href="legal.html">Privacy Policy</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Terms of Service</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Legal & Disclosures</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
 
             </div>
         </div>
@@ -591,5 +520,56 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-    </body>
+    
+        <!-- Custom Accordion & Timeline Interactive Animations JS -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const triggers = document.querySelectorAll('.accordion-trigger-btn');
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const targetId = this.getAttribute('aria-controls');
+                    const targetContent = document.getElementById(targetId);
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    // Toggle current
+                    if (isExpanded) {
+                        this.setAttribute('aria-expanded', 'false');
+                        this.classList.remove('active');
+                        if (targetContent) {
+                            targetContent.style.height = '0px';
+                            targetContent.classList.remove('open');
+                            targetContent.setAttribute('aria-hidden', 'true');
+                        }
+                    } else {
+                        // Close other items
+                        triggers.forEach(t => {
+                            t.setAttribute('aria-expanded', 'false');
+                            t.classList.remove('active');
+                            const cId = t.getAttribute('aria-controls');
+                            const cContent = document.getElementById(cId);
+                            if (cContent) {
+                                cContent.style.height = '0px';
+                                cContent.classList.remove('open');
+                                cContent.setAttribute('aria-hidden', 'true');
+                            }
+                        });
+                        
+                        this.setAttribute('aria-expanded', 'true');
+                        this.classList.add('active');
+                        if (targetContent) {
+                            targetContent.style.height = 'auto';
+                            const fullHeight = targetContent.scrollHeight + 'px';
+                            targetContent.style.height = '0px';
+                            // Force repaint
+                            targetContent.offsetHeight;
+                            targetContent.style.height = fullHeight;
+                            targetContent.classList.add('open');
+                            targetContent.setAttribute('aria-hidden', 'false');
+                        }
+                    }
+                });
+            });
+        });
+        </script>
+</body>
 </html>

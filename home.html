@@ -12,7 +12,7 @@
     <!-- ======== Page title ============ -->
     <title>Home — Adople AI</title>
     <!--<< Favicon >>-->
-    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <link rel="shortcut icon" href="assets/img/favicon.webp">
     <!--<< Bootstrap min.css >>-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--<< All Min Css >>-->
@@ -29,8 +29,12 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Dark Mode.css >>-->
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
+        <!--<< RTL.css >>-->
+        <link rel="stylesheet" href="assets/css/rtl.css">
     <!--<< Institutional Theme.css >>-->
-    <link rel="stylesheet" href="assets/css/institutional-theme.css">
+    <link rel="stylesheet" href="assets/css/two-sigma-theme.css">
 </head>
 
 <body>
@@ -46,93 +50,99 @@
 
         <!-- Header Section Start -->
         <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                2σ
-                            </span>
-                            <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                ADOPLE <span style="color: #0052CC;">AI</span>
-                            </span>
-                        </a>
-                        <div class="header-left">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
                             <div class="mean__menu-wrapper">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
+                                    <div class="main-menu">
+                                         <nav id="mobile-menu">
+                                        <ul style="display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0;">
                                             <li>
-                                                <a href="about.html">About</a>
+                                                <a href="about.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">About</a>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Business
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="service.html">Our Solutions</a></li>
-                                                    <li><a href="securities.html">Securities</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="service.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Our Solutions</a></li>
+                                                    <li><a href="securities.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Securities</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Insights
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="data-science-engineering.html">Data Science & Engineering</a></li>
-                                                    <li><a href="academic-partnership.html">Academic Partnership</a></li>
-                                                    <li><a href="market-security.html">Market Security</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="data-science-engineering.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Data Science & Engineering</a></li>
+                                                    <li><a href="academic-partnership.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Academic Partnership</a></li>
+                                                    <li><a href="market-security.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Market Security</a></li>
                                                 </ul>
                                             </li>
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
                                                     Pages
-                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
                                                 </a>
-                                                <ul class="submenu">
-                                                    <li><a href="project.html">Research</a></li>
-                                                    <li><a href="technology.html">Technology</a></li>
-                                                    <li><a href="careers.html">Careers</a></li>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="project.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Research</a></li>
+                                                    <li><a href="technology.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Technology</a></li>
+                                                    <li><a href="careers.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Careers</a></li>
                                                     <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
+                                                        <a href="javascript:void(0)" style="color: #001A33; padding: 10px 24px; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
                                                             Legal & Disclosures Hub
-                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                            <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
                                                         </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                                            <li><a href="legal.html">Privacy Policy</a></li>
-                                                            <li><a href="client-portals.html">Client Portals & Deployment</a></li>
+                                                        <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                            <li><a href="terms-and-conditions.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Terms & Conditions</a></li>
+                                                            <li><a href="legal.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Privacy Policy</a></li>
+                                                            <li><a href="client-portals.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Client Portals & Deployment</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="pricing.html">Pricing</a>
+                                                <a href="pricing.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Pricing</a>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="contact.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <a href="home.html#" class="main-header__search search-toggler d-none d-xxl-block">
-                                <i class="fa-regular fa-magnifying-glass"></i>
-                            </a>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fa-regular fa-bars"></i>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                
+                                <a href="tel:+86661233562" class="theme-btn d-none d-xxl-block">
+                                    <div class="btn_inner">
+                                        <div class="btn_icon">
+                                        <span>
+                                            <img src="assets/img/call.svg" alt="">
+                                            <img src="assets/img/call.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="btn_text">
+                                        <span>+8 (666) 123-3562</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="header__hamburger d-xl-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fa-regular fa-bars"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
         <!-- Search Popup Start -->
         <div class="search-popup">
@@ -185,7 +195,7 @@
                                     <h6 class="sub-title wow fadeInUp" data-wow-delay=".1s">
                                         ENTERPRISE ARTIFICIAL INTELLIGENCE SYSTEMS
                                     </h6>
-                                    <h1 class="wow fadeInUp" data-wow-delay=".2s" style="font-size: 64px; line-height: 1.08; font-weight: 800; letter-spacing: -2.2px; color: #001A33; margin-bottom: 28px;">
+                                    <h1 class="wow fadeInUp" data-wow-delay=".2s" style="font-size: 64px; line-height: 1.08; font-weight: 800; letter-spacing: -2.2px; color: #0d1114; margin-bottom: 28px;">
                                         Mission-Critical AI for the Modern Enterprise.
                                     </h1>
                                     <p class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 19px; line-height: 1.7; color: #4B5563; margin-bottom: 40px; max-width: 680px;">
@@ -216,19 +226,19 @@
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <div class="hero-image wow fadeInUp" data-wow-delay=".3s" style="border: 1px solid #E5E7EB; background: #F8F9FA; padding: 24px;">
+                                <div class="hero-image wow fadeInUp" data-wow-delay=".3s" style="border: 1px solid #E5E7EB; background: #F8F9FA; border-radius: 16px !important; overflow: hidden; padding: 24px;">
                                     <div style="background: #FFFFFF; border: 1px solid #E5E7EB; padding: 32px 24px; display: flex; flex-direction: column; gap: 16px;">
-                                        <div style="font-family: var(--font-mono); font-size: 11px; color: #0052CC; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">
+                                        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--color-teal-500); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600;">
                                             [SYSTEM_ARCH // ADOPLE.AI]
                                         </div>
                                         <div style="display: flex; flex-direction: column; gap: 12px;">
-                                            <div style="padding: 14px 18px; background: #F8F9FA; border-left: 3px solid #001A33; font-size: 14px; font-weight: 600; color: #001A33;">
+                                            <div style="padding: 14px 18px; background: #F8F9FA; border-left: 3px solid #0d1114; font-size: 14px; font-weight: 600; color: #0d1114;">
                                                 01. Multi-Agent Orchestration Layer
                                             </div>
-                                            <div style="padding: 14px 18px; background: #F8F9FA; border-left: 3px solid #0052CC; font-size: 14px; font-weight: 600; color: #001A33;">
+                                            <div style="padding: 14px 18px; background: #F8F9FA; border-left: 3px solid var(--color-teal-500); font-size: 14px; font-weight: 600; color: #0d1114;">
                                                 02. Enterprise LLM & Neural Feature Engine
                                             </div>
-                                            <div style="padding: 14px 18px; background: #F8F9FA; border-left: 3px solid #001A33; font-size: 14px; font-weight: 600; color: #001A33;">
+                                            <div style="padding: 14px 18px; background: #F8F9FA; border-left: 3px solid #0d1114; font-size: 14px; font-weight: 600; color: #0d1114;">
                                                 03. Zero-Trust Security Forensics & Verification
                                             </div>
                                         </div>
@@ -251,7 +261,7 @@
                             <h6 class="sub-title wow fadeInUp">
                                 ARCHITECTURE & CAPABILITIES
                             </h6>
-                            <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #001A33; letter-spacing: -1.2px;">
+                            <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #0d1114; letter-spacing: -1.2px;">
                                 Platform Overview
                             </h2>
                         </div>
@@ -259,13 +269,13 @@
                         <div class="row g-4">
                             <!-- Feature 1 -->
                             <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="service-card-item" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="service-card-item" class="service-card-item" style="border-radius: 16px !important; border-top: 3px solid var(--color-teal-500) !important; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                                     <div>
                                         <div class="mb-4" style="overflow: hidden; height: 180px; border: 1px solid #E5E7EB; background: #F3F4F6;">
                                             <img src="assets/img/inner-page/project-details-02.jpg" alt="Multi-Agent Systems & Orchestration" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITY 01</h6>
-                                        <h3 style="font-size: 22px; font-weight: 700; color: #001A33; margin-bottom: 16px; line-height: 1.3;">
+                                        <h3 style="font-size: 22px; font-weight: 700; color: #0d1114; margin-bottom: 16px; line-height: 1.3;">
                                             Multi-Agent Systems & Orchestration
                                         </h3>
                                         <p style="font-size: 16px; line-height: 1.7; color: #4B5563; margin: 0;">
@@ -277,13 +287,13 @@
 
                             <!-- Feature 2 -->
                             <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="service-card-item" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="service-card-item" class="service-card-item" style="border-radius: 16px !important; border-top: 3px solid var(--color-teal-500) !important; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                                     <div>
                                         <div class="mb-4" style="overflow: hidden; height: 180px; border: 1px solid #E5E7EB; background: #F3F4F6;">
                                             <img src="assets/img/inner-page/project-details-03.jpg" alt="Generative AI & Conversational Chatbots" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITY 02</h6>
-                                        <h3 style="font-size: 22px; font-weight: 700; color: #001A33; margin-bottom: 16px; line-height: 1.3;">
+                                        <h3 style="font-size: 22px; font-weight: 700; color: #0d1114; margin-bottom: 16px; line-height: 1.3;">
                                             Generative AI & Conversational Chatbots
                                         </h3>
                                         <p style="font-size: 16px; line-height: 1.7; color: #4B5563; margin: 0;">
@@ -295,13 +305,13 @@
 
                             <!-- Feature 3 -->
                             <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                <div class="service-card-item" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                                <div class="service-card-item" class="service-card-item" style="border-radius: 16px !important; border-top: 3px solid var(--color-teal-500) !important; padding: 44px 36px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
                                     <div>
                                         <div class="mb-4" style="overflow: hidden; height: 180px; border: 1px solid #E5E7EB; background: #F3F4F6;">
                                             <img src="assets/img/inner-page/project-details-04.jpg" alt="Uncompromising Enterprise Security & Forensics" style="width: 100%; height: 100%; object-fit: cover;">
                                         </div>
                                         <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITY 03</h6>
-                                        <h3 style="font-size: 22px; font-weight: 700; color: #001A33; margin-bottom: 16px; line-height: 1.3;">
+                                        <h3 style="font-size: 22px; font-weight: 700; color: #0d1114; margin-bottom: 16px; line-height: 1.3;">
                                             Uncompromising Enterprise Security & Forensics
                                         </h3>
                                         <p style="font-size: 16px; line-height: 1.7; color: #4B5563; margin: 0;">
@@ -323,16 +333,16 @@
                             <h6 class="sub-title wow fadeInUp">
                                 INSTITUTIONAL METRICS
                             </h6>
-                            <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #001A33; letter-spacing: -1.2px;">
+                            <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #0d1114; letter-spacing: -1.2px;">
                                 Firm Statistics
                             </h2>
                         </div>
 
                         <div class="row g-4">
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #0d1114; height: 100%;">
                                     <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">HERITAGE</h6>
-                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">2016</h2>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #0d1114; margin-bottom: 12px;">2016</h2>
                                     <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
                                         <strong>Heritage:</strong> Established in 2016 (LLPIN: ACM-6072) with a proven foundation in secure architecture.
                                     </p>
@@ -340,9 +350,9 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #0d1114; height: 100%;">
                                     <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">MARKETS</h6>
-                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">US</h2>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #0d1114; margin-bottom: 12px;">US</h2>
                                     <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
                                         <strong>Target Markets:</strong> Dedicated to resolving high-stakes challenges in US Healthcare & Financial Enterprises.
                                     </p>
@@ -350,9 +360,9 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #0d1114; height: 100%;">
                                     <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">COMPLIANCE</h6>
-                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">HIPAA</h2>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #0d1114; margin-bottom: 12px;">HIPAA</h2>
                                     <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
                                         <strong>Compliance Posture:</strong> Engineered from the ground up for HIPAA and SOC2 alignment.
                                     </p>
@@ -360,9 +370,9 @@
                             </div>
 
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #001A33; height: 100%;">
+                                <div class="counter-box" style="background: #FFFFFF; padding: 36px 28px; border: 1px solid #E5E7EB; border-top: 3px solid #0d1114; height: 100%;">
                                     <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #6B7280; margin-bottom: 12px;">CAPABILITIES</h6>
-                                    <h2 style="font-size: 38px; font-weight: 800; color: #001A33; margin-bottom: 12px;">Core AI</h2>
+                                    <h2 style="font-size: 38px; font-weight: 800; color: #0d1114; margin-bottom: 12px;">Core AI</h2>
                                     <p style="font-size: 15px; color: #4B5563; margin: 0; line-height: 1.6;">
                                         <strong>Core Capabilities:</strong> Deep Learning, Generative AI, Python/Java Enterprise Integration, and Enterprise Security Forensics.
                                     </p>
@@ -389,7 +399,7 @@
                                         <h6 class="sub-title wow fadeInUp">
                                             ENGINEERING CULTURE
                                         </h6>
-                                        <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 42px; line-height: 1.15; letter-spacing: -1.5px; font-weight: 700; color: #001A33;">
+                                        <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 42px; line-height: 1.15; letter-spacing: -1.5px; font-weight: 700; color: #0d1114;">
                                             Precision, Privacy, and Relentless Innovation.
                                         </h2>
                                     </div>
@@ -419,98 +429,139 @@
                      GLOBAL FOOTER (EXACTLY MATCHING HOME PAGE)
                      ========================================== -->
                 <footer class="footer-section">
-                    <div class="footer-area">
-                        <div class="container">
-                            <div class="footer-widget-wrapper">
-                                <div class="row g-4">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head" style="margin-bottom: 20px;">
-                                                <span style="font-family: var(--font-primary); font-size: 22px; font-weight: 800; letter-spacing: -0.8px; color: #001A33; text-transform: uppercase;">`r`n                                ADOPLE <span style="color: #0052CC;">AI</span>
-                                                </span>
-                                            </div>
-                                            <div class="footer-content">
-                                                <p style="color: #9CA3AF; font-size: 15px; line-height: 1.7;">
-                                                    Production-grade, highly secure artificial intelligence systems and enterprise multi-agent orchestration for US healthcare and financial enterprises.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Navigation</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="home.html">Home</a></li>
-                                                <li><a href="about.html">About Firm</a></li>
-                                                <li><a href="service.html">Our Solutions</a></li>
-                                                <li><a href="project.html">Research</a></li>
-                                                <li><a href="technology.html">Technology</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Capabilities</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="technology.html">Multi-Agent Systems</a></li>
-                                                <li><a href="technology.html">Generative AI Models</a></li>
-                                                <li><a href="technology.html">Enterprise Security & Forensics</a></li>
-                                                <li><a href="technology.html">HIPAA & SOC2 Security</a></li>
-                                                <li><a href="service.html">Enterprise Integration</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Get in touch</h3>
-                                            </div>
-                                            <ul class="contact-list">
-                                                <li>
-                                                    United States — <br>
-                                                    350 Fifth Avenue, 21st Floor New York, NY 10118
-                                                </li>
-                                                <li>
-                                                    <a href="tel:+86661233562">+8 (666) 123-3562</a>
-                                                </li>
-                                                <li>
-                                                    Mon-Fri 9:00am - 5:00pm
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-bottom">
+                        <div class="footer-area">
                             <div class="container">
-                                <div class="footer-bottom-wrapper d-flex justify-content-between align-items-center flex-wrap gap-3">
-                                    <p style="color: #9CA3AF; font-size: 13px; font-family: var(--font-mono); margin: 0;">
-                                        © 2025 <b>Adople AI.</b> All rights reserved.
-                                    </p>
-                                    <ul class="footer-list d-flex align-items-center gap-3">
-                                        <li>
-                                            <a href="legal.html">Privacy Policy</a>
-                                        </li>
-                                        <li>|</li>
-                                        <li>
-                                            <a href="terms-and-conditions.html">Terms of Service</a>
-                                        </li>
-                                        <li>|</li>
-                                        <li>
-                                            <a href="terms-and-conditions.html">Legal & Disclosures Hub</a>
-                                        </li>
-                                    </ul>
+                                <div class="footer-widget-wrapper">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <a href="index.html" class="footer-logo d-inline-flex align-items-center">
+                                                        <img src="assets/img/logo/logo.webp" alt="img">
+                                                        <span class="logo-text ms-2">Adople AI</span>
+                                                    </a>
+                                                </div>
+                                                <div class="footer-content">
+                                                    <p>
+                                                        Under no circumstances should any information presented on this website be construed as an offer to sell, or a solicitation of any offer to purchase, any securities or other investments.
+                                                    </p>
+                                                    <a href="contact.html" class="footer-btn">
+                                                        <span class="icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                                        Inquire
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Quick links</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="about.html">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Strategies
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">
+                                                        Contact
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="news.html">
+                                                        Research
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Strategies</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Statistical Arbitrage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Systematic Macro
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Equity Market Neutral
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Machine Learning Alpha
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Get in touch</h3>
+                                                </div>
+                                                <ul class="contact-list">
+                                                    <li>
+                                                        United States — <br>
+                                                        350 Fifth Avenue, 21st Floor New York, NY 10118
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:+86661233562">+8 (666) 123-3562</a>
+                                                    </li>
+                                                    <li>
+                                                        Mon-Fri 9:00am - 5:00pm
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <div class="container">
+                                    <div class="footer-bottom-wrapper">
+                                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                                            © 2025 <b>Adople AI.</b> All rights reserved.
+                                        </p>
+                                        <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                        <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                            <li>
+                                                <a href="legal.html">Privacy Policy</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Terms of Service</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Legal & Disclosures</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
 
             </div>
         </div>
@@ -518,7 +569,7 @@
         <!-- ==========================================
              COOKIE & PRIVACY BANNER WITH CLOSE SYMBOL
              ========================================== -->
-        <div id="cookie-banner" style="position: fixed; bottom: 24px; left: 24px; right: 24px; max-width: 860px; margin: 0 auto; background: #001A33; color: #FFFFFF; border: 1px solid #2D3748; padding: 24px 32px; z-index: 99999; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
+        <div id="cookie-banner" style="position: fixed; bottom: 24px; left: 24px; right: 24px; max-width: 860px; margin: 0 auto; background: #0d1114; color: #FFFFFF; border: 1px solid #2D3748; padding: 24px 32px; z-index: 99999; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
             <div style="flex: 1; min-width: 280px; position: relative;">
                 <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #9CA3AF; margin-bottom: 6px;">
                     COOKIE & PRIVACY NOTICE
@@ -528,7 +579,7 @@
                 </p>
             </div>
             <div style="display: flex; gap: 16px; align-items: center;">
-                <button onclick="dismissCookieBanner()" style="background: #FFFFFF; color: #001A33; border: 1px solid #FFFFFF; padding: 10px 24px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: all 0.2s;">
+                <button onclick="dismissCookieBanner()" style="background: #FFFFFF; color: #0d1114; border: 1px solid #FFFFFF; padding: 10px 24px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: all 0.2s;">
                     Accept & Proceed
                 </button>
                 <button onclick="dismissCookieBanner()" aria-label="Close Cookie Banner" style="background: transparent; border: none; color: #9CA3AF; font-size: 22px; cursor: pointer; padding: 4px 8px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: color 0.2s;">

@@ -1,140 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--<< Header Area >>-->
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Adople AI">
+        <meta name="description" content="Adople AI - Quantitative Systematic Platform">
+        <!-- ======== Page title ============ -->
+        <title>Adople AI - Quantitative Systematic Platform</title>
+        <!--<< Favcion >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.webp">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< All Min Css >>-->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Dark Mode.css >>-->
+        <link rel="stylesheet" href="assets/css/dark-mode.css">
+        <!--<< RTL.css >>-->
+        <link rel="stylesheet" href="assets/css/rtl.css">
+        <!--<< Two Sigma Theme.css >>-->
+        <link rel="stylesheet" href="assets/css/two-sigma-theme.css">
+    </head>
+    <body>
 
-<head>
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Adople AI">
-    <meta name="description" content="About Us — Adople AI Quantitative Intelligence & Enterprise AI Platform">
-    <!-- ======== Page title ============ -->
-    <title>About Us — Adople AI</title>
-    <!--<< Favicon >>-->
-    <link rel="shortcut icon" href="assets/img/favicon.svg">
-    <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--<< All Min Css >>-->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!--<< Animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!--<< Magnific Popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!--<< MeanMenu.css >>-->
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <!--<< Swiper Bundle.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <!--<< Nice Select.css >>-->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <!--<< Main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!--<< Institutional Theme.css >>-->
-    <link rel="stylesheet" href="assets/css/institutional-theme.css">
-</head>
-
-<body>
-
-    <div class="page-wrapper">
-        <!-- Preloader Start -->
-        
+         <div class="page-wrapper">
+            <!-- ==== color switcher start ==== -->
+            <div class="color-palate">
+                <button class="color-trigger">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <button class="close-color-trigger">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="color-palate-inner">
+                    <a href="index.html" class="palate-logo mb-4 d-block">
+                        <img src="assets/img/logo/logo.webp" alt="img">
+                    </a>
+                    <h6>Dark Verion</h6>
+                        <ul class="dark-version box-version option-box">
+                        <li class="box">Dark Mode</li>
+                        <li>Light Mode</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Preloader Start -->
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">                
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="D" class="letters-loading">D</span>
+                    <span data-text-preloader="O" class="letters-loading">O</span>
+                    <span data-text-preloader="P" class="letters-loading">P</span>
+                    <span data-text-preloader="L" class="letters-loading">L</span>
+                    <span data-text-preloader="E" class="letters-loading">E</span>
+                    <span data-text-preloader="&nbsp;" class="letters-loading">&nbsp;</span>
+                    <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="I" class="letters-loading">I</span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top">
             <i class="fa-regular fa-arrow-up"></i>
         </button>
 
-        <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <a href="index.html" class="logo d-flex align-items-center gap-2" style="text-decoration: none;">
-                            <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #001A33; color: #FFFFFF; font-family: var(--font-mono); font-size: 14px; font-weight: 700; border-radius: 4px !important;">
-                                2σ
-                            </span>
-                            <span style="font-family: var(--font-primary); font-size: 20px; font-weight: 800; letter-spacing: -0.6px; color: #001A33; text-transform: uppercase;">
-                                ADOPLE <span style="color: #0052CC;">AI</span>
-                            </span>
-                        </a>
-                        <div class="header-left">
-                            <div class="mean__menu-wrapper">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
-                                            <li>
-                                                <a href="about.html">About</a>
-                                            </li>
-                                            <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
-                                                    Business
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="service.html">Our Solutions</a></li>
-                                                    <li><a href="securities.html">Securities</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
-                                                    Insights
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="data-science-engineering.html">Data Science & Engineering</a></li>
-                                                    <li><a href="academic-partnership.html">Academic Partnership</a></li>
-                                                    <li><a href="market-security.html">Market Security</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
-                                                    Pages
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="project.html">Research</a></li>
-                                                    <li><a href="technology.html">Technology</a></li>
-                                                    <li><a href="careers.html">Careers</a></li>
-                                                    <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
-                                                            Legal & Disclosures Hub
-                                                            <i class="fa-solid fa-chevron-right"></i>
-                                                        </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                                                            <li><a href="legal.html">Privacy Policy</a></li>
-                                                            <li><a href="client-portals.html">Client Portals & Deployment</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="pricing.html">Pricing</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+        <!-- GT MouseCursor Start -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner"></div>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/logo.webp" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <a href="about.html#" class="main-header__search search-toggler d-none d-xxl-block">
-                                <i class="fa-regular fa-magnifying-glass"></i>
-                            </a>
-                            <div class="header__hamburger d-xl-none my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fa-regular fa-bars"></i>
+                        <p class="text d-none d-xl-block">
+                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                        </p>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="about.html#">Main Street, Melbourne, Australia</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="about.html#">Mod-friday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+11002345909">+11002345909</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="theme-btn mt-4">
+                                <div class="btn_inner">
+                                    <div class="btn_icon">
+                                    <span>
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                    </span>
+                                    </div>
+                                    <div class="btn_text">
+                                    <span>Contact us</span>
+                                    </div>
                                 </div>
+                            </a>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="about.html#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="about.html#"><i class="fab fa-twitter"></i></a>
+                                <a href="about.html#"><i class="fab fa-youtube"></i></a>
+                                <a href="about.html#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+        <div class="offcanvas__overlay"></div>
 
-        <!-- Search Popup Start -->
+        <!-- Header Section Start -->
+            <header id="header-sticky" class="header-1">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+                            <a href="index.html" class="logo d-inline-flex align-items-center">
+                                <img src="assets/img/logo/logo.webp" alt="img">
+                                <span class="logo-text ms-2">Adople AI</span>
+                            </a>
+                            <div class="mean__menu-wrapper">
+                                    <div class="main-menu">
+                                         <nav id="mobile-menu">
+                                        <ul style="display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0;">
+                                            <li>
+                                                <a href="about.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">About</a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
+                                                    Business
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+                                                </a>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="service.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Our Solutions</a></li>
+                                                    <li><a href="securities.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Securities</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
+                                                    Insights
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+                                                </a>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="data-science-engineering.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Data Science & Engineering</a></li>
+                                                    <li><a href="academic-partnership.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Academic Partnership</a></li>
+                                                    <li><a href="market-security.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Market Security</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0)" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">
+                                                    Pages
+                                                    <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+                                                </a>
+                                                <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                    <li><a href="project.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Research</a></li>
+                                                    <li><a href="technology.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Technology</a></li>
+                                                    <li><a href="careers.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Careers</a></li>
+                                                    <li class="has-dropdown">
+                                                        <a href="javascript:void(0)" style="color: #001A33; padding: 10px 24px; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
+                                                            Legal & Disclosures Hub
+                                                            <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                                                        </a>
+                                                        <ul class="submenu" style="background: #FFFFFF; border: 1px solid #E5E7EB; border-top: 2px solid #001A33; padding: 12px 0;">
+                                                            <li><a href="terms-and-conditions.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Terms & Conditions</a></li>
+                                                            <li><a href="legal.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Privacy Policy</a></li>
+                                                            <li><a href="client-portals.html" style="color: #001A33; padding: 10px 24px; font-size: 14px;">Client Portals & Deployment</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="pricing.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" style="font-weight: 600; color: #001A33; font-size: 14px; padding: 24px 11px;">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    </div>
+                                    
+                                </div>
+                            <div class="header-right d-flex justify-content-end align-items-center">
+                                
+                                <a href="tel:+86661233562" class="theme-btn d-none d-xxl-block">
+                                    <div class="btn_inner">
+                                        <div class="btn_icon">
+                                        <span>
+                                            <img src="assets/img/call.svg" alt="">
+                                            <img src="assets/img/call.svg" alt="">
+                                        </span>
+                                        </div>
+                                        <div class="btn_text">
+                                        <span>+8 (666) 123-3562</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="header__hamburger d-xl-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fa-regular fa-bars"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <!-- Search Start -->
         <div class="search-popup">
             <div class="search-popup__overlay search-toggler"></div>
             <div class="search-popup__content">
@@ -146,20 +293,20 @@
                 </form>
             </div>
         </div>
-
+       
         <div id="smooth-wrapper">
             <div id="smooth-content">
 
-                <!-- Breadcrumb Section Start (Dark Architectural Banner Theme) -->
+                <!-- Breadcrumb Section Start -->
                 <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb-bg.jpg');">
                     <div class="container">
                         <div class="page-heading">
                             <div class="breadcrumb-sub-title">
-                                <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">About Us</h1>
+                                <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">About us</h1>
                             </div>
                             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                                 <li>
-                                    <a href="home.html">
+                                    <a href="index.html">
                                         <i class="fa-solid fa-house"></i> Home
                                     </a>
                                 </li>
@@ -167,233 +314,859 @@
                                     /
                                 </li>
                                 <li>
-                                    About Us
+                                    About us
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- ==========================================
-                     1. FIRM HERITAGE & MISSION
-                     ========================================== -->
-                <section class="about-section fix section-padding" style="background: #FFFFFF; border-bottom: 1px solid #E5E7EB; padding: 120px 0;">
+                <!-- About Inner Section Start -->
+                <section class="about-inner-section fix section-padding">
                     <div class="container">
-                        <div class="row g-5 align-items-center">
-                            <div class="col-lg-6">
-                                <div class="about-content">
-                                    <h6 class="sub-title wow fadeInUp" data-wow-delay=".1s" style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #6B7280; margin-bottom: 16px;">
-                                        INSTITUTIONAL FOUNDATION
-                                    </h6>
-                                    <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #001A33; letter-spacing: -1.2px; margin-bottom: 24px; line-height: 1.15;">
-                                        Firm Heritage & Mission
-                                    </h2>
-                                    <p class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 18px; line-height: 1.8; color: #4B5563; margin-bottom: 32px;">
-                                        Founded in 2016 and proudly operating from our engineering hubs in Bengaluru and Salem, Adople AI emerged with a clear, singular vision: to bridge the gap between theoretical AI and secure, enterprise application. While many firms focus solely on algorithmic capabilities, we recognized early on that true business value in regulated industries requires a foundation of uncompromising security and compliance. Today, our mission is to empower global businesses—primarily US-based enterprises navigating stringent regulatory landscapes—by transforming fragmented, sensitive data into actionable, compliant intelligence.
-                                    </p>
-                                    <div class="d-flex flex-wrap gap-4 pt-2 wow fadeInUp" data-wow-delay=".4s">
-                                        <div style="border-left: 2px solid #001A33; padding-left: 16px;">
-                                            <div style="font-family: var(--font-mono); font-size: 11px; color: #6B7280; text-transform: uppercase; letter-spacing: 1px;">GLOBAL HUBS</div>
-                                            <div style="font-size: 15px; font-weight: 700; color: #001A33;">Bengaluru & Salem</div>
-                                        </div>
-                                        <div style="border-left: 2px solid #0052CC; padding-left: 16px;">
-                                            <div style="font-family: var(--font-mono); font-size: 11px; color: #6B7280; text-transform: uppercase; letter-spacing: 1px;">PRIMARY FOCUS</div>
-                                            <div style="font-size: 15px; font-weight: 700; color: #001A33;">US Regulated Sectors</div>
-                                        </div>
+                        <div class="section-title-area align-items-start">
+                            <div class="section-title">
+                                <h6 class="sub-title wow fadeInUp">
+                                    <img src="assets/img/home-1/star.svg" alt="img">COMPANY OVERVIEW
+                                </h6>
+                                <h2 class="text-anim">
+                                    Investment management driven by <br> rigorous mathematical modeling <br> and statistical execution.
+                                </h2>
+                            </div>
+                            <div class="about-content">
+                                <p>
+                                    Our firm operates at the intersection of high-performance computing and empirical finance. We design systematic trading strategies across global liquid asset classes, identifying non-correlated statistical alpha to generate superior long-term returns for institutional allocators.
+                                </p>
+                                <div class="about-info">
+                                    <div class="client-image">
+                                        <img src="assets/img/inner-page/about-info.png" alt="img">
+                                        <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
+                                            <i class="fa-duotone fa-play"></i>
+                                        </a>
+                                        <span>Watch now!</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="about-image wow fadeInUp" data-wow-delay=".3s" style="border: 1px solid #E5E7EB; background: #F8F9FA; padding: 20px;">
-                                    <img src="assets/img/inner-page/about-image.jpg" alt="Firm Heritage & Mission" class="img-fluid" style="width: 100%; height: 420px; object-fit: cover;">
+                        </div>
+                        <div class="about-inner-image">
+                            <div class="fix">
+                                <img data-speed=".8" src="assets/img/inner-page/about-image.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="about-counter-wrapper">
+                            <div class="row g-4">
+                                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="about-counter-item">
+                                       <h6>Venues</h6>
+                                       <h2>
+                                            <span class="count">120</span>+
+                                       </h2>
+                                       <p>
+                                        Direct systematic connectivity across global liquid markets.
+                                       </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="about-counter-item">
+                                       <h6>Data (PB)</h6>
+                                       <h2>
+                                            <span class="count">640</span>+
+                                       </h2>
+                                       <p>
+                                        Analyzing tick-level historical databases to validate signals.
+                                       </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                    <div class="about-counter-item">
+                                       <h6>Systematic</h6>
+                                       <h2>
+                                            <span class="count">100</span>%
+                                       </h2>
+                                       <p>
+                                        Operating automated execution pipelines without human bias.
+                                       </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- ==========================================
-                     2. LEADERSHIP & ENGINEERING EXCELLENCE
-                     ========================================== -->
-                <section class="about-section fix section-padding" style="background: #F8F9FA; border-bottom: 1px solid #E5E7EB; padding: 120px 0;">
+                <!-- About Text Inner Section Start -->
+                <section class="about-text-inner fix actually-area section-bg">
                     <div class="container">
-                        <div class="row g-5 align-items-center flex-row-reverse">
-                            <div class="col-lg-6">
-                                <div class="about-content">
-                                    <h6 class="sub-title wow fadeInUp" data-wow-delay=".1s" style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #6B7280; margin-bottom: 16px;">
-                                        SCIENTIFIC RIGOR & TALENT
+                        <div class="section-title text-center">
+                            <h6 class="sub-title wow fadeInUp">
+                                <img src="assets/img/home-1/star.svg" alt="img"> MISSION & VISION
+                            </h6>
+                            <h2 class="font-sequelsans-romanbody t_line">
+                                Empirical discovery and absolute execution discipline: <br> we approach markets as a scientific puzzle <br> where only verifiable relationships win.
+                            </h2>
+                            <a href="service.html" class="theme-btn mt-5 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="btn_inner">
+                                    <div class="btn_icon">
+                                    <span>
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                    </span>
+                                    </div>
+                                    <div class="btn_text">
+                                    <span>Our Strategies</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                 <!-- Marquee Section Start -->
+                <div class="marquee-section2">
+                    <div class="marquee style-2 mb-0">
+                        <div class="marquee-group">
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Growth
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Success
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Leadership
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Trust
+                            </div>
+                        </div>
+                        <div class="marquee-group">
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Growth
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Success
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Leadership
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Trust
+                            </div>
+                        </div>
+                        <div class="marquee-group">
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Growth
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Success
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Leadership
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Trust
+                            </div>
+                        </div>
+                        <div class="marquee-group">
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Growth
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Success
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Leadership
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Trust
+                            </div>
+                        </div>
+                        <div class="marquee-group">
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Growth
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Success
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Leadership
+                            </div>
+                            <div class="text">
+                                <img src="assets/img/home-1/star2.svg" alt="img">
+                                Trust
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Team Section Start -->
+                <section class="team-section-3 fix section-bg section-padding tp-panel-pin-area2">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="section-title tp-panel-pin2">
+                                    <h6 class="sub-title wow fadeInUp">
+                                        <img src="assets/img/home-1/star.svg" alt="img"> LEADERSHIP & RESEARCH
                                     </h6>
-                                    <h2 class="sec_title wow fadeInUp" data-wow-delay=".2s" style="font-size: 44px; font-weight: 700; color: #001A33; letter-spacing: -1.2px; margin-bottom: 24px; line-height: 1.15;">
-                                        Leadership & Engineering Excellence
+                                    <h2 class="text-anim">
+                                       Scientific Leadership & Research.
                                     </h2>
-                                    <p class="wow fadeInUp" data-wow-delay=".3s" style="font-size: 18px; line-height: 1.8; color: #4B5563; margin-bottom: 32px;">
-                                        Our strength lies in our people. The Adople AI team is composed of seasoned data scientists, Python and Java developers, and dedicated enterprise security experts. We bring together deep domain expertise across multiple disciplines. Our leadership prioritizes a scientific approach to software development, ensuring that every algorithmic model, chatbot interface, and data structure we deploy is tested against the most rigorous standards of reliability and security.
-                                    </p>
-                                    <a href="careers.html" class="theme-btn wow fadeInUp" data-wow-delay=".4s">
+                                    <a href="about.html#" class="mt-4 theme-btn wow fadeInUp" data-wow-delay=".5s">
                                         <div class="btn_inner">
-                                            <div class="btn_text">
-                                                <span>Join Our Engineering Team</span>
-                                            </div>
                                             <div class="btn_icon">
-                                                <i class="fa-solid fa-arrow-right"></i>
+                                            <span>
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                            </span>
+                                            </div>
+                                            <div class="btn_text">
+                                            <span>Research Careers</span>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="about-image wow fadeInUp" data-wow-delay=".3s" style="border: 1px solid #E5E7EB; background: #FFFFFF; padding: 20px;">
-                                    <img src="assets/img/inner-page/careers-banner.jpg" alt="Leadership & Engineering Excellence" class="img-fluid" style="width: 100%; height: 420px; object-fit: cover;">
+                            <div class="col-lg-8">
+                                <div class="row g-4">
+                                     <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                <div class="team-box-item-3 style-2">
+                                    <div class="thumb">
+                                        <img src="assets/img/inner-page/team-1.jpg" alt="img">
+                                        <img src="assets/img/inner-page/team-1.jpg" alt="img">
+                                        <div class="social-icon d-flex align-items-center">
+                                            <a href="about.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="about.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="about.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="about.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="about.html#">Dr. Shikhon Islam</a>
+                                        </h3>
+                                        <p>
+                                            Chief Executive Officer & Founder
+                                        </p>
+                                        <a href="about.html#" class="icon">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="team-box-item-3 style-2">
+                                    <div class="thumb">
+                                        <img src="assets/img/inner-page/team-2.jpg" alt="img">
+                                        <img src="assets/img/inner-page/team-2.jpg" alt="img">
+                                        <div class="social-icon d-flex align-items-center">
+                                            <a href="about.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="about.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="about.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="about.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="about.html#">Michael Thompson</a>
+                                        </h3>
+                                        <p>
+                                            Head of Quantitative Research
+                                        </p>
+                                        <a href="about.html#" class="icon">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                <div class="team-box-item-3 style-2">
+                                    <div class="thumb">
+                                         <img src="assets/img/inner-page/team-3.jpg" alt="img">
+                                         <img src="assets/img/inner-page/team-3.jpg" alt="img">
+                                        <div class="social-icon d-flex align-items-center">
+                                            <a href="about.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="about.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="about.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="about.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="about.html#">John Davies</a>
+                                        </h3>
+                                        <p>
+                                            Head of Low-Latency Systems
+                                        </p>
+                                        <a href="about.html#" class="icon">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                <div class="team-box-item-3 style-2">
+                                    <div class="thumb">
+                                         <img src="assets/img/inner-page/team-04.jpg" alt="img">
+                                         <img src="assets/img/inner-page/team-04.jpg" alt="img">
+                                        <div class="social-icon d-flex align-items-center">
+                                            <a href="about.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="about.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="about.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="about.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            <a href="about.html#">Sarah Johnson</a>
+                                        </h3>
+                                        <p>
+                                            Chief Risk Officer
+                                        </p>
+                                        <a href="about.html#" class="icon">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!-- ==========================================
-                     GLOBAL FOOTER (EXACTLY MATCHING HOME PAGE)
-                     ========================================== -->
-                                <!-- ==========================================
-                     GLOBAL FOOTER (EXACTLY MATCHING HOME PAGE)
-                     ========================================== -->
-                <footer class="footer-section">
-                    <div class="footer-area">
-                        <div class="container">
-                            <div class="footer-widget-wrapper">
-                                <div class="row g-4">
-                                    <div class="col-xl-4 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head" style="margin-bottom: 20px;">
-                                                <span style="font-family: var(--font-primary); font-size: 22px; font-weight: 800; letter-spacing: -0.8px; color: #001A33; text-transform: uppercase;">`r`n                                ADOPLE <span style="color: #0052CC;">AI</span>
-                                                </span>
-                                            </div>
-                                            <div class="footer-content">
-                                                <p style="color: #9CA3AF; font-size: 15px; line-height: 1.7;">
-                                                    Production-grade, highly secure artificial intelligence systems and enterprise multi-agent orchestration for US healthcare and financial enterprises.
-                                                </p>
-                                            </div>
+                <!-- Testimonial Section Start -->
+                <section class="testimonial-section-3 testi-sec-2 fix section-padding">
+                    <div class="container">
+                        <div class="section-title text-center">
+                            <h6 class="sub-title wow fadeInUp">
+                                <img src="assets/img/home-1/star.svg" alt="img"> CORE VALUES & CULTURE
+                            </h6>
+                            <h2 class="text-anim">
+                                Operating Principles That <br> Drive Our Systematic Edge.
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="array-button wow fadeInUp" data-wow-delay=".5s">
+                        <button class="array-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="array-next"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="swiper testimonial-slider-3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-box-items-3 style-2">
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        “We approach markets with deep inquiry, demanding empirical evidence for every mathematical relationship we model. If a signal cannot be mathematically validated and backtested on historical tick data, it is not deployed.”
+                                    </h4>
+                                    <div class="client-info">
+                                        <div class="thumb">
+                                            <img src="assets/img/home-3/client-info.png" alt="img">
+                                        </div>
+                                        <div class="info-content">
+                                            <h5>Scientific Inquiry</h5> 
+                                            <span>Empirical Principle</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-2 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Navigation</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="home.html">Home</a></li>
-                                                <li><a href="about.html">About Firm</a></li>
-                                                <li><a href="service.html">Our Solutions</a></li>
-                                                <li><a href="project.html">Research</a></li>
-                                                <li><a href="technology.html">Technology</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                            </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-box-items-3 style-2">
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        “Capital preservation is embedded strictly outside execution paths. Real-time automated risk controls, circuit breakers, and capital allocation limits run independently of trading algorithms to prevent systemic failure.”
+                                    </h4>
+                                    <div class="client-info">
+                                        <div class="thumb">
+                                            <img src="assets/img/home-3/client-info-2.png" alt="img">
+                                        </div>
+                                        <div class="info-content">
+                                            <h5>Risk Discipline </h5> 
+                                            <span>Capital Preservation</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Capabilities</h3>
-                                            </div>
-                                            <ul class="footer-list">
-                                                <li><a href="technology.html">Multi-Agent Systems</a></li>
-                                                <li><a href="technology.html">Generative AI Models</a></li>
-                                                <li><a href="technology.html">Enterprise Security & Forensics</a></li>
-                                                <li><a href="technology.html">HIPAA & SOC2 Security</a></li>
-                                                <li><a href="service.html">Enterprise Integration</a></li>
-                                            </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-box-items-3 style-2">
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        “We offer the excitement of a startup with the resources of an industry leader. This is a place where extraordinary minds come together to discover, create, and solve complex mathematical and computing problems.”
+                                    </h4>
+                                    <div class="client-info">
+                                        <div class="thumb">
+                                            <img src="assets/img/home-3/client-info-3.png" alt="img">
+                                        </div>
+                                        <div class="info-content">
+                                            <h5>Academic Culture </h5> 
+                                            <span>Team Alignment</span>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Get in touch</h3>
-                                            </div>
-                                            <ul class="contact-list">
-                                                <li>
-                                                    United States — <br>
-                                                    350 Fifth Avenue, 21st Floor New York, NY 10118
-                                                </li>
-                                                <li>
-                                                    <a href="tel:+86661233562">+8 (666) 123-3562</a>
-                                                </li>
-                                                <li>
-                                                    Mon-Fri 9:00am - 5:00pm
-                                                </li>
-                                            </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-box-items-3 style-2">
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        “Institutional allocators underwrite process, team, and risk management rather than historical performance. Every operational claim we make is supported by auditable software structures and complete due diligence transparency.”
+                                    </h4>
+                                    <div class="client-info">
+                                        <div class="thumb">
+                                            <img src="assets/img/home-3/client-info-4.png" alt="img">
+                                        </div>
+                                        <div class="info-content">
+                                            <h5>Process Transparency </h5> 
+                                            <span>ODD Alignment</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial-box-items-3 style-2">
+                                    <div class="star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h4>
+                                        “Alpha decays over time. We continuously optimize our low-latency networks, hack compilers, refine simulation frameworks, and speed up ingestion engines to maintain our edge in global liquid markets.”
+                                    </h4>
+                                    <div class="client-info">
+                                        <div class="thumb">
+                                            <img src="assets/img/home-3/client-info-5.png" alt="img">
+                                        </div>
+                                        <div class="info-content">
+                                            <h5>Infrastructure Tuning</h5> 
+                                            <span>Continuous Evolution</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-bottom">
-                            <div class="container">
-                                <div class="footer-bottom-wrapper d-flex justify-content-between align-items-center flex-wrap gap-3">
-                                    <p style="color: #9CA3AF; font-size: 13px; font-family: var(--font-mono); margin: 0;">
-                                        © 2025 <b>Adople AI.</b> All rights reserved.
-                                    </p>
-                                    <ul class="footer-list d-flex align-items-center gap-3">
-                                        <li>
-                                            <a href="legal.html">Privacy Policy</a>
+                        <div class="swiper-dot text-center mt-5">
+                            <div class="dot2"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Faq Section Start -->
+                <section class="faq-section-3 faq-about fix section-padding tp-panel-pin-area">
+                    <div class="container">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                 <div class="section-title tp-panel-pin">
+                                    <h6 class="sub-title wow fadeInUp">
+                                        <img src="assets/img/home-1/star.svg" alt="img"> GOVERNANCE & TRANS-PROVIDER
+                                    </h6>
+                                    <h2 class="text-anim">
+                                        Operational Due Diligence & Audits.
+                                    </h2>
+                                    <a href="contact.html" class="mt-4 theme-btn wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="btn_inner">
+                                            <div class="btn_icon">
+                                            <span>
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                            <i class="fa-solid fa-arrow-up-right"></i>
+                                            </span>
+                                            </div>
+                                            <div class="btn_text">
+                                            <span>Request DDQ</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                               <div class="faq-items-2 style-faq-2">
+                                    <ul class="accordion-box">
+                                        <!--Block-->
+                                        <li class="accordion block active-block wow fadeInUp">
+                                            <div class="acc-btn active">
+                                                Who are the firm's prime brokers?
+                                            <div class="icon fa-solid fa-plus"></div>
+                                            </div>
+                                            <div class="acc-content current">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        Our primary brokerage and custodial accounts are maintained at Tier 1 global investment institutions (such as Goldman Sachs and Morgan Stanley) to ensure trading settlement security.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>|</li>
-                                        <li>
-                                            <a href="terms-and-conditions.html">Terms of Service</a>
+                                        <!--Block-->
+                                        <li class="accordion block wow fadeInUp" data-wow-delay=".2s">
+                                           <div class="acc-btn">
+                                               Who administers the systematic investment programs?
+                                                <div class="icon fa-solid fa-plus"></div>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        To ensure absolute bookkeeping and valuation transparency, our funds are managed under the administration of independent third-party fund administrators (such as SS&C and Citco).
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li>|</li>
-                                        <li>
-                                            <a href="terms-and-conditions.html">Legal & Disclosures Hub</a>
+                                        <!--Block-->
+                                        <li class="accordion block wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="acc-btn">
+                                                How are the assets and systematic valuations audited?
+                                                <div class="icon fa-solid fa-plus"></div>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        We undergo complete annual audits performed by Tier 1 accounting networks (such as PwC and EY) to certify all asset holdings, valuations, and compliance metrics.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--Block-->
+                                        <li class="accordion block wow fadeInUp" data-wow-delay=".6s">
+                                           <div class="acc-btn">
+                                                What regulatory frameworks govern the funds?
+                                                <div class="icon fa-solid fa-plus"></div>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        Our corporate structures strictly operate under relevant regulatory exemptions (such as US SEC Reg D 506(c) exemptions for verified qualified purchasers or respective local AIF frameworks).
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--Block-->
+                                        <li class="accordion block mb-0 wow fadeInUp" data-wow-delay=".8s">
+                                           <div class="acc-btn">
+                                               How is security posture and data safety enforced?
+                                                <div class="icon fa-solid fa-plus"></div>
+                                            </div>
+                                            <div class="acc-content">
+                                                <div class="content">
+                                                    <div class="text">
+                                                        Our environments employ mandatory MFA, collocated servers, zero public registration gateways, regular third-party pen tests, and are structured around NIST SP 800-63B guidelines to ensure allocator confidentiality.
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </footer>
+                </section>
 
+                 <!-- Brand Section Start -->
+                <div class="brand-section mt-0 mb-30">
+                    <div class="swiper brand-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="brand-box-1">
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-1.png" alt="img">
+                                </span>
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-1.png" alt="img">
+                                </span>
+                                </div>
+                            </div>
+                             <div class="swiper-slide">
+                                <div class="brand-box-1">
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-2.png" alt="img">
+                                </span>
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-2.png" alt="img">
+                                </span>
+                                </div>
+                            </div>
+                             <div class="swiper-slide">
+                                <div class="brand-box-1">
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-3.png" alt="img">
+                                </span>
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-3.png" alt="img">
+                                </span>
+                                </div>
+                            </div>
+                             <div class="swiper-slide">
+                                <div class="brand-box-1">
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-4.png" alt="img">
+                                </span>
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-4.png" alt="img">
+                                </span>
+                                </div>
+                            </div>
+                             <div class="swiper-slide">
+                                <div class="brand-box-1">
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-5.png" alt="img">
+                                </span>
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-5.png" alt="img">
+                                </span>
+                                </div>
+                            </div>
+                             <div class="swiper-slide">
+                                <div class="brand-box-1">
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-6.png" alt="img">
+                                </span>
+                                <span class="brand-img-1">
+                                    <img src="assets/img/home-1/brand/brand-6.png" alt="img">
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cta Newsletter Section Start -->
+                    <section class="cta-newsletter-section bg-cover" style="background-image: url('assets/img/home-1/cta-newsletter.jpg');">
+                        <div class="container">
+                            <div class="cta-newsletter-wrapper">
+                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
+                                    Institutional Gated <br> <span>Portal Gateway.</span>
+                                </h2>
+                                <div class="newsletter-form wow fadeInUp" data-wow-delay=".3s">
+                                    <p>
+                                        Qualified allocators may request portal credentials:
+                                    </p>
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter institutional email...">
+                                        <button class="email-btn" type="submit">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+<!-- Footer Section Start -->
+                    <footer class="footer-section">
+                        <div class="footer-area">
+                            <div class="container">
+                                <div class="footer-widget-wrapper">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-4 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <a href="index.html" class="footer-logo d-inline-flex align-items-center">
+                                                        <img src="assets/img/logo/logo.webp" alt="img">
+                                                        <span class="logo-text ms-2">Adople AI</span>
+                                                    </a>
+                                                </div>
+                                                <div class="footer-content">
+                                                    <p>
+                                                        Under no circumstances should any information presented on this website be construed as an offer to sell, or a solicitation of any offer to purchase, any securities or other investments.
+                                                    </p>
+                                                    <a href="contact.html" class="footer-btn">
+                                                        <span class="icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                                                        Inquire
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Quick links</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="about.html">
+                                                            About Us
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Strategies
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact.html">
+                                                        Contact
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="news.html">
+                                                        Research
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Strategies</h3>
+                                                </div>
+                                                <ul class="gt-list-area">
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Statistical Arbitrage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Systematic Macro
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                            Equity Market Neutral
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service.html">
+                                                        Machine Learning Alpha
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                            <div class="footer-widget-items">
+                                                <div class="widget-head">
+                                                    <h3>Get in touch</h3>
+                                                </div>
+                                                <ul class="contact-list">
+                                                    <li>
+                                                        United States — <br>
+                                                        350 Fifth Avenue, 21st Floor New York, NY 10118
+                                                    </li>
+                                                    <li>
+                                                        <a href="tel:+86661233562">+8 (666) 123-3562</a>
+                                                    </li>
+                                                    <li>
+                                                        Mon-Fri 9:00am - 5:00pm
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-bottom">
+                                <div class="container">
+                                    <div class="footer-bottom-wrapper">
+                                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                                            © 2025 <b>Adople AI.</b> All rights reserved.
+                                        </p>
+                                        <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="index.html#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="index.html#"><i class="fab fa-twitter"></i></a>
+                                            <a href="index.html#"><i class="fab fa-vimeo-v"></i></a>
+                                            <a href="index.html#"><i class="fab fa-pinterest-p"></i></a>
+                                        </div>
+                                        <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                            <li>
+                                                <a href="legal.html">Privacy Policy</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Terms of Service</a>
+                                            </li>
+                                            <li>|</li>
+                                            <li>
+                                                <a href="legal.html">Legal & Disclosures</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
             </div>
         </div>
-
-        <!-- ==========================================
-             COOKIE & PRIVACY BANNER WITH CLOSE SYMBOL
-             ========================================== -->
-        <div id="cookie-banner" style="position: fixed; bottom: 24px; left: 24px; right: 24px; max-width: 860px; margin: 0 auto; background: #001A33; color: #FFFFFF; border: 1px solid #2D3748; padding: 24px 32px; z-index: 99999; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);">
-            <div style="flex: 1; min-width: 280px; position: relative;">
-                <h6 style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #9CA3AF; margin-bottom: 6px;">
-                    COOKIE & PRIVACY NOTICE
-                </h6>
-                <p style="font-size: 14px; line-height: 1.6; color: #E5E7EB; margin: 0;">
-                    Adople AI leverages secure tracking technologies to optimize our enterprise platform and ensure strict compliance with global data privacy standards. By proceeding, you agree to our <a href="legal.html" style="color: #60A5FA; text-decoration: underline;">Privacy Policy</a>, which is tailored for enterprise-grade security and confidentiality.
-                </p>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: center;">
-                <button onclick="dismissCookieBanner()" style="background: #FFFFFF; color: #001A33; border: 1px solid #FFFFFF; padding: 10px 24px; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; transition: all 0.2s;">
-                    Accept & Proceed
-                </button>
-                <button onclick="dismissCookieBanner()" aria-label="Close Cookie Banner" style="background: transparent; border: none; color: #9CA3AF; font-size: 22px; cursor: pointer; padding: 4px 8px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: color 0.2s;">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
         </div>
 
-    </div>
-
-    <!--<< All JS Plugins >>-->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/viewport.jquery.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script>
-        function dismissCookieBanner() {
-            var banner = document.getElementById('cookie-banner');
-            if (banner) {
-                banner.style.display = 'none';
-            }
-        }
-    </script>
-</body>
-
+        
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Viewport Js >>-->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Gsap Min Js >>-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--<< ScrollTrigger Min Js >>-->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!--<< ScrollSmoother Min Js >>-->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!--<< ScrollToPlugin Min Js >>-->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!--<< SplitText Min Js >>-->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!--<< TextPlugin Min Js >>-->
+        <script src="assets/js/TextPlugin.js"></script>
+         <!--<< Chroma Min Js >>-->
+        <script src="assets/js/chroma.min.js"></script>
+        <!--<< nice-selec Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Waypoints Js >>-->
+        <script src="assets/js/jquery.waypoints.js"></script>
+        <!--<< Counterup Js >>-->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Parallaxie Js >>-->
+        <script src="assets/js/parallaxie.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/custom.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
