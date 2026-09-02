@@ -95,36 +95,272 @@ h1, h2, h3, h4, h5, h6,
   color: var(--color-white) !important;
 }
 
-/* Header Navigation Bar Outline */
-#header-sticky,
-.header-1,
-.header-main {
-  background-color: var(--color-white) !important;
-  border-bottom: 1px solid var(--color-border-default-light) !important;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.02) !important;
+/* ==========================================
+   Two Sigma Header - Full Width Clean Design
+   ========================================== */
+
+.twosigma-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  z-index: 9999 !important;
+  padding: 0 !important;
 }
 
-.dark-body #header-sticky,
-.dark-body .header-1,
-.dark-body .header-main {
-  background-color: var(--color-background-brand) !important;
-  border-bottom: 1px solid var(--color-border-default-dark) !important;
-  box-shadow: none !important;
+.twosigma-header-content {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  height: 88px;
+  gap: 0;
 }
 
-/* Navigation Link Colors (Fix Invisible Links) */
-.main-menu ul li a {
-  color: var(--color-black) !important;
+/* Logo styling */
+.twosigma-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  flex-shrink: 0;
+  margin-right: 0;
 }
 
-.dark-body .main-menu ul li a {
-  color: var(--color-white) !important;
+.twosigma-logo img {
+  height: 42px !important;
+  width: auto !important;
 }
 
-/* Maintain active link style */
-.main-menu ul li.active a,
-.main-menu ul li a:hover {
-  color: var(--color-teal-500) !important;
+.twosigma-logo .logo-text {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  letter-spacing: -0.8px !important;
+}
+
+/* Menu container - takes remaining space */
+.twosigma-menu {
+  display: flex !important;
+  align-items: center;
+  flex: 1;
+  gap: 0;
+  margin-left: 48px;
+}
+
+/* Navigation Links */
+.twosigma-nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.twosigma-nav-links li {
+  display: inline-block;
+}
+
+.twosigma-nav-links a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.twosigma-nav-links a:hover {
+  color: #00a5bd;
+}
+
+/* Search Form */
+.twosigma-search {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.twosigma-search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.twosigma-search-form label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.twosigma-search-form .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.twosigma-search-form .search-field {
+  width: 320px;
+  height: 48px;
+  padding: 12px 50px 12px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 24px;
+  background: #f8f8f8;
+  font-size: 16px;
+  color: #000000;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.twosigma-search-form .search-field::placeholder {
+  color: #999999;
+}
+
+.twosigma-search-form .search-field:focus {
+  background: #ffffff;
+  border-color: #00a5bd;
+}
+
+.twosigma-search-form .search-submit {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666666;
+  transition: color 0.3s ease;
+}
+
+.twosigma-search-form .search-submit:hover {
+  color: #00a5bd;
+}
+
+.twosigma-search-form .search-submit i {
+  font-size: 18px;
+}
+
+/* Mobile hamburger */
+.twosigma-nav-trigger {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.twosigma-nav-trigger .sidebar__toggle {
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+}
+
+.twosigma-nav-trigger i {
+  font-size: 24px;
+  color: #000000;
+}
+
+/* Hide old header elements */
+.twosigma-header .mean__menu-wrapper,
+.twosigma-header .mega-menu-wrapper,
+.twosigma-header .header-main {
+  background: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .twosigma-search-form .search-field {
+    width: 240px;
+  }
+
+  .twosigma-nav-links a {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  .twosigma-menu {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .twosigma-header-content {
+    padding: 0 32px;
+    height: 76px;
+  }
+
+  .twosigma-search-form .search-field {
+    width: 180px;
+  }
+
+  .twosigma-nav-links a {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  .twosigma-menu {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .twosigma-header-content {
+    height: 70px;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .twosigma-header-content {
+    padding: 0 16px;
+  }
+
+  .twosigma-logo .logo-text {
+    font-size: 20px !important;
+  }
+}
+
+/* Keep header always light (no dark mode) */
+.twosigma-header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+/* Override template header styles */
+.twosigma-header .container,
+.twosigma-header .container-fluid {
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+.header-1.twosigma-header {
+  padding-top: 0 !important;
+}
+
+.header-1.twosigma-header .mean__menu-wrapper {
+  display: none !important;
+}
+
+.header-1.twosigma-header .mega-menu-wrapper {
+  display: none !important;
 }
 
 /* ==========================================
@@ -419,8 +655,8 @@ a:hover {
   color: #ffffff !important;
   position: relative;
   overflow: hidden;
-  margin-top: -50px;
-  z-index: 99 !important; /* Render on top of the hero section (z-index 9) to prevent clipping */
+  margin-top: 0;
+  z-index: 10 !important;
   box-shadow: 0px 12px 30px rgba(0, 165, 189, 0.25) !important;
 }
 
@@ -455,6 +691,31 @@ a:hover {
 .twosigma-banner-btn:hover {
   background: #f0f4f5 !important;
   transform: translateY(-2px);
+}
+
+/* Banner responsive */
+@media (max-width: 991px) {
+  .twosigma-banner {
+    padding: 40px 30px !important;
+  }
+
+  .twosigma-banner h2 {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .twosigma-banner {
+    padding: 30px 24px !important;
+  }
+
+  .twosigma-banner h2 {
+    font-size: 28px !important;
+  }
+
+  .twosigma-banner p {
+    font-size: 15px !important;
+  }
 }
 
 /* 3. Capabilities Section & Cards */
@@ -1280,4 +1541,551 @@ body:not(.dark-body) .dark-version li:not(.box) {
 .dark-version li:hover {
   opacity: 0.9 !important;
   transform: translateY(-1px) !important;
+}
+
+/* ==========================================
+   Enhanced Two Sigma Design System
+   Phase 4: Whitespace & Typography Refinements
+   ========================================== */
+
+/* Section Spacing - Generous whitespace like Two Sigma */
+section {
+    padding: 80px 0;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding: 60px 0;
+    }
+    .section-padding {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 40px 0;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* Typography Scale - Match Two Sigma hierarchy */
+h1, .hero-content h1 {
+    font-size: 64px !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.5px !important;
+    font-weight: 700 !important;
+}
+
+h2, .sec_title {
+    font-size: 42px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.3px !important;
+    font-weight: 700 !important;
+}
+
+p, .body-text {
+    font-size: 18px !important;
+    line-height: 1.85 !important;
+    letter-spacing: 0.3px !important;
+    color: #555555 !important;
+}
+
+/* Responsive Typography */
+@media (max-width: 767px) {
+    h1, .hero-content h1 {
+        font-size: 42px !important;
+    }
+    h2, .sec_title {
+        font-size: 32px !important;
+    }
+    h3 {
+        font-size: 24px !important;
+    }
+    p, .body-text {
+        font-size: 16px !important;
+    }
+}
+
+/* ==========================================
+   Benefit Card Component (Careers Page)
+   ========================================== */
+.benefit-card {
+    text-align: center;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-color: #00a5bd;
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00a5bd, #7b2cbf);
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+}
+
+.benefit-card h5 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    color: #000000 !important;
+    letter-spacing: -0.3px !important;
+}
+
+.benefit-card p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #666666 !important;
+    margin: 0 !important;
+}
+
+/* ==========================================
+   Career Stage Card Component
+   ========================================== */
+.career-stage-card {
+    padding: 32px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #7b2cbf;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.career-stage-card:hover {
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.career-stage-card h4 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    color: #000000 !important;
+    letter-spacing: -0.3px !important;
+}
+
+.career-stage-card p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #666666 !important;
+    margin-bottom: 16px !important;
+}
+
+.stage-link {
+    color: #7b2cbf;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.stage-link:hover {
+    color: #00a5bd;
+    text-decoration: none;
+}
+
+/* ==========================================
+   Card Component Consistency
+   ========================================== */
+.twosigma-card,
+.service-box-items,
+.feature-box-items {
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+.twosigma-card:hover,
+.service-box-items:hover,
+.feature-box-items:hover {
+    transform: translateY(-4px) !important;
+}
+
+/* Ensure consistent padding across card types */
+.service-box-items,
+.feature-box-items {
+    padding: 32px !important;
+}
+
+/* ==========================================
+   Color Palette Consistency
+   ========================================== */
+body {
+    background-color: var(--color-white) !important;
+    color: var(--color-black) !important;
+}
+
+/* Primary CTA buttons */
+.theme-btn {
+    transition: all 0.3s ease !important;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 16px rgba(0,165,189,0.3) !important;
+}
+
+/* ==========================================
+   Career Stages Section
+   ========================================== */
+.career-stages-section {
+    padding: 80px 0;
+}
+
+.career-stages-section .section-title h2 {
+    font-size: 42px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+.career-stages-section .section-title p {
+    font-size: 18px !important;
+    color: #666666 !important;
+}
+
+@media (max-width: 767px) {
+    .career-stages-section {
+        padding: 60px 0;
+    }
+    
+    .career-stage-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================================
+   Enhanced Button Consistency
+   ========================================== */
+.twosigma-banner-btn,
+.twosigma-card-btn,
+.twosigma-insights-footer-btn {
+    transition: all 0.3s ease !important;
+}
+
+.twosigma-banner-btn:hover,
+.twosigma-card-btn:hover,
+.twosigma-insights-footer-btn:hover {
+    transform: scale(1.05) !important;
+}
+
+/* ==========================================
+   Accessibility & UX Improvements
+   ========================================== */
+a, button {
+    transition: all 0.3s ease !important;
+}
+
+/* Ensure proper focus states */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #00a5bd !important;
+    outline-offset: 2px !important;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   Two Sigma Hero Section - Exact Match
+   ========================================== */
+
+.twosigma-hero {
+    position: relative;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 0;
+    margin-top: 88px;
+}
+
+.twosigma-hero .aurora-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.twosigma-hero .aurora-background svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.twosigma-hero .container {
+    position: relative;
+    z-index: 1;
+    padding: 120px 20px;
+}
+
+.twosigma-hero .hero-content-centered {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.twosigma-hero h1 {
+    font-size: 72px !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+    letter-spacing: -2px !important;
+    color: #000000 !important;
+    margin-bottom: 24px !important;
+}
+
+.twosigma-hero p {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #000000 !important;
+    margin-bottom: 60px !important;
+    max-width: 700px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.twosigma-hero .scroll-down-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.twosigma-hero .scroll-down-btn:hover {
+    transform: translateY(4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    color: #00a5bd;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .twosigma-hero {
+        margin-top: 76px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .twosigma-hero {
+        min-height: 500px;
+    }
+
+    .twosigma-hero h1 {
+        font-size: 56px !important;
+    }
+
+    .twosigma-hero p {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .twosigma-hero {
+        min-height: 450px;
+        margin-top: 70px;
+    }
+
+    .twosigma-hero .container {
+        padding: 80px 20px;
+    }
+
+    .twosigma-hero h1 {
+        font-size: 42px !important;
+        letter-spacing: -1px !important;
+    }
+
+    .twosigma-hero p {
+        font-size: 16px !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+/* ==========================================
+   Ultra-Minimal Card Style (Two Sigma)
+   ========================================== */
+
+.twosigma-minimal-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 40px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.twosigma-minimal-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.twosigma-minimal-card h3 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    color: #000000 !important;
+    margin-bottom: 24px !important;
+    letter-spacing: -0.5px !important;
+}
+
+.twosigma-minimal-card .card-arrow-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.twosigma-minimal-card .card-arrow-link:hover {
+    color: #00a5bd;
+    gap: 12px;
+}
+
+.twosigma-minimal-card .card-arrow-link i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 10px;
+    transition: all 0.3s ease;
+}
+
+.twosigma-minimal-card:hover .card-arrow-link i {
+    background: #00a5bd;
+}
+
+/* ==========================================
+   Two Sigma Stats Section Style
+   ========================================== */
+
+.twosigma-stats-section {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.twosigma-stats-section .twosigma-stat-item {
+    text-align: center;
+    padding: 0;
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin-bottom: 12px !important;
+    letter-spacing: -2px !important;
+    white-space: nowrap !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item p {
+    font-size: 16px !important;
+    color: #666666 !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+/* Responsive stats */
+@media (max-width: 991px) {
+    .twosigma-stats-section .twosigma-stat-item h2 {
+        font-size: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .twosigma-stats-section .twosigma-stat-item h2 {
+        font-size: 36px !important;
+    }
+
+    .twosigma-stats-section .twosigma-stat-item p {
+        font-size: 14px !important;
+    }
+}
+
+/* ==========================================
+   Section Title Two Sigma Style
+   ========================================== */
+
+.twosigma-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.twosigma-section-title h2 {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #000000 !important;
+    letter-spacing: -1px !important;
+    margin-bottom: 16px !important;
+}
+
+.twosigma-section-title p {
+    font-size: 18px !important;
+    color: #666666 !important;
+    line-height: 1.6 !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 767px) {
+    .twosigma-section-title h2 {
+        font-size: 36px !important;
+    }
+    
+    .twosigma-section-title p {
+        font-size: 16px !important;
+    }
 }
