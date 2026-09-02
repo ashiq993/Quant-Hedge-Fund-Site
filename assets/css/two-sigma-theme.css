@@ -327,12 +327,75 @@ a:hover {
    Two Sigma Home Page Specific Layouts
    ========================================== */
 
-/* 1. Hero Glow Background and Vertical Lines */
-.hero-section {
+/* 1. Hero Glow Background, Clean Spacing, and Vertical Lines */
+.hero-section,
+.hero-1 {
   background: radial-gradient(circle at 50% 0%, rgba(0, 165, 189, 0.16) 0%, rgba(123, 44, 191, 0.04) 40%, #ffffff 80%) !important;
   position: relative;
   overflow: hidden;
-  padding-bottom: 100px !important; /* Add spacing so hero content does not get cut off */
+  padding-top: 180px !important; /* Ample spacing below sticky navbar */
+  padding-bottom: 120px !important;
+}
+
+@media (max-width: 1199px) {
+  .hero-section,
+  .hero-1 {
+    padding-top: 160px !important;
+    padding-bottom: 90px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section,
+  .hero-1 {
+    padding-top: 140px !important;
+    padding-bottom: 70px !important;
+  }
+}
+
+/* Hero Badge & Heading Spacing & Alignment */
+.hero-content .hero-badge-heading,
+.hero-1 .hero-content h6 {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+  line-height: 1.4 !important;
+}
+
+.hero-content .hero-badge-heading .hero-badge-pill,
+.hero-1 .hero-content h6 span {
+  background: var(--color-teal-500) !important;
+  color: #ffffff !important;
+  border-radius: 30px !important;
+  padding: 6px 14px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto !important;
+  margin-right: 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 165, 189, 0.25) !important;
+}
+
+.hero-content .hero-badge-heading .hero-badge-text,
+.hero-1 .hero-content h6 {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: var(--color-black) !important;
+  text-transform: uppercase !important;
+}
+
+.hero-1 .hero-content h1,
+.hero-content h1 {
+  margin-top: 0 !important;
+  margin-bottom: 22px !important;
 }
 
 .hero-section::after {
