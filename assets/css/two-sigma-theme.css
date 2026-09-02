@@ -96,271 +96,115 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ==========================================
-   Two Sigma Header - Full Width Clean Design
+   Header 1 - Consistent Institutional Navigation & 2x3 Preview
    ========================================== */
 
-.twosigma-header {
+.header-1 {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5 !important;
-  z-index: 9999 !important;
-  padding: 0 !important;
+  z-index: 999 !important;
+  padding-top: 20px;
+  transition: all 0.3s ease;
 }
 
-.twosigma-header-content {
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 48px;
+.header-1.sticky {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.header-1 .header-main {
   display: flex;
   align-items: center;
-  height: 88px;
-  gap: 0;
+  justify-content: space-between;
 }
 
-/* Logo styling */
-.twosigma-logo {
+.header-1 .logo .logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #001a33;
+  letter-spacing: -0.5px;
+}
+
+.header-1 .mean__menu-wrapper .main-menu ul li a {
+  font-weight: 600;
+  color: #001a33;
+  font-size: 14.5px;
+  transition: color 0.2s ease;
+}
+
+.header-1 .mean__menu-wrapper .main-menu ul li a:hover,
+.header-1 .mean__menu-wrapper .main-menu ul li.active > a {
+  color: #00a5bd !important;
+}
+
+.header-1 .mean__menu-wrapper .main-menu ul li .submenu {
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 16px 36px rgba(0, 26, 51, 0.08);
+}
+
+/* 2x3 Format Navigation Preview - Only 6 Main Topics */
+.nav-preview-dropdown {
+  min-width: 380px !important;
+  padding: 24px 28px !important;
+  border-top: 2px solid #001A33 !important;
+}
+
+.nav-preview-2x3 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  column-gap: 40px !important;
+  row-gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.preview-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.preview-topic-item {
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
-  text-decoration: none !important;
-  flex-shrink: 0;
-  margin-right: 0;
-}
-
-.twosigma-logo img {
-  height: 42px !important;
-  width: auto !important;
-}
-
-.twosigma-logo .logo-text {
-  font-size: 24px !important;
+  gap: 10px !important;
+  font-size: 16px !important;
   font-weight: 700 !important;
-  color: #000000 !important;
-  letter-spacing: -0.8px !important;
+  color: #001a33 !important;
+  text-decoration: none !important;
+  padding: 4px 0 !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
 }
 
-/* Menu container - takes remaining space */
-.twosigma-menu {
-  display: flex !important;
-  align-items: center;
-  flex: 1;
-  gap: 0;
-  margin-left: 48px;
+.preview-topic-item .preview-arrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 14px !important;
+  color: #001a33 !important;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.2s ease !important;
+  width: 12px;
 }
 
-/* Navigation Links */
-.twosigma-nav-links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 0;
+.preview-topic-item:hover {
+  color: #00a5bd !important;
+  transform: translateX(4px);
 }
 
-.twosigma-nav-links li {
-  display: inline-block;
-}
-
-.twosigma-nav-links a {
-  font-size: 16px;
-  font-weight: 500;
-  color: #000000;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: inline-block;
-  transition: color 0.3s ease;
-  white-space: nowrap;
-}
-
-.twosigma-nav-links a:hover {
-  color: #00a5bd;
-}
-
-/* Search Form */
-.twosigma-search {
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
-.twosigma-search-form {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.twosigma-search-form label {
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.twosigma-search-form .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.twosigma-search-form .search-field {
-  width: 320px;
-  height: 48px;
-  padding: 12px 50px 12px 20px;
-  border: 1px solid #e5e5e5;
-  border-radius: 24px;
-  background: #f8f8f8;
-  font-size: 16px;
-  color: #000000;
-  transition: all 0.3s ease;
-  outline: none;
-}
-
-.twosigma-search-form .search-field::placeholder {
-  color: #999999;
-}
-
-.twosigma-search-form .search-field:focus {
-  background: #ffffff;
-  border-color: #00a5bd;
-}
-
-.twosigma-search-form .search-submit {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666666;
-  transition: color 0.3s ease;
-}
-
-.twosigma-search-form .search-submit:hover {
-  color: #00a5bd;
-}
-
-.twosigma-search-form .search-submit i {
-  font-size: 18px;
-}
-
-/* Mobile hamburger */
-.twosigma-nav-trigger {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.twosigma-nav-trigger .sidebar__toggle {
-  cursor: pointer;
-  padding: 8px;
-  background: none;
-  border: none;
-}
-
-.twosigma-nav-trigger i {
-  font-size: 24px;
-  color: #000000;
-}
-
-/* Hide old header elements */
-.twosigma-header .mean__menu-wrapper,
-.twosigma-header .mega-menu-wrapper,
-.twosigma-header .header-main {
-  background: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-}
-
-/* Responsive */
-@media (max-width: 1400px) {
-  .twosigma-search-form .search-field {
-    width: 240px;
-  }
-
-  .twosigma-nav-links a {
-    padding: 14px 16px;
-    font-size: 15px;
-  }
-
-  .twosigma-menu {
-    margin-left: 32px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .twosigma-header-content {
-    padding: 0 32px;
-    height: 76px;
-  }
-
-  .twosigma-search-form .search-field {
-    width: 180px;
-  }
-
-  .twosigma-nav-links a {
-    padding: 12px 14px;
-    font-size: 15px;
-  }
-
-  .twosigma-menu {
-    margin-left: 24px;
-  }
-}
-
-@media (max-width: 991px) {
-  .twosigma-header-content {
-    height: 70px;
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 576px) {
-  .twosigma-header-content {
-    padding: 0 16px;
-  }
-
-  .twosigma-logo .logo-text {
-    font-size: 20px !important;
-  }
-}
-
-/* Keep header always light (no dark mode) */
-.twosigma-header {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5 !important;
-}
-
-/* Override template header styles */
-.twosigma-header .container,
-.twosigma-header .container-fluid {
-  max-width: none !important;
-  padding: 0 !important;
-}
-
-.header-1.twosigma-header {
-  padding-top: 0 !important;
-}
-
-.header-1.twosigma-header .mean__menu-wrapper {
-  display: none !important;
-}
-
-.header-1.twosigma-header .mega-menu-wrapper {
-  display: none !important;
+.preview-topic-item:hover .preview-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: #00a5bd !important;
 }
 
 /* ==========================================
@@ -1863,10 +1707,10 @@ html {
 }
 
 .twosigma-hero h1 {
-    font-size: 72px !important;
+    font-size: 64px !important;
     font-weight: 700 !important;
-    line-height: 1.1 !important;
-    letter-spacing: -2px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1.5px !important;
     color: #000000 !important;
     margin-bottom: 24px !important;
 }

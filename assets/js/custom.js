@@ -1,12 +1,14 @@
 /**
  * ======================================
- * template settings
+ * Custom Site Scripts
  * ======================================
  */
 
 (function($) {
     "use strict";
 
-    // Additional custom scripts can be added here
+    $(document).ready(function() {
+        // Custom interactions can be placed here
+    });
 
 })(jQuery);
