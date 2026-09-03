@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 @charset "UTF-8";
 /*======================================================================================
 Theme Name: Brevon 
@@ -19,8 +21,8 @@ Version: 1.0.0
 /*---------------------------------------
 01. Mixins & Variables
 ---------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 
 :root {
   --body: #fff;
@@ -54,7 +56,7 @@ Version: 1.0.0
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -98,7 +100,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--header);
@@ -491,7 +493,7 @@ span {
   font-size: 16px;
   padding: 13px 30px;
   display: inline-flex;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   align-items: center;
   gap: 30px;
   border-radius: 40px;
@@ -606,7 +608,7 @@ span {
   text-transform: capitalize;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
   border: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .mean-container .mean-nav ul li a:hover {
@@ -654,7 +656,7 @@ span {
 .mobile-menus.style-2 .mean-nav ul li a {
   font-size: 18px !important;
   font-weight: 600 !important;
-  font-family: "Public Sans", sans-serif !important;
+  font-family: 'Poppins', 'Poppins', sans-serif !important;
 }
 
 @media (max-width: 767px) {
@@ -666,7 +668,7 @@ span {
 .mobile-menus .mean-nav ul li a {
   font-size: 30px !important;
   font-weight: 600 !important;
-  font-family: "Public Sans", sans-serif !important;
+  font-family: 'Poppins', 'Poppins', sans-serif !important;
 }
 
 @media (max-width: 767px) {
@@ -1103,10 +1105,10 @@ span {
 }
 
 .preloader .animation-preloader .txt-loading {
-  font: 500 5em "Inter", sans-serif, "Public Sans", sans-serif;
+  font: 500 5em 'Poppins', 'Poppins', sans-serif, 'Poppins', 'Poppins', sans-serif;
   text-align: center;
   user-select: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-weight: 700;
 }
 
@@ -1155,7 +1157,7 @@ span {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);
@@ -1848,7 +1850,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   color: var(--header);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   padding: 20px 0;
   text-align: left;
   position: relative;
@@ -2073,7 +2075,7 @@ span {
   display: inline-block;
   font-size: 15px;
   font-weight: 500;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .header-main .main-menu ul li:hover>a {
@@ -2207,7 +2209,7 @@ span {
 
 .header-1 .mean__menu-wrapper .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-title {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .header-1 .mean__menu-wrapper .main-menu ul li:hover>a {
@@ -2275,7 +2277,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -1px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2384,7 +2386,7 @@ span {
 
 .header-section-2 .header-2 .mean__menu-wrapper .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-title {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .header-section-2 .header-2 .mean__menu-wrapper .main-menu ul li:hover>a {
@@ -2550,7 +2552,7 @@ span {
 
 .header-3 .mean__menu-wrapper .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-title {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .header-3 .mean__menu-wrapper .main-menu ul li:hover>a {
@@ -2650,7 +2652,7 @@ span {
 
 .header-4 .mean__menu-wrapper .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-title {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .header-4 .mean__menu-wrapper .main-menu ul li:hover>a {
@@ -2802,7 +2804,7 @@ span {
 
 .header-5 .mean__menu-wrapper .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-title {
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .header-5 .mean__menu-wrapper .main-menu ul li:hover>a {
@@ -2860,7 +2862,7 @@ span {
 .header-5 .contact-info .text {
   font-size: 16px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin-left: 10px;
   color: var(--header4);
 }
@@ -3466,7 +3468,7 @@ span {
 
 .footer-area.footer-area-3 .footer-lets-text p {
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 155.556%;
@@ -3828,7 +3830,7 @@ span {
   font-size: 16px;
   font-weight: 600;
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   padding: 0 30px;
   padding-left: 7px;
   margin-top: 30px;
@@ -3881,7 +3883,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   line-height: 162.5%;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   transition: all 0.4s ease-in-out;
 }
 
@@ -3933,7 +3935,7 @@ span {
 
 .footer-widget-wrapper.style-2 .footer-widget-items .gt-list-area li {
   transition: all 0.4s ease-in-out;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-weight: 500;
 }
 
@@ -3958,7 +3960,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   line-height: 162.5%;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .footer-widget-wrapper.style-2 .footer-widget-items .contact-list li:not(:last-child) {
@@ -4016,7 +4018,7 @@ span {
 
 .footer-bottom .footer-bottom-wrapper p {
   color: rgba(255, 255, 255, 0.75);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -4055,7 +4057,7 @@ span {
 .footer-bottom .footer-bottom-wrapper .footer-list li {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .footer-bottom .footer-bottom-wrapper .footer-list li a {
@@ -4235,7 +4237,7 @@ span {
   font-size: 18px;
   font-weight: 500;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .footer-widget-wrapper-5 .footer-left-item ul li a {
@@ -4295,7 +4297,7 @@ span {
   transition: all 0.4s ease-in-out;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .footer-widget-wrapper-5 .footer-right-item .footer-widget-items .gt-list-area li:not(:last-child) {
@@ -4360,7 +4362,7 @@ span {
 }
 
 .footer-bottom-5 .footer-bottom-wrapper-5 p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: var(--header4);
@@ -4466,7 +4468,7 @@ span {
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   border-radius: 50px;
   color: var(--theme3);
   text-transform: uppercase;
@@ -4483,7 +4485,7 @@ span {
 
 .section-title.style-4 .sub-title {
   color: var(--theme4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -4567,7 +4569,7 @@ span {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin-bottom: 24px;
 }
 
@@ -5060,7 +5062,7 @@ span {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: -1px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .hero-2 .hero-image-items .video-text .video-btn {
@@ -5655,7 +5657,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   display: inline-block;
   margin-right: 5px;
 }
@@ -5786,7 +5788,7 @@ span {
   font-size: 16px;
   font-weight: 600;
   color: #F8FAFC;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   display: block;
   max-width: 270px;
   margin-top: 20px;
@@ -6248,7 +6250,7 @@ span {
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   border-radius: 50px;
   color: var(--theme3);
   text-transform: uppercase;
@@ -6462,7 +6464,7 @@ span {
 .about-wrapper-5 .about-left-items .about-bottom-content .about-counter p {
   font-weight: 500;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 15px;
   opacity: 0.88;
 }
@@ -6577,7 +6579,7 @@ span {
   font-size: 16px;
   font-weight: 600;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin-top: 18px;
 }
 
@@ -6648,7 +6650,7 @@ span {
 
 .about-inner-section .section-title-area .about-content .about-info span {
   color: var(--header);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -6693,7 +6695,7 @@ span {
 
 .about-inner-section .about-counter-wrapper .about-counter-item h6 {
   color: var(--header);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 600;
 }
@@ -6811,7 +6813,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   color: var(--header);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   padding: 0 12px;
   height: 30px;
   line-height: 28px;
@@ -7009,7 +7011,7 @@ span {
   font-weight: 500;
   line-height: 1;
   letter-spacing: -10px;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 @media (max-width: 1399px) {
@@ -7040,7 +7042,7 @@ span {
   font-weight: 500;
   line-height: 140%;
   letter-spacing: -1px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -7157,7 +7159,7 @@ span {
   font-weight: 500;
   color: var(--white);
   flex: 0 0 auto;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   position: relative;
   z-index: 9;
 }
@@ -7357,7 +7359,7 @@ span {
   color: var(--header4);
   font-weight: 600;
   margin-top: 15px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   text-transform: capitalize;
 }
 
@@ -7491,7 +7493,7 @@ span {
 
 .counter-box-style-5 p {
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-top: 18px;
@@ -7531,7 +7533,7 @@ span {
   border-radius: 50%;
   text-align: center;
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 20px;
   background-color: var(--header4);
   font-weight: 600;
@@ -7542,7 +7544,7 @@ span {
 .work-process-box-style-4 .content h3 {
   font-size: 32px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   color: var(--header4);
   letter-spacing: -1px;
 }
@@ -7597,7 +7599,7 @@ span {
 .work-process-box-style-4 .work-btn {
   display: inline-block;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-weight: 600;
   margin-top: 175px;
   font-size: 16px;
@@ -8092,7 +8094,7 @@ span {
 
 .service-box-style-3 .number {
   color: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -8318,7 +8320,7 @@ span {
   display: inline-block;
   font-size: 18px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   color: var(--header4);
   position: absolute;
   top: 0;
@@ -8428,7 +8430,7 @@ span {
   color: var(--header4);
   font-size: 16px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .service-box-style-4 .service-list-wrap .service-wrap .item-text ul li:not(:last-child) {
@@ -8635,7 +8637,7 @@ span {
 .service-details-wrapper .service-details-sidebar .service-list-item li {
   font-size: 16px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .service-details-wrapper .service-details-sidebar .service-list-item li:not(:last-child) {
@@ -8828,7 +8830,7 @@ span {
 .project-box-items .content .number {
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.1);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 166.588px;
   font-weight: 500;
   line-height: 1;
@@ -8950,7 +8952,7 @@ span {
 
 .marquee-section3 .marquee .text {
   font-size: 24px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-weight: 500;
   letter-spacing: initial;
   text-transform: capitalize;
@@ -9522,7 +9524,7 @@ span {
   font-size: 18px;
   font-weight: 600;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   position: absolute;
   top: 25px;
   right: 30px;
@@ -9586,7 +9588,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   padding: 3px 14px;
 }
 
@@ -9627,7 +9629,7 @@ span {
   color: var(--header4);
   font-size: 16px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin-top: 30px;
 }
 
@@ -9651,7 +9653,7 @@ span {
   font-size: 16px;
   color: var(--header4);
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   background: #F5EFDC;
   box-shadow: 0 4.051px 30.38px 0 rgba(31, 41, 55, 0.1);
   text-align: center;
@@ -9825,7 +9827,7 @@ span {
   font-size: 16px;
   font-weight: 500;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   padding: 6px 10px;
 }
 
@@ -10514,7 +10516,7 @@ span {
 .testimonial-box-items .content .client-info h4 span {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .testimonial-box-items .content .client-info .star {
@@ -10701,7 +10703,7 @@ span {
 
 .testimonial-box-style-5 p {
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 160%;
@@ -10996,7 +10998,7 @@ span {
   color: var(--white);
   font-size: 16px;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   overflow: hidden;
   position: relative;
   transition: all 0.4s ease-in-out;
@@ -12153,7 +12155,7 @@ span {
 .news-box-style-5 .content .news-btn {
   display: inline-block;
   color: var(--header4);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-weight: 600;
   margin-top: 30px;
 }
@@ -12845,7 +12847,7 @@ span {
   transition: all 0.4s ease-in-out;
   background-color: var(--white);
   padding: 22px 25px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   line-height: 1;
   text-transform: capitalize;
   border-radius: 8px;
@@ -12901,7 +12903,7 @@ span {
   font-weight: 600;
   font-size: 18px;
   line-height: 150%;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .gt-main-sideber .gt-single-sideber-widget .gt-recent-post-area .gt-recent-items .gt-recent-content h5 a:hover {
@@ -12919,7 +12921,7 @@ span {
   line-height: 1;
   font-weight: 600;
   background: var(--white);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin-right: 10px;
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -13181,7 +13183,7 @@ span {
   font-size: 24px;
   color: var(--header);
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -13195,7 +13197,7 @@ span {
 
 .faq-content-1 .accordion-box .block .acc-btn .number {
   color: var(--text);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: -3px;
@@ -13303,7 +13305,7 @@ span {
   font-size: 24px;
   color: var(--header3);
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -13323,7 +13325,7 @@ span {
 
 .faq-items-2 .accordion-box .block .acc-btn .number {
   color: var(--text);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 500;
   letter-spacing: -3px;
@@ -13392,7 +13394,7 @@ span {
 
 .faq-items-2 .accordion-box li .number {
   color: var(--header3);
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -1.5px;
@@ -13458,7 +13460,7 @@ span {
   font-size: 24px;
   color: var(--header);
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -13580,7 +13582,7 @@ span {
   font-weight: 500;
   line-height: 144.444%;
   letter-spacing: -1px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
   margin-bottom: 30px;
 }
 
@@ -14100,7 +14102,7 @@ span {
   transition: all 0.3s ease-in-out;
   margin: 0 2px;
   border-radius: 50%;
-  font-family: "Inter", sans-serif;
+  font-family: 'Poppins', 'Poppins', sans-serif;
 }
 
 .page-nav-wrap ul li .page-numbers.current {
