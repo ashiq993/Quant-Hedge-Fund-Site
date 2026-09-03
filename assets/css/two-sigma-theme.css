@@ -1,0 +1,3796 @@
+/* ==========================================
+   Avenir Local Font-Face Setup
+   ========================================== */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Light/Avenir Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Regular/Avenir Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Medium/Avenir Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Heavy/Avenir Heavy.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Black/Avenir Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* ==========================================
+   Two Sigma Brand Colors & Web Font Variables
+   ========================================== */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-teal-500: #00a5bd;
+  --color-surface-subtle-light: #f3f6f6;
+  --color-surface-subtle-dark: #161c20;
+  --color-border-default-light: #e5eaea;
+  --color-border-default-dark: rgba(255, 255, 255, 0.08);
+  --color-background-brand: #0d1114;
+  --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  --shadow-card-elevated: 0px 16px 32px rgba(0, 0, 0, 0.08);
+  
+  --font-heading: 'Avenir', 'Avenir Next', sans-serif !important;
+  --font-primary: 'Avenir', 'Avenir Next', sans-serif !important;
+  --font-body: 'Avenir', 'Avenir Next', sans-serif !important;
+}
+
+/* ==========================================
+   Font Awesome & Icon Protection
+   ========================================== */
+i,
+i::before,
+i::after,
+[class^="fa-"], 
+[class*=" fa-"],
+[class^="fa-"]::before, 
+[class*=" fa-"]::before,
+.fa, .fas, .far, .fal, .fat, .fad, .fab,
+.fa-solid, .fa-regular, .fa-light, .fa-thin, .fa-duotone, .fa-brands {
+  font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free", "FontAwesome" !important;
+}
+
+/* ==========================================
+   Headings, Header Navigation & Titles: Glacial Indifference
+   ========================================== */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.sec_title,
+.tx-title,
+.section-title h2,
+.section-title h6,
+.page-heading h1,
+.breadcrumb-sub-title h1,
+.logo-text,
+.main-menu ul li a,
+.mean__menu-wrapper ul li a,
+.theme-btn,
+.theme-btn *,
+.btn_text,
+.btn_text span,
+.sub-title,
+.ts-who-we-are .main-title,
+.why-choose-section .section-title h2,
+.faq-content-1 .section-title h2,
+.pageHeader h1,
+.pageHeader h2,
+.header-main nav ul li a {
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+/* ==========================================
+   Content Sections, Body, Paragraphs & Lists: Roboto
+   ========================================== */
+body, 
+p, 
+body p, 
+.text, 
+.about-content p, 
+.service-details-content p, 
+.news-details-content p, 
+.blog-details-content p, 
+.content-grid-card p, 
+.content-grid-card__description, 
+li, 
+ul li, 
+input, 
+textarea, 
+select {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-weight: 400;
+}
+
+
+
+.ts-location-body .ts-location-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  background: #00A5BD !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  margin-top: auto !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 14px rgba(0, 165, 189, 0.25) !important;
+}
+
+.ts-location-body .ts-location-link:hover,
+.ts-location-card:hover .ts-location-link {
+  background: #001A33 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 26, 51, 0.2) !important;
+  gap: 12px !important;
+}
+
+.ts-location-body .ts-location-link i {
+  font-size: 14px;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.ts-location-card:hover .ts-location-link i {
+  transform: translateX(4px);
+}
+
+/* ==========================================
+   Citadel Content Grid Cards / What We Do Section
+   ========================================== */
+
+.content-grid-section {
+  padding: 100px 0 120px;
+  background: #ffffff;
+}
+
+.content-grid-header {
+  max-width: 920px;
+  margin-bottom: 60px;
+}
+
+.content-grid-header .eyebrow-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  color: #00A5BD !important;
+  margin-bottom: 18px !important;
+}
+
+.content-grid-header .eyebrow-tag img {
+  width: 14px;
+  height: 14px;
+}
+
+.content-grid-header .intro-text {
+  font-size: 21px !important;
+  line-height: 1.75 !important;
+  color: #0F172A !important;
+  font-weight: 450 !important;
+  letter-spacing: -0.2px !important;
+  margin-bottom: 0 !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+}
+
+@media (max-width: 991px) {
+  .content-grid-cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Citadel 3-Up Layout & Section Intro */
+.layout-content_grid__three-up {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .layout-content_grid__three-up {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-content_grid__three-up {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.layout-content_grid__three-up .content-grid-card,
+.layout-content_grid__three-up .content-grid-card__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.layout-content_grid__three-up .content-grid-card:hover,
+.layout-content_grid__three-up .content-grid-card__inner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 26, 51, 0.1);
+  border-color: #00A5BD;
+  background: #ffffff;
+}
+
+.layout-content_grid__three-up .content-grid-card__content {
+  padding: 32px 28px 24px !important;
+  flex-grow: 1;
+}
+
+.layout-content_grid__three-up .content-grid-card__content__heading h3 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.4px !important;
+  margin-bottom: 14px !important;
+}
+
+.layout-content_grid__three-up .content-grid-card__content p {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #475569 !important;
+  font-weight: 400 !important;
+  margin-bottom: 0 !important;
+}
+
+.layout-content_grid__three-up .content-grid-card__image-wrapper {
+  width: 100%;
+  height: 220px !important;
+  overflow: hidden;
+  background: #001A33;
+}
+
+.layout-content_grid__three-up .content-grid-card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.layout-content_grid__three-up .content-grid-card:hover .content-grid-card__image-wrapper img,
+.layout-content_grid__three-up .content-grid-card__inner:hover .content-grid-card__image-wrapper img {
+  transform: scale(1.05);
+}
+
+.content-grid-card__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  height: 100%;
+}
+
+.content-grid-card__inner:hover {
+  transform: translateY(-6px);
+  border-color: #00A5BD;
+  box-shadow: 0 24px 48px -12px rgba(0, 26, 51, 0.12);
+}
+
+.content-grid-card__category {
+  display: inline-block;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  color: #00A5BD !important;
+  margin-bottom: 10px !important;
+}
+
+.content-grid-card__content {
+  padding: 40px 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.content-grid-card__content__heading h3,
+.js-content-grid-card-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.6px !important;
+  margin-bottom: 16px !important;
+  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+}
+
+.content-grid-card__content p {
+  font-size: 16.5px !important;
+  line-height: 1.7 !important;
+  color: #475569 !important;
+  font-weight: 400 !important;
+  margin-bottom: 32px !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content-grid-card__cta {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.content-grid-card__cta-text__inner {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  background: #00A5BD !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 14px rgba(0, 165, 189, 0.25) !important;
+}
+
+.content-grid-card__inner:hover .content-grid-card__cta-text__inner {
+  background: #001A33 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 26, 51, 0.2) !important;
+  gap: 12px !important;
+}
+
+.content-grid-card__cta-text__inner .button-arrow,
+.explore-chevron-icon {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+  font-size: 16px !important;
+  color: #ffffff !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.content-grid-card__inner:hover .button-arrow,
+.content-grid-card__inner:hover .explore-chevron-icon,
+.ts-location-card:hover .explore-chevron-icon,
+.ts-location-link:hover .explore-chevron-icon {
+  transform: translateX(4px) !important;
+}
+
+.content-grid-card__image-wrapper {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  background: #001A33;
+}
+
+.content-grid-card__image-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.content-grid-card__inner:hover .content-grid-card__image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* 2x3 Format Navigation Preview - Only 6 Main Topics */
+.nav-preview-dropdown {
+  min-width: 380px !important;
+  padding: 24px 28px !important;
+  border-top: 2px solid #001A33 !important;
+}
+
+/* Production Ready Cards text visibility */
+.project-box-items .content p {
+  color: #E2E8F0 !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  margin-top: 14px !important;
+  margin-bottom: 24px !important;
+  font-weight: 400 !important;
+  opacity: 0.95 !important;
+}
+
+.project-box-items .content h3 a {
+  color: #FFFFFF !important;
+}
+
+.project-box-items .content span {
+  color: #00A5BD !important;
+  font-weight: 700 !important;
+}
+
+.nav-preview-2x3 {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  column-gap: 40px !important;
+  row-gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.preview-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.preview-topic-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #001a33 !important;
+  text-decoration: none !important;
+  padding: 4px 0 !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+}
+
+.preview-topic-item .preview-arrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 14px !important;
+  color: #001a33 !important;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.2s ease !important;
+  width: 12px;
+}
+
+.preview-topic-item:hover {
+  color: #00a5bd !important;
+  transform: translateX(4px);
+}
+
+.preview-topic-item:hover .preview-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: #00a5bd !important;
+}
+
+/* ==========================================
+   Global Theme Colors & Dark Mode
+   ========================================== */
+/* Light Mode Backgrounds */
+body, 
+.page-wrapper {
+  background-color: var(--color-white);
+}
+
+.section-bg {
+  background-color: var(--color-surface-subtle-light) !important;
+}
+
+/* Dark Mode Overrides */
+.dark-body,
+.dark-body .page-wrapper,
+.dark-body .section-bg,
+.dark-body .breadcrumb-wrapper,
+.dark-body .footer-section,
+.dark-body #preloader {
+  background: var(--color-background-brand) !important;
+}
+
+.dark-body .service-card-item,
+.dark-body .feature-box-items,
+.dark-body .faq-content-1,
+.dark-body .testimonial-warpper::before,
+.dark-body .project-card-item,
+.dark-body .pricing-card-item,
+.dark-body .news-card-item,
+.dark-body .offcanvas__wrapper {
+  background: var(--color-surface-subtle-dark) !important;
+}
+
+.dark-body p {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ==========================================
+   Shapes & Rounding (Buttons, Inputs, Cards)
+   ========================================== */
+/* Pill Shapes for interactive items */
+.theme-btn,
+.back-to-top,
+.array-prev,
+.array-next,
+.social-icon a,
+.color-trigger,
+.close-color-trigger,
+.meanmenu-reveal,
+.nice-select,
+.search-toggler,
+.scroll-to-top {
+  border-radius: 9999px !important;
+}
+
+/* Ensure inner structures of the button don't overflow */
+.theme-btn .btn_inner,
+.theme-btn .btn_inner span,
+.theme-btn .btn_inner .btn_icon,
+.theme-btn .btn_inner .btn_text {
+  border-radius: 9999px !important;
+}
+
+/* Card Geometry (16px cards, 24px large containers) */
+.service-card-item,
+.feature-box-items,
+.project-card-item,
+.pricing-card-item,
+.news-card-item,
+.testimonial-card,
+.faq-content-1,
+.about-image img,
+.hero-image img,
+.project-image img,
+.team-card-item,
+.news-image img {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+/* Large containers */
+.cta-wrapper,
+.contact-wrapper-area,
+.pricing-section .container,
+.terms-conditions-section .container {
+  border-radius: 24px !important;
+}
+
+/* ==========================================
+   Shadows & Elevation
+   ========================================== */
+.service-card-item,
+.feature-box-items,
+.project-card-item,
+.pricing-card-item,
+.news-card-item,
+.team-card-item {
+  box-shadow: var(--shadow-card) !important;
+  border: 1px solid var(--color-border-default-light) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.dark-body .service-card-item,
+.dark-body .feature-box-items,
+.dark-body .project-card-item,
+.dark-body .pricing-card-item,
+.dark-body .news-card-item,
+.dark-body .team-card-item {
+  border: 1px solid var(--color-border-default-dark) !important;
+}
+
+/* Hover elevation */
+.service-card-item:hover,
+.feature-box-items:hover,
+.project-card-item:hover,
+.pricing-card-item:hover,
+.news-card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-elevated) !important;
+  border-color: var(--color-teal-500) !important;
+}
+
+/* Feature Box Items Hover State: Force ALL text & body content to white */
+.feature-box-items:hover,
+.feature-box-items:hover h6,
+.feature-box-items:hover h3,
+.feature-box-items:hover h3 a,
+.feature-box-items:hover p,
+.feature-box-items:hover span {
+  color: #ffffff !important;
+}
+
+/* ==========================================
+   Brand Accent Colors & Interactive Fills
+   ========================================== */
+/* Navigation links & hovers */
+.main-menu ul li.active a,
+.main-menu ul li a:hover,
+.submenu li a:hover {
+  color: var(--color-teal-500) !important;
+}
+
+/* Scroll-to-top button & list arrows */
+.back-to-top,
+.array-button .array-prev:hover,
+.array-button .array-next:hover,
+.social-icon a:hover {
+  background-color: var(--color-teal-500) !important;
+  border-color: var(--color-teal-500) !important;
+}
+
+/* Preloader spinner */
+.spinner {
+  border-top-color: var(--color-teal-500) !important;
+}
+
+/* Primary Button color styling override */
+.theme-btn {
+  background-color: var(--color-teal-500) !important;
+  border: 1px solid var(--color-teal-500) !important;
+  color: var(--color-white) !important;
+}
+
+.theme-btn:hover {
+  background-color: #008fa4 !important; /* Slightly darker teal for contrast */
+}
+
+/* List Checkmarks & Icons */
+ul.list-items li i,
+.contact-icon i,
+.offcanvas__contact-icon i,
+.service-card-item .icon img,
+.feature-box-items .icon img {
+  filter: hue-rotate(145deg) saturate(2); /* Automatically turn typical brand blues/yellows into teal */
+}
+
+.incrase-box img {
+  filter: hue-rotate(-25deg) saturate(2) brightness(0.9) !important; /* Precision shift from blue to Two Sigma teal */
+}
+
+/* ==========================================
+   Full-Bleed Gradient Hero / Breadcrumbs
+   ========================================== */
+.breadcrumb-wrapper {
+  background: linear-gradient(135deg, var(--color-teal-500) 0%, #1e1335 100%) !important;
+}
+
+.breadcrumb-wrapper::before {
+  display: none !important; /* Hide standard color overlays so gradient shines */
+}
+
+/* Hero Background styling */
+.hero-section {
+  background-image: none !important;
+}
+
+.dark-body .hero-section {
+  background: linear-gradient(135deg, var(--color-background-brand) 40%, #062b32 100%) !important;
+}
+
+/* Adjust general hover styling */
+a:hover {
+  color: var(--color-teal-500);
+}
+
+/* ==========================================
+   Two Sigma Home Page Specific Layouts
+   ========================================== */
+
+/* 1. Hero Glow Background, Clean Spacing, and Vertical Lines */
+.hero-section,
+.hero-1 {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 165, 189, 0.16) 0%, rgba(123, 44, 191, 0.04) 40%, #ffffff 80%) !important;
+  position: relative;
+  overflow: hidden;
+  padding-top: 180px !important; /* Ample spacing below sticky navbar */
+  padding-bottom: 120px !important;
+}
+
+@media (max-width: 1199px) {
+  .hero-section,
+  .hero-1 {
+    padding-top: 160px !important;
+    padding-bottom: 90px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section,
+  .hero-1 {
+    padding-top: 140px !important;
+    padding-bottom: 70px !important;
+  }
+}
+
+/* Hero Badge & Heading Spacing & Alignment */
+.hero-content .hero-badge-heading,
+.hero-1 .hero-content h6 {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 0 !important;
+  margin-bottom: 24px !important;
+  line-height: 1.4 !important;
+}
+
+.hero-content .hero-badge-heading .hero-badge-pill,
+.hero-1 .hero-content h6 span {
+  background: var(--color-teal-500) !important;
+  color: #ffffff !important;
+  border-radius: 30px !important;
+  padding: 6px 14px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.5px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: auto !important;
+  margin-right: 0 !important;
+  box-shadow: 0 2px 8px rgba(0, 165, 189, 0.25) !important;
+}
+
+.hero-content .hero-badge-heading .hero-badge-text,
+.hero-1 .hero-content h6 {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: var(--color-black) !important;
+  text-transform: uppercase !important;
+}
+
+.hero-1 .hero-content h1,
+.hero-content h1 {
+  margin-top: 0 !important;
+  margin-bottom: 22px !important;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 25% 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 2. Opportunities Callout Banner */
+.twosigma-banner {
+  background: linear-gradient(135deg, #00a5bd 0%, #7b2cbf 100%) !important;
+  border-radius: 16px !important;
+  padding: 50px 60px !important;
+  color: #ffffff !important;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  z-index: 10 !important;
+  box-shadow: 0px 12px 30px rgba(0, 165, 189, 0.25) !important;
+}
+
+.twosigma-banner h2 {
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  margin-bottom: 20px;
+}
+
+.twosigma-banner p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 16px !important;
+  max-width: 600px;
+  margin-bottom: 30px !important;
+}
+
+.twosigma-banner-btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 14px 28px !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.twosigma-banner-btn:hover {
+  background: #f0f4f5 !important;
+  transform: translateY(-2px);
+}
+
+/* Banner responsive */
+@media (max-width: 991px) {
+  .twosigma-banner {
+    padding: 40px 30px !important;
+  }
+
+  .twosigma-banner h2 {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .twosigma-banner {
+    padding: 30px 24px !important;
+  }
+
+  .twosigma-banner h2 {
+    font-size: 28px !important;
+  }
+
+  .twosigma-banner p {
+    font-size: 15px !important;
+  }
+}
+
+/* 3. Capabilities Section & Cards */
+.twosigma-capabilities-sec {
+  background: #ffffff !important;
+}
+
+.twosigma-card {
+  background: #f3f6f6 !important;
+  border: 1px solid #e5eaea !important;
+  border-radius: 20px !important;
+  padding: 50px 40px !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.twosigma-card h3 {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  color: #000000 !important;
+  margin-bottom: 50px;
+}
+
+.twosigma-card-btn {
+  width: 44px;
+  height: 44px;
+  background: #000000 !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.twosigma-card:hover {
+  transform: translateY(-5px);
+  background: #ebf0f0 !important;
+  border-color: #00a5bd !important;
+}
+
+.twosigma-card:hover .twosigma-card-btn {
+  background: #00a5bd !important;
+}
+
+/* 4. Stats Section */
+.twosigma-stats-section {
+  padding: 80px 0;
+  border-top: 1px solid #e5eaea;
+  border-bottom: 1px solid #e5eaea;
+  background: #ffffff !important;
+}
+
+.twosigma-stat-item h2 {
+  font-size: 58px !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin-bottom: 10px;
+}
+
+.twosigma-fact-table td:last-child {
+  color: #444444;
+}
+
+/* ==========================================
+   Full Width Footer & CTA Section Override
+   (Removes rounded box & side margins across all screens)
+   ========================================== */
+.cta-newsletter-section {
+    position: relative !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 80px 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.footer-section {
+    position: relative !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #0b111e !important;
+}
+
+.footer-area {
+    background-color: #0b111e !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 1399px) {
+    .cta-newsletter-section,
+    .footer-area,
+    .footer-section {
+        margin: 0 !important;
+        border-radius: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+.twosigma-stat-item p {
+  color: #555555 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+
+/* 5. Team Section & 3x3 Grid */
+.twosigma-team-section {
+  background: #ffffff !important;
+  padding: 100px 0;
+}
+
+.twosigma-quote-card {
+  background: #ffffff !important;
+  border: 1px solid #e5eaea !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.twosigma-quote-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.twosigma-quote-content {
+  padding: 30px !important;
+}
+
+.twosigma-quote-content p {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #00a5bd !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  margin-bottom: 20px !important;
+}
+
+.twosigma-quote-author {
+  font-weight: 700 !important;
+  color: #000000 !important;
+  font-size: 16px;
+}
+
+/* 3x3 Photo Grid */
+.twosigma-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  height: 100%;
+}
+
+.twosigma-grid-item {
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.twosigma-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.twosigma-grid-teal { background-color: #00a5bd; }
+.twosigma-grid-cyan { background-color: #e0f2f1; }
+.twosigma-grid-purple { background-color: #7b2cbf; }
+
+/* 6. Insights Gradient Banner */
+.twosigma-insights-section {
+  background: linear-gradient(180deg, #16405b 0%, #007a8c 100%) !important;
+  padding: 120px 0;
+}
+
+.twosigma-insights-section h2,
+.twosigma-insights-section h6 {
+  color: #ffffff !important;
+}
+
+.twosigma-insights-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.twosigma-insights-card .thumb {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.twosigma-insights-card .thumb img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.twosigma-insights-card:hover .thumb img {
+  transform: scale(1.05);
+}
+
+.twosigma-insights-card .category {
+  color: #00d2f1 !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.twosigma-insights-card h3 a {
+  color: #ffffff !important;
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+  font-weight: 700 !important;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.twosigma-insights-card h3 a:hover {
+  color: #00d2f1 !important;
+  text-decoration: underline;
+}
+
+.twosigma-insights-footer-btn {
+  background: #ffffff !important;
+  color: #000000 !important;
+  padding: 14px 28px !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.twosigma-insights-footer-btn:hover {
+  background: #e0f2f1 !important;
+}
+
+/* Preloader custom style */
+.preloader {
+  background-color: #ffffff !important;
+}
+
+.letters-loading {
+  color: #000000 !important;
+}
+
+/* ==========================================
+   Two Sigma Testimonials Panel Styles
+   ========================================== */
+.testimonialsPanel__layout {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  .testimonialsPanel__layout {
+    flex-direction: column;
+  }
+}
+
+.testimonialsPanel__card {
+  flex: 1.2;
+  background: #ffffff;
+  border: 1px solid #e5eaea;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.testimonialsPanel__cardPhoto {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.testimonialsPanel__cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialsPanel__cardBody {
+  padding: 40px !important;
+  position: relative;
+}
+
+.testimonialsPanel__quoteIcon {
+  color: var(--color-teal-500);
+  margin-bottom: 20px;
+}
+
+.testimonialsPanel__quoteText {
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  color: #000000 !important;
+  font-weight: 300 !important;
+  margin-bottom: 25px !important;
+}
+
+.testimonialsPanel__authorName {
+  font-weight: 700 !important;
+  color: #000000 !important;
+  font-size: 17px !important;
+  margin-bottom: 2px !important;
+}
+
+.testimonialsPanel__authorTitle {
+  font-size: 14px !important;
+  color: #666666 !important;
+  margin-bottom: 0 !important;
+}
+
+/* 4x4 Grid styling */
+.testimonialsPanel__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.testimonialsPanel__gridCell {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+}
+
+button.testimonialsPanel__gridCell {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button.testimonialsPanel__gridCell:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button.testimonialsPanel__gridCell.is-selected {
+  outline: 4px solid var(--color-teal-500);
+  outline-offset: 3px;
+  z-index: 10;
+}
+
+.testimonialsPanel__gridThumbWrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.testimonialsPanel__gridThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonialsPanel__gridCell--filled {
+  background-color: var(--color-teal-500);
+}
+
+.testimonialsPanel__gridCell--empty {
+  background-color: transparent;
+}
+
+/* Alternate cell coloring similar to Two Sigma grid layout */
+.testimonialsPanel__gridCell:nth-child(2) {
+  background-color: var(--color-teal-500);
+}
+
+.testimonialsPanel__gridCell:nth-child(8) {
+  background-color: #7b2cbf; /* Purple */
+}
+
+.testimonialsPanel__gridCell:nth-child(10) {
+  background-color: var(--color-teal-500);
+}
+
+.testimonialsPanel__gridCell:nth-child(14) {
+  background-color: #e0f2f1; /* Light cyan */
+}
+
+/* Hide navigation dots default */
+.testimonialsPanel__dots {
+  display: none !important;
+}
+
+/* Global Logo Resizing (Header, Sticky Nav, Footer, and Sidebar) */
+.logo img,
+.header-logo img,
+.footer-logo img,
+.offcanvas__logo img {
+  max-height: 45px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+/* Custom Header & Footer logo text style */
+.logo-text {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  color: var(--color-black) !important;
+  white-space: nowrap;
+}
+
+.dark-body .logo-text {
+  color: var(--color-white) !important;
+}
+
+.footer-logo .logo-text {
+  color: var(--color-white) !important;
+}
+
+/* Move the logo container in the header right a little bit */
+.header-main .logo {
+  margin-left: 40px !important; /* Move logo to the right */
+}
+
+/* Testimonial slider same-height alignment (stretches cards to match tallest card) */
+.testimonial-slider-3,
+.testimonial-slider-3 .swiper-wrapper {
+  align-items: stretch !important;
+}
+
+.testimonial-slider-3 .swiper-slide {
+  height: auto !important;
+  display: flex !important;
+}
+
+.testimonial-box-items-3 {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.testimonial-box-items-3 h4 {
+  flex-grow: 1 !important; /* Forces the quote text area to expand and push author info to the bottom */
+  margin-bottom: 20px !important;
+}
+
+/* ==========================================================================
+   Two Sigma Page Layout Alignment CSS (For Securities, Timeline, & Grid pages)
+   ========================================================================== */
+
+.featureGrid {
+  padding: 80px 0;
+  background-color: var(--color-white);
+}
+
+.featureGrid__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.featureGrid__header {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.featureGrid__title {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: var(--color-black) !important;
+  letter-spacing: -1px;
+}
+
+.featureGrid__description {
+  font-size: 18px;
+  color: #555;
+  margin-top: 15px;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.featureGrid__columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureGrid__columns.featureGrid__threeCol .featureGrid__feature {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+  background: #F8F9FA;
+  border-radius: 12px;
+  padding: 40px 30px;
+  border-top: 3px solid var(--color-teal-500);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.featureGrid__columns.featureGrid__threeCol .featureGrid__feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.featureGrid__image {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.featureGrid__featureTitle {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  color: var(--color-black) !important;
+  margin-bottom: 14px;
+}
+
+.featureGrid__desc {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Stacked Accordion Layout styles */
+.accordion--stacked {
+  padding: 80px 0;
+  background-color: #0c151d;
+  color: var(--color-white);
+}
+
+.accordion__header {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
+
+.accordion__header h2 {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: var(--color-white) !important;
+  margin-bottom: 15px;
+}
+
+.accordion__header p {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.accordion__list {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.accordion-trigger {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 24px 0;
+  color: var(--color-white);
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.accordion-trigger::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+  transition: transform 0.2s ease;
+}
+
+.accordion-trigger.active {
+  color: var(--color-teal-500);
+}
+
+.accordion-trigger.active::after {
+  content: '-';
+  transform: rotate(180deg);
+  color: var(--color-teal-500);
+}
+
+.accordion-item {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.open {
+  max-height: 1000px;
+}
+
+.accordion-item__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px 0;
+}
+
+.accordion-image {
+  flex: 1 1 350px;
+}
+
+.accordion-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.accordion-content {
+  flex: 1 1 450px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Timeline Layout styles */
+.vtimeline {
+  padding: 80px 0;
+  background-color: #F8F9FA;
+}
+
+.vtimeline-nav {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
+
+.vtimeline-header h2 {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  color: var(--color-black) !important;
+}
+
+.vtimeline-header p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.vtimeline-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.vtimeline-content::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: var(--color-teal-500);
+}
+
+.vtimeline-row {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.vtimeline-tab {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 250px;
+  flex-shrink: 0;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 2;
+}
+
+.vtimeline-tab__text h3 {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: var(--color-teal-500) !important;
+  margin: 0;
+  background: #F8F9FA;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--color-teal-500);
+}
+
+.vtimeline-tab__text__body p {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 5px 0 0 0;
+}
+
+.vtimeline-panel {
+  flex-grow: 1;
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 24px 30px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.vtimeline-panel__richtext p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* ==========================================================================
+   ADOPLE AI CUSTOM THEME OVERRIDES (Feat/Ashiq Style)
+   ========================================================================== */
+
+/* Custom Header Logo Text and Spacing Overrides */
+.logo-text {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  color: var(--color-black) !important;
+}
+
+.dark-body .logo-text {
+  color: var(--color-white) !important;
+}
+
+.logo img,
+.header-logo img,
+.footer-logo img,
+.footer-logo2 img,
+.offcanvas__logo img,
+.palate-logo img {
+  max-height: 45px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+/* High-Contrast Mobile Hamburger & Search Buttons */
+.search-toggler,
+.sidebar__toggle {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: var(--color-black) !important;
+  border-radius: 50% !important;
+  width: 45px !important;
+  height: 45px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease !important;
+}
+
+.search-toggler:hover,
+.sidebar__toggle:hover {
+  background-color: var(--color-teal-500) !important;
+  color: var(--color-white) !important;
+}
+
+.dark-body .search-toggler,
+.dark-body .sidebar__toggle {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--color-white) !important;
+}
+
+/* Color Palate Selector & Dark/Light Mode Buttons (Reactive to dark-body class) */
+.color-palate h6 {
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  margin-bottom: 12px !important;
+  color: var(--color-black) !important;
+}
+
+.dark-body .color-palate h6 {
+  color: var(--color-white) !important;
+}
+
+.dark-version {
+  display: flex !important;
+  gap: 10px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.dark-version li {
+  flex: 1 !important;
+  text-align: center !important;
+  padding: 10px 14px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  transition: all 0.25s ease !important;
+  border: 1px solid var(--color-border-default-light) !important;
+}
+
+/* Light Mode active/inactive defaults (body does not have .dark-body) */
+body:not(.dark-body) .dark-version li.box {
+  background-color: var(--color-white) !important;
+  color: var(--color-black) !important;
+  border-color: var(--color-border-default-light) !important;
+}
+
+body:not(.dark-body) .dark-version li:not(.box) {
+  background-color: var(--color-teal-500) !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-teal-500) !important;
+}
+
+/* Dark Mode active/inactive overrides (body has .dark-body) */
+.dark-body .dark-version li.box {
+  background-color: var(--color-teal-500) !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-teal-500) !important;
+}
+
+.dark-body .dark-version li:not(.box) {
+  background-color: var(--color-surface-subtle-dark) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  border-color: var(--color-border-default-dark) !important;
+}
+
+.dark-version li:hover {
+  opacity: 0.9 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* ==========================================
+   Enhanced Two Sigma Design System
+   Phase 4: Whitespace & Typography Refinements
+   ========================================== */
+
+/* Section Spacing - Generous whitespace like Two Sigma */
+section {
+    padding: 80px 0;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding: 60px 0;
+    }
+    .section-padding {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 40px 0;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* Typography Scale - Match Two Sigma hierarchy */
+h1, .hero-content h1 {
+    font-size: 64px !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.5px !important;
+    font-weight: 700 !important;
+}
+
+h2, .sec_title {
+    font-size: 42px !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.5px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.3px !important;
+    font-weight: 700 !important;
+}
+
+p, .body-text {
+    font-size: 18px !important;
+    line-height: 1.85 !important;
+    letter-spacing: 0.3px !important;
+    color: #555555 !important;
+}
+
+/* Responsive Typography */
+@media (max-width: 767px) {
+    h1, .hero-content h1 {
+        font-size: 42px !important;
+    }
+    h2, .sec_title {
+        font-size: 32px !important;
+    }
+    h3 {
+        font-size: 24px !important;
+    }
+    p, .body-text {
+        font-size: 16px !important;
+    }
+}
+
+/* ==========================================
+   Benefit Card Component (Careers Page)
+   ========================================== */
+.benefit-card {
+    text-align: center;
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-color: #00a5bd;
+}
+
+.benefit-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00a5bd, #7b2cbf);
+    border-radius: 50%;
+    color: white;
+    font-size: 28px;
+}
+
+.benefit-card h5 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    color: #000000 !important;
+    letter-spacing: -0.3px !important;
+}
+
+.benefit-card p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #666666 !important;
+    margin: 0 !important;
+}
+
+/* ==========================================
+   Career Stage Card Component
+   ========================================== */
+.career-stage-card {
+    padding: 32px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #7b2cbf;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.career-stage-card:hover {
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.career-stage-card h4 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    color: #000000 !important;
+    letter-spacing: -0.3px !important;
+}
+
+.career-stage-card p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #666666 !important;
+    margin-bottom: 16px !important;
+}
+
+.stage-link {
+    color: #7b2cbf;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.stage-link:hover {
+    color: #00a5bd;
+    text-decoration: none;
+}
+
+/* ==========================================
+   Card Component Consistency
+   ========================================== */
+.twosigma-card,
+.service-box-items,
+.feature-box-items {
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+}
+
+.twosigma-card:hover,
+.service-box-items:hover,
+.feature-box-items:hover {
+    transform: translateY(-4px) !important;
+}
+
+/* Ensure consistent padding across card types */
+.service-box-items,
+.feature-box-items {
+    padding: 32px !important;
+}
+
+/* ==========================================
+   Color Palette Consistency
+   ========================================== */
+body {
+    background-color: var(--color-white) !important;
+    color: var(--color-black) !important;
+}
+
+/* Primary CTA buttons */
+.theme-btn {
+    transition: all 0.3s ease !important;
+}
+
+.theme-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 16px rgba(0,165,189,0.3) !important;
+}
+
+/* ==========================================
+   Career Stages Section
+   ========================================== */
+.career-stages-section {
+    padding: 80px 0;
+}
+
+.career-stages-section .section-title h2 {
+    font-size: 42px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+.career-stages-section .section-title p {
+    font-size: 18px !important;
+    color: #666666 !important;
+}
+
+@media (max-width: 767px) {
+    .career-stages-section {
+        padding: 60px 0;
+    }
+    
+    .career-stage-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================================
+   Enhanced Button Consistency
+   ========================================== */
+.twosigma-banner-btn,
+.twosigma-card-btn,
+.twosigma-insights-footer-btn {
+    transition: all 0.3s ease !important;
+}
+
+.twosigma-banner-btn:hover,
+.twosigma-card-btn:hover,
+.twosigma-insights-footer-btn:hover {
+    transform: scale(1.05) !important;
+}
+
+/* ==========================================
+   Accessibility & UX Improvements
+   ========================================== */
+a, button {
+    transition: all 0.3s ease !important;
+}
+
+/* Ensure proper focus states */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #00a5bd !important;
+    outline-offset: 2px !important;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   Two Sigma Hero Section - Exact Match
+   ========================================== */
+
+.twosigma-hero {
+    position: relative;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 0;
+    margin-top: 88px;
+}
+
+.twosigma-hero .aurora-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.twosigma-hero .aurora-background svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.twosigma-hero .container {
+    position: relative;
+    z-index: 1;
+    padding: 120px 20px;
+}
+
+.twosigma-hero .hero-content-centered {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.twosigma-hero h1 {
+    font-size: 64px !important;
+    font-weight: 700 !important;
+    line-height: 1.15 !important;
+    letter-spacing: -1.5px !important;
+    color: #000000 !important;
+    margin-bottom: 24px !important;
+}
+
+.twosigma-hero p {
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    color: #000000 !important;
+    margin-bottom: 60px !important;
+    max-width: 700px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.twosigma-hero .scroll-down-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.twosigma-hero .scroll-down-btn:hover {
+    transform: translateY(4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    color: #00a5bd;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .twosigma-hero {
+        margin-top: 76px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .twosigma-hero {
+        min-height: 500px;
+    }
+
+    .twosigma-hero h1 {
+        font-size: 56px !important;
+    }
+
+    .twosigma-hero p {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .twosigma-hero {
+        min-height: 450px;
+        margin-top: 70px;
+    }
+
+    .twosigma-hero .container {
+        padding: 80px 20px;
+    }
+
+    .twosigma-hero h1 {
+        font-size: 42px !important;
+        letter-spacing: -1px !important;
+    }
+
+    .twosigma-hero p {
+        font-size: 16px !important;
+        margin-bottom: 40px !important;
+    }
+}
+
+/* ==========================================
+   Ultra-Minimal Card Style (Two Sigma)
+   ========================================== */
+
+.twosigma-minimal-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 40px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.twosigma-minimal-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+
+.twosigma-minimal-card h3 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    line-height: 1.3 !important;
+    color: #000000 !important;
+    margin-bottom: 24px !important;
+    letter-spacing: -0.5px !important;
+}
+
+.twosigma-minimal-card .card-arrow-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.twosigma-minimal-card .card-arrow-link:hover {
+    color: #00a5bd;
+    gap: 12px;
+}
+
+.twosigma-minimal-card .card-arrow-link i {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 10px;
+    transition: all 0.3s ease;
+}
+
+.twosigma-minimal-card:hover .card-arrow-link i {
+    background: #00a5bd;
+}
+
+/* ==========================================
+   Two Sigma Stats Section Style
+   ========================================== */
+
+.twosigma-stats-section {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.twosigma-stats-section .twosigma-stat-item {
+    text-align: center;
+    padding: 0;
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    margin-bottom: 12px !important;
+    letter-spacing: -2px !important;
+    white-space: nowrap !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item p {
+    font-size: 16px !important;
+    color: #666666 !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+/* Responsive stats */
+@media (max-width: 991px) {
+    .twosigma-stats-section .twosigma-stat-item h2 {
+        font-size: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .twosigma-stats-section .twosigma-stat-item h2 {
+        font-size: 36px !important;
+    }
+
+    .twosigma-stats-section .twosigma-stat-item p {
+        font-size: 14px !important;
+    }
+}
+
+/* ==========================================
+   Section Title Two Sigma Style
+   ========================================== */
+
+.twosigma-section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.twosigma-section-title h2 {
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: #000000 !important;
+    letter-spacing: -1px !important;
+    margin-bottom: 16px !important;
+}
+
+.twosigma-section-title p {
+    font-size: 18px !important;
+    color: #666666 !important;
+    line-height: 1.6 !important;
+    max-width: 700px !important;
+    margin: 0 auto !important;
+}
+
+@media (max-width: 767px) {
+    .twosigma-section-title h2 {
+        font-size: 36px !important;
+    }
+    
+    .twosigma-section-title p {
+        font-size: 16px !important;
+    }
+}
+
+/* ==========================================
+<<<<<<< HEAD
+   Global Footer Contrast & Typography
+   ========================================== */
+
+.footer-section,
+.footer-area {
+  background-color: #001A33 !important;
+  color: #FFFFFF !important;
+}
+
+.footer-logo .logo-text {
+  color: #FFFFFF !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.footer-widget-items .widget-head h3 {
+  color: #FFFFFF !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.3px !important;
+  margin-bottom: 24px !important;
+}
+
+.footer-widget-items .footer-content p,
+.footer-section .footer-content p,
+.footer-area .footer-content p,
+.footer-section p {
+  color: #E2E8F0 !important;
+  font-size: 15px !important;
+  line-height: 1.75 !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+}
+
+.footer-widget-items .gt-list-area li a,
+.footer-widget-items .contact-list li,
+.footer-widget-items .contact-list li a {
+  color: #CBD5E1 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+}
+
+.footer-widget-items .gt-list-area li:hover a,
+.footer-widget-items .contact-list li:hover a {
+  color: #00A5BD !important;
+  padding-left: 4px;
+}
+
+.footer-widget-items .footer-content .footer-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  height: 48px !important;
+  line-height: 48px !important;
+  border-radius: 9999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #FFFFFF !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  padding: 0 24px 0 6px !important;
+  margin-top: 24px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer-widget-items .footer-content .footer-btn:hover {
+  background: #00A5BD !important;
+  border-color: #00A5BD !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+.footer-widget-items .footer-content .footer-btn .icon {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  background-color: #00A5BD !important;
+  color: #FFFFFF !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 12px !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer-widget-items .footer-content .footer-btn:hover .icon {
+  background-color: #001A33 !important;
+  color: #FFFFFF !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding: 24px 0 !important;
+  margin-top: 40px !important;
+}
+
+.footer-bottom-wrapper p {
+  color: #94A3B8 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.footer-bottom-wrapper p b {
+  color: #FFFFFF !important;
+}
+
+.footer-bottom .social-icon a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #CBD5E1 !important;
+  margin: 0 4px !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer-bottom .social-icon a:hover {
+  background-color: #00A5BD !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+.footer-bottom .footer-list {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-bottom .footer-list li {
+  color: #64748B !important;
+  font-size: 14px !important;
+}
+
+.footer-bottom .footer-list li a {
+  color: #94A3B8 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.footer-bottom .footer-list li a:hover {
+  color: #00A5BD !important;
+}
+
+/* ==========================================
+   Two Sigma Insights Page Layout (Exact Skeleton)
+   ========================================== */
+.ts-insights-hero {
+  background-color: #ffffff;
+  padding: 60px 0 40px 0;
+  border-bottom: 1px solid #e5eaea;
+}
+
+.ts-insights-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0d1114;
+  margin-bottom: 30px;
+}
+
+.ts-insights-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5eaea;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.ts-insights-tabs {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ts-insights-tabs li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none;
+  padding-bottom: 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.ts-insights-tabs li.active a,
+.ts-insights-tabs li a:hover {
+  color: #00a5bd;
+  border-bottom: 2px solid #00a5bd;
+}
+
+.ts-insights-search {
+  position: relative;
+  width: 280px;
+}
+
+.ts-insights-search input {
+  width: 100%;
+  padding: 8px 16px 8px 36px;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.ts-insights-search i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Featured Section */
+.ts-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.ts-featured-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ts-featured-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d1114;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.ts-featured-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.ts-featured-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #0d1114;
+  margin-bottom: 12px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.ts-featured-title:hover {
+  color: #00a5bd;
+}
+
+.ts-featured-excerpt {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.ts-featured-meta {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.ts-featured-meta span {
+  color: #00a5bd;
+  margin-right: 6px;
+}
+
+/* Article Listing Grid Section */
+.ts-listing-section {
+  background-color: #f8fafc;
+  padding: 60px 0 80px 0;
+}
+
+.ts-listing-header {
+  margin-bottom: 30px;
+}
+
+.ts-listing-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0d1114;
+  margin-bottom: 20px;
+}
+
+.ts-listing-filters {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.ts-listing-filters li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none;
+  padding-bottom: 12px;
+  border-bottom: 2px solid transparent;
+}
+
+.ts-listing-filters li.active a {
+  color: #0d1114;
+  border-bottom: 2px solid #0d1114;
+}
+
+.ts-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .ts-articles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ts-articles-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ts-featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ts-article-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ts-article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.ts-article-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.ts-article-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.ts-article-category {
+  font-size: 12px;
+  font-weight: 600;
+  color: #00a5bd;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ts-article-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #0d1114;
+  margin-bottom: 12px;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.ts-article-card-title:hover {
+  color: #00a5bd;
+}
+
+.ts-article-author-meta {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: auto;
+}
+
+.ts-load-more-wrap {
+  text-align: center;
+}
+
+.ts-btn-load-more {
+  background-color: #0d1114;
+  color: #ffffff !important;
+  padding: 12px 36px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ts-btn-load-more:hover {
+  background-color: #00a5bd;
+}
+
+/* Topic Survey Banner */
+.ts-survey-banner {
+  background: linear-gradient(135deg, #1d4ed8 0%, #7e22ce 100%);
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.ts-survey-banner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 10px;
+}
+
+.ts-survey-banner p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 30px;
+}
+
+.ts-survey-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.ts-survey-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ts-survey-option input[type="radio"] {
+  accent-color: #00a5bd;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.ts-btn-survey-submit {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff !important;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ts-btn-survey-submit:hover {
+  background: #ffffff;
+  color: #1d4ed8 !important;
+}
+
+/* ==========================================
+   Institutional Gated Portal Gateway / CTA Newsletter High-Contrast Typography
+   ========================================== */
+.cta-newsletter-section .cta-newsletter-wrapper p,
+.cta-newsletter-wrapper .newsletter-form p,
+.cta-newsletter-section .newsletter-form p,
+.newsletter-form p {
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+  font-size: 19px !important;
+  line-height: 1.6 !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45) !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.cta-newsletter-section .tx-title,
+.cta-newsletter-section .sec_title,
+.cta-newsletter-section h2 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+.cta-newsletter-section .tx-title span,
+.cta-newsletter-section .sec_title span,
+.cta-newsletter-section h2 span {
+  color: #00A5BD !important;
+}
+
+.cta-newsletter-wrapper .newsletter-form form input {
+  color: #0F172A !important;
+  font-weight: 500 !important;
+}
+
+.cta-newsletter-wrapper .newsletter-form form input::placeholder {
+  color: #64748B !important;
+  font-weight: 400 !important;
+}
+
+/* ==========================================
+   Header Navigation Bar & Sticky Scroll Behavior
+   ========================================== */
+header,
+header.header-1,
+.header-1,
+#header-sticky {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sticky Header State when scrolling down */
+header.sticky,
+.header-1.sticky,
+#header-sticky.sticky,
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  animation: stickySlideDown 0.3s ease-in-out;
+}
+
+@keyframes stickySlideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-main,
+.mega-menu-wrapper,
+.mean__menu-wrapper {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.header-1 .logo-text,
+.logo-text {
+  color: #001A33 !important;
+  font-weight: 700 !important;
+}
+
+.header-1 .main-menu nav ul li a,
+.header-1 .mean__menu-wrapper .main-menu ul li a,
+.main-menu ul li a,
+.mean__menu-wrapper ul li a {
+  color: #001A33 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  background: transparent !important;
+}
+
+.header-1 .main-menu nav ul li a:hover,
+.main-menu ul li a:hover,
+.mean__menu-wrapper ul li a:hover {
+  color: #00a5bd !important;
+}
+
+/* ==========================================
+   Institutional Careers & Culture Styles
+   ========================================== */
+.career-stage-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-top: 3px solid #00a5bd !important;
+  border-radius: 10px !important;
+  padding: 28px 24px !important;
+  height: 100% !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.career-stage-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(0, 26, 51, 0.08) !important;
+  border-top-color: #001A33 !important;
+}
+
+.career-stage-card h4 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 12px !important;
+}
+
+.career-stage-card p {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 16px !important;
+}
+
+.career-stage-card .stage-link {
+  color: #00a5bd !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: gap 0.2s ease !important;
+}
+
+.career-stage-card:hover .stage-link {
+  gap: 10px !important;
+  color: #001A33 !important;
+}
+
+/* Benefit Cards */
+.benefit-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 24px 20px !important;
+  height: 100% !important;
+  transition: all 0.3s ease !important;
+}
+
+.benefit-card:hover {
+  border-color: #00a5bd !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0, 165, 189, 0.08) !important;
+}
+
+.benefit-card .benefit-icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 10px !important;
+  background: rgba(0, 165, 189, 0.08) !important;
+  color: #00a5bd !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 20px !important;
+  margin-bottom: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.benefit-card:hover .benefit-icon {
+  background: #00a5bd !important;
+  color: #ffffff !important;
+}
+
+.benefit-card h5 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 8px !important;
+}
+
+.service-box-items h5,
+.service-box-items h4,
+.service-box-items h3,
+.service-box-items .title {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 17.5px !important;
+  white-space: nowrap !important;
+  color: #001A33 !important;
+  margin-top: 14px !important;
+  margin-bottom: 10px !important;
+}
+
+.benefit-card p {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 13.5px !important;
+  color: #4b5563 !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+*:focus,
+*:focus-visible,
+*:active,
+a:focus,
+a:focus-visible,
+a:active,
+button:focus,
+button:focus-visible,
+button:active,
+.theme-btn:focus,
+.theme-btn:focus-visible,
+.theme-btn:active,
+input:focus,
+input:focus-visible,
+select:focus,
+select:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* ==========================================
+   Send Message Pill Button UI Theme
+   ========================================== */
+.theme-btn,
+a.theme-btn,
+button.theme-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  background-color: #00a5bd !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  padding: 6px 28px 6px 8px !important;
+  text-decoration: none !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.theme-btn:hover {
+  background-color: #008fa4 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 165, 189, 0.25) !important;
+}
+
+.theme-btn .btn_inner {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.theme-btn .btn_icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background-color: #001A33 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  transition: transform 0.3s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.theme-btn:hover .btn_icon {
+  background-color: #0d1114 !important;
+  transform: scale(1.05) !important;
+}
+
+.theme-btn .btn_text span {
+  color: #ffffff !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+
+/* ==========================================
+   About Page Layout Styling (feat/changes)
+   ========================================== */
+
+/* Eyebrow Badge */
+.eyebrow-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #00a5bd !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 16px !important;
+}
+
+/* Page Header Section (Who We Are) */
+.pageHeader {
+  padding: 80px 0 60px 0 !important;
+  background-color: #ffffff !important;
+}
+
+.pageHeader .content {
+  max-width: 960px !important;
+}
+
+.pageHeader h1.h2,
+.pageHeader h1 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  line-height: 1.25 !important;
+  margin-bottom: 24px !important;
+}
+
+.pageHeader p.h4,
+.pageHeader p {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16.5px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+}
+
+/* Our Approaches Feature Section */
+.feature-section {
+  padding: 80px 0 !important;
+  background-color: #f8fafc !important;
+}
+
+.feature__content {
+  display: flex !important;
+  align-items: center !important;
+  gap: 48px !important;
+}
+
+@media (max-width: 991px) {
+  .feature__content {
+    flex-direction: column !important;
+  }
+}
+
+.feature__media {
+  flex: 1 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 28px rgba(0, 26, 51, 0.08) !important;
+}
+
+.feature__media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+}
+
+.feature__body {
+  flex: 1 !important;
+}
+
+.feature__header {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 20px !important;
+}
+
+.feature__copy p {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 15.5px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+  margin-bottom: 16px !important;
+}
+
+/* Global Reach Section */
+.ts-global-section {
+  padding: 80px 0 !important;
+  background-color: #ffffff !important;
+}
+
+.ts-global-section .section-header {
+  margin-bottom: 48px !important;
+  max-width: 860px !important;
+}
+
+.ts-global-section .section-title {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 16px !important;
+}
+
+.ts-global-section .section-lead {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+}
+
+/* Location Cards Grid */
+.ts-locations-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px !important;
+}
+
+@media (max-width: 768px) {
+  .ts-locations-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.ts-location-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ts-location-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 28px rgba(0, 26, 51, 0.08) !important;
+  border-color: #00a5bd !important;
+}
+
+.ts-location-img-wrap {
+  width: 100% !important;
+  height: 240px !important;
+  overflow: hidden !important;
+}
+
+.ts-location-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease !important;
+}
+
+.ts-location-card:hover .ts-location-img-wrap img {
+  transform: scale(1.05) !important;
+}
+
+.ts-location-body {
+  padding: 28px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.ts-location-body h3 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 6px !important;
+}
+
+.ts-location-address {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 13.5px !important;
+  color: #00a5bd !important;
+  font-weight: 500 !important;
+  margin-bottom: 14px !important;
+  display: block !important;
+}
+
+.ts-location-body p {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.65 !important;
+  margin-bottom: 20px !important;
+  text-align: justify !important;
+  flex-grow: 1 !important;
+}
+
+.ts-location-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #00a5bd !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: gap 0.2s ease !important;
+}
+
+.ts-location-card:hover .ts-location-link {
+  gap: 12px !important;
+  color: #001A33 !important;
+}
+
+/* ==========================================
+   Global Body Text: Avenir Light (Weight 300)
+   ========================================== */
+body,
+p,
+span,
+li,
+td,
+.intro-text,
+.section-lead,
+.feature__copy p,
+.twosigma-hero p {
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 300 !important;
+}
+
+strong, b, th {
+  font-weight: 700 !important;
+}
+
+/* ==========================================
+   Two Sigma Stats Section Style (Avenir Light Spec)
+   ========================================== */
+.twosigma-stats-section {
+    background: #ffffff !important;
+    padding: 60px 0 !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item {
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-size: 54px !important;
+    font-weight: 300 !important; /* Numbers in Avenir Light 300 */
+    color: #000000 !important;
+    margin-bottom: 12px !important;
+    letter-spacing: -1.5px !important;
+    white-space: nowrap !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 span.count,
+.twosigma-stats-section .twosigma-stat-item h2 span.tilde-sym {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-weight: 300 !important; /* Light weight for numbers & tilde */
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 strong,
+.twosigma-stats-section .twosigma-stat-item h2 b {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-weight: 700 !important; /* Bold weight for B+ and PB */
+}
+
+.twosigma-stats-section .twosigma-stat-item p {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-size: 14.5px !important;
+    font-weight: 300 !important; /* Light weight for subtext */
+    color: #64748b !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 991px) {
+    .twosigma-stats-section .twosigma-stat-item h2 {
+        font-size: 42px !important;
+    }
+}
+
+.twosigma-stats-section,
+.twosigma-stats-section *,
+.twosigma-stats-section .twosigma-stat-item h2,
+.twosigma-stats-section .twosigma-stat-item h2 span,
+.twosigma-stats-section .twosigma-stat-item h2 .count,
+.twosigma-stats-section .twosigma-stat-item h2 .tilde-sym,
+.twosigma-stats-section .twosigma-stat-item h2 strong,
+.twosigma-stats-section .twosigma-stat-item h2 b,
+.tilde-sym {
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Enforce BOLD (700) for ALL numbers, letters, and symbols in stats heading */
+.twosigma-stats-section .twosigma-stat-item h2,
+.twosigma-stats-section .twosigma-stat-item h2 *,
+.twosigma-stats-section .twosigma-stat-item h2 span,
+.twosigma-stats-section .twosigma-stat-item h2 span.count,
+.twosigma-stats-section .twosigma-stat-item h2 span.tilde-sym,
+.twosigma-stats-section .twosigma-stat-item h2 strong,
+.twosigma-stats-section .twosigma-stat-item h2 b {
+  font-weight: 700 !important;
+}
+
+/* ==========================================
+   Who We Are Bold Title & Hover Text Contrast Fixes
+   ========================================== */
+.pageHeader h1,
+.pageHeader .h2,
+.pageHeader h1 span,
+.pageHeader .h2 span,
+.pageHeader h1 .fx-slide-up {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important; /* Enforce BOLD for Who We Are section title */
+  color: #001A33 !important;
+}
+
+/* Ensure hover text is always white on buttons & sidebar links */
+a.theme-btn:hover,
+button.theme-btn:hover,
+.theme-btn:hover span,
+.single-sidebar-widget a:hover,
+.single-sidebar-widget a:hover *,
+.main-sidebar a:hover,
+.main-sidebar a:hover * {
+  color: #ffffff !important;
+}
+
+/* Permanently disable loading screen / preloader site-wide */
+#preloader,
+.preloader,
+.animation-preloader,
+.loader {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Hide pagination navigation bar site-wide */
+.page-nav-wrap,
+.pagination,
+.gt-pagination {
+  display: none !important;
+}
+
+/* ==========================================
+   Decrease Breadcrumb Hero Title Font Size (4 Blog Pages Only)
+   ========================================== */
+body.blog-details-page .breadcrumb-wrapper .page-heading h1,
+body.blog-details-page .breadcrumb-sub-title h1,
+body.blog-details-page .page-heading h1 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 34px !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  text-transform: none !important;
+  max-width: 900px !important;
+  margin: 0 auto 16px auto !important;
+}
+
+body.blog-details-page .breadcrumb-wrapper {
+  padding: 50px 0 30px 0 !important;
+  min-height: auto !important;
+}
+
+body.blog-details-page .breadcrumb-wrapper .page-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+  body.blog-details-page .breadcrumb-wrapper .page-heading h1,
+  body.blog-details-page .breadcrumb-sub-title h1,
+  body.blog-details-page .page-heading h1 {
+    font-size: 26px !important;
+  }
+}
+
+/* ==========================================
+   Fix Tag Cloud Pill Overlapping & Spacing
+   ========================================== */
+.tagcloud,
+.tag-share-wrap .tagcloud {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tagcloud a,
+.tag-share-wrap .tagcloud a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 18px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #001A33 !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  line-height: 1.4 !important;
+}
+
+.tagcloud a:hover,
+.tag-share-wrap .tagcloud a:hover {
+  background: #00a5bd !important;
+  color: #ffffff !important;
+  border-color: #00a5bd !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Hide tagcloud tags section across blog details pages */
+.tagcloud,
+.tag-share-wrap .tagcloud {
+  display: none !important;
+}
+
+/* ==========================================
+   Institutional Gated Portal Gateway (Reference Design Sync)
+   ========================================== */
+.cta-newsletter-section {
+  background-image: url('../img/home-1/cta-newsletter.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 60px 0 !important;
+  position: relative !important;
+}
+
+.cta-newsletter-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 30px !important;
+}
+
+.cta-newsletter-wrapper h2 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+.cta-newsletter-wrapper h2 span {
+  color: #00A5BD !important;
+}
+
+.newsletter-form {
+  max-width: 480px !important;
+  width: 100% !important;
+}
+
+.newsletter-form p {
+  color: #ffffff !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.4 !important;
+  text-shadow: none !important;
+}
+
+.newsletter-form form {
+  background: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 4px 6px 4px 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+}
+
+.newsletter-form form input {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  color: #1e293b !important;
+  font-size: 14px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  width: 100% !important;
+  padding: 10px 0 !important;
+}
+
+.newsletter-form form input::placeholder {
+  color: #94a3b8 !important;
+}
+
+.newsletter-form form button.email-btn,
+.newsletter-form form button[type="submit"] {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: #001A33 !important;
+  color: #ffffff !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  transition: background 0.25s ease !important;
+  padding: 0 !important;
+}
+
+.newsletter-form form button.email-btn:hover,
+.newsletter-form form button[type="submit"]:hover {
+  background: #00A5BD !important;
+}
+
+/* ==========================================
+   Fix About Page Location Link Button Text White on Hover
+   ========================================== */
+.ts-location-body .ts-location-link,
+.ts-location-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  background: #00A5BD !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  margin-top: auto !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 14px rgba(0, 165, 189, 0.25) !important;
+}
+
+.ts-location-body .ts-location-link span,
+.ts-location-link span {
+  color: #ffffff !important;
+}
+
+.ts-location-body .ts-location-link:hover,
+.ts-location-link:hover,
+.ts-location-card:hover .ts-location-link {
+  background: #001A33 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 26, 51, 0.2) !important;
+}
+
+.ts-location-body .ts-location-link:hover span,
+.ts-location-link:hover span,
+.ts-location-card:hover .ts-location-link span {
+  color: #ffffff !important;
+}
+
+.ts-location-link .explore-chevron-icon,
+.ts-location-link svg,
+.ts-location-link:hover .explore-chevron-icon,
+.ts-location-link:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* ==========================================
+   Fix Portal Gateway Text White & Mail Button Alignment
+   ========================================== */
+.cta-newsletter-section .tx-title span,
+.cta-newsletter-section .sec_title span,
+.cta-newsletter-section h2 span,
+.cta-newsletter-wrapper h2 span {
+  color: #FFFFFF !important;
+}
+
+.newsletter-form form {
+  background: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 4px 6px 4px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  height: 52px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.newsletter-form form input {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  color: #1e293b !important;
+  font-size: 14px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  flex: 1 !important;
+  padding: 0 10px 0 0 !important;
+  height: 100% !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.newsletter-form form button.email-btn,
+.newsletter-form form button[type="submit"] {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  border-radius: 50% !important;
+  background: #001A33 !important;
+  color: #ffffff !important;
+  border: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  transition: background 0.25s ease !important;
+}
+
+.newsletter-form form button.email-btn i,
+.newsletter-form form button[type="submit"] i {
+  font-size: 15px !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+/* ==========================================
+   Fix Solution & Securities Dark Box Body Text & Sidebar Link Hover
+   ========================================== */
+/* 1. Force white color on body paragraphs inside dark navy sidebar cards */
+div[style*="background: #001A33"] p,
+div[style*="background:#001A33"] p,
+div[style*="background: #0b111e"] p,
+div[style*="background:#0b111e"] p {
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+}
+
+/* 2. Fix All Products / All Securities Sidebar Link Hover Text (Cyan #00A5BD on hover) */
+.widget-categories ul li a:hover,
+.widget-categories ul li:hover a,
+.gt-main-sideber .gt-single-sideber-widget ul li a:hover,
+.gt-main-sideber .gt-single-sideber-widget ul li:hover a,
+.service-details-sidebar ul li a:hover,
+.service-details-sidebar ul li:hover a,
+.gt-category-list li:hover a,
+.gt-category-list li a:hover,
+ul li a[style*="color: #001A33"]:hover,
+ul li a[style*="color:#001A33"]:hover,
+ul li:hover a[style*="color: #001A33"],
+ul li:hover a[style*="color:#001A33"] {
+  color: #00A5BD !important;
+}
+
+.widget-categories ul li a:hover i,
+.widget-categories ul li:hover a i,
+.gt-main-sideber .gt-single-sideber-widget ul li a:hover i,
+.service-details-sidebar ul li a:hover i,
+ul li a[style*="color: #001A33"]:hover i,
+ul li:hover a[style*="color: #001A33"] i {
+  color: #00A5BD !important;
+  transform: translateX(4px) !important;
+}
+
+
