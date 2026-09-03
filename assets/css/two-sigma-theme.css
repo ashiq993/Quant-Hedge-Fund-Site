@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* ==========================================
+   Glacial Indifference Local Font-Face Setup
+   ========================================== */
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../../fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('../../fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* ==========================================
    Two Sigma Brand Colors & Web Font Variables
@@ -11,29 +30,17 @@
   --color-surface-subtle-dark: #161c20;
   --color-border-default-light: #e5eaea;
   --color-border-default-dark: rgba(255, 255, 255, 0.08);
-  --color-background-brand: #0d1114; /* Deep Two Sigma dark theme core */
+  --color-background-brand: #0d1114;
   --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.05);
   --shadow-card-elevated: 0px 16px 32px rgba(0, 0, 0, 0.08);
   
-  --font-heading: 'Poppins', sans-serif !important;
-  --font-primary: 'Poppins', sans-serif !important;
-  --font-body: 'Poppins', sans-serif !important;
-
-  /* Overwrite template default theme blue with Two Sigma brand teal */
-  --theme: var(--color-teal-500) !important;
-}
-
-/* Exclude the custom mouse cursor from the color change, keeping its original blue color */
-.cursor-outer {
-  border-color: #3b82f6 !important;
-  background-color: #3b82f6 !important;
-}
-.cursor-inner {
-  background-color: #3b82f6 !important;
+  --font-heading: 'Glacial Indifference', sans-serif !important;
+  --font-primary: 'Roboto', sans-serif !important;
+  --font-body: 'Roboto', sans-serif !important;
 }
 
 /* ==========================================
-   Font Awesome & Icon Protection (Fix Broken Icon Glyphs)
+   Font Awesome & Icon Protection
    ========================================== */
 i,
 i::before,
@@ -48,715 +55,56 @@ i::after,
 }
 
 /* ==========================================
-   Global Typography Hierarchy (Poppins Web Font)
+   Headings, Header Navigation & Titles: Glacial Indifference
    ========================================== */
-body, 
-p, 
-span:not([class*="fa-"]):not([class^="fa-"]), 
-a:not([class*="fa-"]):not([class^="fa-"]), 
-li, 
-input, button, select, textarea,
-.letters-loading,
-.footer-area,
-.two-sigma-footer,
 h1, h2, h3, h4, h5, h6,
-.twosigma-hero,
-.twosigma-hero h1,
-.hero-content-centered h1,
-.twosigma-banner,
-.twosigma-banner h2,
-.feature__header,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.sec_title,
+.tx-title,
+.section-title h2,
+.section-title h6,
+.page-heading h1,
+.breadcrumb-sub-title h1,
+.logo-text,
+.main-menu ul li a,
+.mean__menu-wrapper ul li a,
+.theme-btn,
+.theme-btn *,
+.btn_text,
+.btn_text span,
+.sub-title,
 .ts-who-we-are .main-title,
 .why-choose-section .section-title h2,
 .faq-content-1 .section-title h2,
 .pageHeader h1,
 .pageHeader h2,
-.sec_title,
-.tx-title,
-.logo-text,
-.main-menu ul li a,
-.breadcrumb-sub-title h1,
-.section-title h2 {
-  font-family: 'Poppins', sans-serif !important;
+.header-main nav ul li a {
+  font-family: 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
+/* ==========================================
+   Content Sections, Body, Paragraphs & Lists: Roboto
+   ========================================== */
+body, 
+p, 
 body p, 
 .text, 
-p,
-.service-details-content p,
-.news-details-content p,
-.blog-details-content p {
-  font-weight: 300 !important;
-  font-size: 16.5px !important;
-  line-height: 1.75 !important;
-  letter-spacing: 0.2px !important;
-  text-align: justify !important;
-  text-justify: inter-word !important;
-}
-
-h1, h2, h3, h4, h5, h6, 
-.sec_title, 
-.tx-title {
-  font-weight: 700 !important;
-  letter-spacing: -1px !important;
-}
-
-/* Accent texts */
-.section-title h2 span,
-.sec-title h2 span,
-.hero-content h1 span,
-.breadcrumb-sub-title span,
-.section-title h6 span,
-.sub-title span,
-.hero-info h3 span {
-  color: var(--color-teal-500) !important;
-}
-
-/* Ensure the button text is always white and visible for all theme-btns (phone pill, hero buttons, etc.) */
-.theme-btn .btn_text span,
-.theme-btn .btn_inner .btn_text span,
-.theme-btn .btn_inner .btn_text > span,
-.theme-btn:hover .btn_text span,
-.theme-btn:hover .btn_inner .btn_text > span {
-  color: #ffffff !important;
-}
-
-/* ==========================================
-   Hero & Header Navigation Fixes
-   ========================================== */
-.hero-content h1, 
-.hero-content p, 
-.hero-content h6,
-.hero-content h3 {
-  color: var(--color-black) !important;
-}
-
-.dark-body .hero-content h1, 
-.dark-body .hero-content p, 
-.dark-body .hero-content h6,
-.dark-body .hero-content h3 {
-  color: var(--color-white) !important;
-}
-
-/* ==========================================
-   Header 1 - Consistent Institutional Navigation & 2x3 Preview
-   ========================================== */
-
-.header-1 {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  z-index: 9999 !important;
-  padding: 12px 0 !important;
-  background: #ffffff !important;
-  border-bottom: 1px solid #E5E7EB !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
-  transition: all 0.3s ease;
-}
-
-.header-1.sticky {
-  padding: 10px 0 !important;
-  background: rgba(255, 255, 255, 0.98) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
-}
-
-.header-1 .mean__menu-wrapper {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-}
-
-.header-1 .header-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-1 .logo .logo-text {
-  font-size: 22px;
-  font-weight: 700;
-  color: #001a33 !important;
-  letter-spacing: -0.5px;
-}
-
-.header-1 .mean__menu-wrapper .main-menu ul li a {
-  font-weight: 600 !important;
-  color: #001a33 !important;
-  font-size: 14.5px !important;
-  transition: color 0.2s ease;
-}
-
-.header-1 .mean__menu-wrapper .main-menu ul li a:hover,
-.header-1 .mean__menu-wrapper .main-menu ul li.active > a {
-  color: #00a5bd !important;
-}
-
-.header-1 .mean__menu-wrapper .main-menu ul li .submenu {
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 16px 36px rgba(0, 26, 51, 0.08);
-  background: #ffffff !important;
-}
-
-.header-1 .mean__menu-wrapper .main-menu ul li .submenu li a {
-  color: #001a33 !important;
-}
-
-.header-1 .mean__menu-wrapper .main-menu ul li .submenu li a:hover {
-  color: #00a5bd !important;
-}
-
-/* Offset page content cleanly below the fixed white header */
-body,
-#smooth-wrapper {
-  padding-top: 75px !important;
-}
-
-.breadcrumb-wrapper {
-  margin-top: 0 !important;
-}
-
-/* ==========================================
-   Why Organizations Choose Adople AI - Premium Enterprise Typography
-   ========================================== */
-
-.why-choose-section {
-  position: relative;
-  background: #ffffff;
-  padding: 130px 0 100px !important;
-  scroll-margin-top: 90px;
-}
-
-.why-choose-content {
-  max-width: 580px;
-}
-
-.why-choose-section .section-title {
-  margin-bottom: 28px;
-}
-
-.why-choose-section .section-title .sub-title {
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  color: #00A5BD !important;
-  text-transform: uppercase !important;
-  letter-spacing: 2px !important;
-  display: block !important;
-  margin-bottom: 14px !important;
-}
-
-.why-choose-section .section-title h2 {
-  font-size: 44px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  line-height: 1.18 !important;
-  letter-spacing: -1.2px !important;
-  margin-bottom: 0 !important;
-  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
-}
-
-.why-choose-content p {
-  font-size: 18px !important;
-  line-height: 1.75 !important;
-  color: #0F172A !important;
-  font-weight: 400 !important;
-  margin-bottom: 24px !important;
-  letter-spacing: -0.15px !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.why-choose-content p:last-child {
-  margin-bottom: 0 !important;
-}
-
-.why-choose-image {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 24px 48px -12px rgba(0, 26, 51, 0.12), 0 4px 12px rgba(0, 26, 51, 0.04);
-  border: 1px solid rgba(0, 26, 51, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.why-choose-image:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 32px 64px -16px rgba(0, 26, 51, 0.16);
-}
-
-.why-choose-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Careers & Culture Section Typography */
-.faq-content-1 .section-title .sub-title {
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  color: #00A5BD !important;
-  text-transform: uppercase !important;
-  letter-spacing: 2px !important;
-}
-
-.faq-content-1 .section-title h2 {
-  font-size: 42px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -1px !important;
-  margin-top: 10px !important;
-  margin-bottom: 28px !important;
-}
-
-.faq-content-1 .section-title h2 span {
-  color: #00A5BD !important;
-}
-
-.faq-content-1 .accordion-box .block .acc-btn {
-  font-size: 22px !important;
-  font-weight: 600 !important;
-  color: #001A33 !important;
-  letter-spacing: -0.4px !important;
-}
-
-.faq-content-1 .accordion-box .block .acc-btn.active {
-  color: #00A5BD !important;
-}
-
-.faq-content-1 .accordion-box .block .acc-btn .number {
-  font-size: 24px !important;
-  font-weight: 700 !important;
-  color: #00A5BD !important;
-  letter-spacing: -1px !important;
-}
-
-.faq-content-1 .accordion-box .block .acc-content .content .text {
-  font-size: 17px !important;
-  line-height: 1.7 !important;
-  color: #1E293B !important;
-  font-weight: 400 !important;
-  max-width: 540px !important;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ==========================================
-   Two Sigma pageHeader Style
-   ========================================== */
-
-.pageHeader {
-  position: relative;
-  padding: 100px 0 80px;
-  background: #ffffff;
-}
-
-.pageHeader--light {
-  background: #ffffff;
-}
-
-.pageHeader .content {
-  max-width: 920px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.pageHeader .eyebrow-tag {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 2.5px !important;
-  color: #00A5BD !important;
-  margin-bottom: 20px !important;
-}
-
-.pageHeader .eyebrow-tag img {
-  width: 16px;
-  height: 16px;
-}
-
-.pageHeader h1.h2,
-.pageHeader h2.h2 {
-  font-size: 38px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -1px !important;
-  margin-bottom: 24px !important;
-  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
-}
-
-@media (max-width: 767px) {
-  .pageHeader h1.h2,
-  .pageHeader h2.h2 {
-    font-size: 28px !important;
-  }
-}
-
-.pageHeader p.h4 {
-  font-size: 19px !important;
-  line-height: 2.0 !important;
-  color: #0F172A !important;
-  font-weight: 450 !important;
-  letter-spacing: -0.15px !important;
-  opacity: 1 !important;
-  margin-top: 12px !important;
-  margin-bottom: 0 !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-}
-
-.pageHeader .fx-slide-up {
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
-}
-
-/* Who We Are Section */
-.ts-who-we-are {
-  padding: 110px 0 90px;
-  background: #ffffff;
-}
-
-.ts-who-we-are .eyebrow-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #00A5BD;
-  margin-bottom: 14px;
-}
-
-.ts-who-we-are .eyebrow-tag img {
-  width: 14px;
-  height: 14px;
-}
-
-.ts-who-we-are .main-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #001A33;
-  line-height: 1.22;
-  letter-spacing: -1px;
-  margin-bottom: 24px;
-  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
-}
-
-@media (max-width: 767px) {
-  .ts-who-we-are .main-title {
-    font-size: 30px;
-  }
-}
-
-.ts-who-we-are .content-block p {
-  font-size: 17.5px;
-  line-height: 1.78;
-  color: #1E293B;
-  font-weight: 400;
-  margin-bottom: 22px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.ts-who-we-are .content-block p:last-child {
-  margin-bottom: 0;
-}
-
-.ts-who-image-wrap {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 24px 50px -12px rgba(0, 26, 51, 0.12), 0 4px 16px rgba(0, 26, 51, 0.04);
-  border: 1px solid rgba(0, 26, 51, 0.06);
-}
-
-.ts-who-image-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.ts-who-image-wrap:hover img {
-  transform: scale(1.02);
-}
-
-.ts-who-badge {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  background: rgba(0, 26, 51, 0.88);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  padding: 14px 20px;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.ts-who-badge .badge-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #00A5BD;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.ts-who-badge .badge-text h6 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0;
-}
-
-.ts-who-badge .badge-text span {
-  font-size: 12px;
-  color: #94A3B8;
-}
-
-/* ==========================================
-   Two Sigma Feature / Our Approach Section
-   ========================================== */
-
-.feature-section {
-  padding: 110px 0;
-  background: #F8FAFC;
-  border-top: 1px solid #E2E8F0;
-  border-bottom: 1px solid #E2E8F0;
-  position: relative;
-}
-
-.feature__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-@media (max-width: 991px) {
-  .feature__content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
-.feature__media {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 24px 48px -12px rgba(0, 26, 51, 0.12);
-  border: 1px solid rgba(0, 26, 51, 0.08);
-}
-
-.feature__media.has-gradient::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 26, 51, 0.1) 0%, rgba(0, 26, 51, 0.4) 100%);
-  pointer-events: none;
-}
-
-.feature__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.feature__header {
-  font-size: 38px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -1px !important;
-  margin-bottom: 28px !important;
-  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
-}
-
-.feature__copy .approach-item {
-  margin-bottom: 28px;
-}
-
-.feature__copy .approach-item:last-child {
-  margin-bottom: 0;
-}
-
-.feature__copy .approach-item h3 {
-  font-size: 22px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  margin-bottom: 10px !important;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.feature__copy .approach-item h3::before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 20px;
-  background: #00A5BD;
-  border-radius: 3px;
-}
-
-.feature__copy .approach-item p {
-  font-size: 17px !important;
-  line-height: 1.75 !important;
-  color: #334155 !important;
-  font-weight: 400 !important;
-  margin-bottom: 0 !important;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ==========================================
-   Global Presence Section (Clean Enterprise Styling)
-   ========================================== */
-
-.ts-global-section {
-  padding: 110px 0 90px;
-  background: #ffffff;
-  position: relative;
-}
-
-.ts-global-section .section-header {
-  max-width: 920px;
-  margin-bottom: 50px;
-}
-
-.ts-global-section .eyebrow-tag {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 2px !important;
-  color: #00A5BD !important;
-  margin-bottom: 16px !important;
-}
-
-.ts-global-section .eyebrow-tag img {
-  width: 14px;
-  height: 14px;
-}
-
-.ts-global-section .section-title {
-  font-size: 38px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -1px !important;
-  margin-bottom: 20px !important;
-  font-family: var(--font-primary, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
-}
-
-.ts-global-section .section-lead {
-  font-size: 18.5px !important;
-  line-height: 1.75 !important;
-  color: #334155 !important;
-  font-weight: 400 !important;
-  margin-bottom: 0 !important;
-  -webkit-font-smoothing: antialiased;
-}
-
-.ts-locations-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 50px 0;
-}
-
-@media (max-width: 767px) {
-  .ts-locations-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-}
-
-.ts-location-card {
-  background: #ffffff;
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 26, 51, 0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.ts-location-card:hover {
-  transform: translateY(-4px);
-  border-color: #00A5BD;
-  box-shadow: 0 20px 40px -12px rgba(0, 26, 51, 0.1);
-}
-
-.ts-location-img-wrap {
-  width: 100%;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  background: #001A33;
-}
-
-.ts-location-img-wrap img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.ts-location-card:hover .ts-location-img-wrap img {
-  transform: scale(1.04);
-}
-
-.ts-location-body {
-  padding: 32px 28px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.ts-location-body h3 {
-  font-size: 24px !important;
-  font-weight: 700 !important;
-  color: #001A33 !important;
-  margin-bottom: 6px !important;
-  letter-spacing: -0.4px !important;
-}
-
-.ts-location-body .ts-location-address {
-  font-size: 13.5px;
-  font-weight: 600;
-  color: #00A5BD;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 14px;
-}
-
-.ts-location-body p {
-  font-size: 15.5px;
-  line-height: 1.65;
-  color: #475569;
-  margin-bottom: 24px;
+.about-content p, 
+.service-details-content p, 
+.news-details-content p, 
+.blog-details-content p, 
+.content-grid-card p, 
+.content-grid-card__description, 
+li, 
+ul li, 
+input, 
+textarea, 
+select {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   font-weight: 400;
 }
+
+
 
 .ts-location-body .ts-location-link {
   display: inline-flex !important;
@@ -1918,7 +1266,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 /* Custom Header & Footer logo text style */
 .logo-text {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -1984,7 +1332,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .featureGrid__title {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-black) !important;
@@ -2031,7 +1379,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .featureGrid__featureTitle {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 21px !important;
   font-weight: 700 !important;
   color: var(--color-black) !important;
@@ -2058,7 +1406,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .accordion__header h2 {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-white) !important;
@@ -2086,7 +1434,7 @@ button.testimonialsPanel__gridCell.is-selected {
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 24px 0;
   color: var(--color-white);
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   cursor: pointer;
@@ -2161,7 +1509,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .vtimeline-header h2 {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-black) !important;
@@ -2212,7 +1560,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .vtimeline-tab__text h3 {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 18px !important;
   font-weight: 800 !important;
   color: var(--color-teal-500) !important;
@@ -2252,7 +1600,7 @@ button.testimonialsPanel__gridCell.is-selected {
 
 /* Custom Header Logo Text and Spacing Overrides */
 .logo-text {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -2302,7 +1650,7 @@ button.testimonialsPanel__gridCell.is-selected {
 
 /* Color Palate Selector & Dark/Light Mode Buttons (Reactive to dark-body class) */
 .color-palate h6 {
-  font-family: 'Poppins', 'Poppins', sans-serif !important;
+  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   margin-bottom: 12px !important;
@@ -3405,7 +2753,6 @@ html {
 /* ==========================================
    Institutional Gated Portal Gateway / CTA Newsletter High-Contrast Typography
    ========================================== */
-
 .cta-newsletter-section .cta-newsletter-wrapper p,
 .cta-newsletter-wrapper .newsletter-form p,
 .cta-newsletter-section .newsletter-form p,
@@ -3441,3 +2788,517 @@ html {
   font-weight: 400 !important;
 }
 
+/* ==========================================
+   Header Navigation Bar & Sticky Scroll Behavior
+   ========================================== */
+header,
+header.header-1,
+.header-1,
+#header-sticky {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sticky Header State when scrolling down */
+header.sticky,
+.header-1.sticky,
+#header-sticky.sticky,
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  animation: stickySlideDown 0.3s ease-in-out;
+}
+
+@keyframes stickySlideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-main,
+.mega-menu-wrapper,
+.mean__menu-wrapper {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.header-1 .logo-text,
+.logo-text {
+  color: #001A33 !important;
+  font-weight: 700 !important;
+}
+
+.header-1 .main-menu nav ul li a,
+.header-1 .mean__menu-wrapper .main-menu ul li a,
+.main-menu ul li a,
+.mean__menu-wrapper ul li a {
+  color: #001A33 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  background: transparent !important;
+}
+
+.header-1 .main-menu nav ul li a:hover,
+.main-menu ul li a:hover,
+.mean__menu-wrapper ul li a:hover {
+  color: #00a5bd !important;
+}
+
+/* ==========================================
+   Institutional Careers & Culture Styles
+   ========================================== */
+.career-stage-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-top: 3px solid #00a5bd !important;
+  border-radius: 10px !important;
+  padding: 28px 24px !important;
+  height: 100% !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.career-stage-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 28px rgba(0, 26, 51, 0.08) !important;
+  border-top-color: #001A33 !important;
+}
+
+.career-stage-card h4 {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 12px !important;
+}
+
+.career-stage-card p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 16px !important;
+}
+
+.career-stage-card .stage-link {
+  color: #00a5bd !important;
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: gap 0.2s ease !important;
+}
+
+.career-stage-card:hover .stage-link {
+  gap: 10px !important;
+  color: #001A33 !important;
+}
+
+/* Benefit Cards */
+.benefit-card {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  padding: 24px 20px !important;
+  height: 100% !important;
+  transition: all 0.3s ease !important;
+}
+
+.benefit-card:hover {
+  border-color: #00a5bd !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 24px rgba(0, 165, 189, 0.08) !important;
+}
+
+.benefit-card .benefit-icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 10px !important;
+  background: rgba(0, 165, 189, 0.08) !important;
+  color: #00a5bd !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 20px !important;
+  margin-bottom: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.benefit-card:hover .benefit-icon {
+  background: #00a5bd !important;
+  color: #ffffff !important;
+}
+
+.benefit-card h5 {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 8px !important;
+}
+
+.service-box-items h5,
+.service-box-items h4,
+.service-box-items h3,
+.service-box-items .title {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  color: #001A33 !important;
+  margin-top: 14px !important;
+  margin-bottom: 10px !important;
+}
+
+.benefit-card p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 13.5px !important;
+  color: #4b5563 !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+
+/* ==========================================
+   Tilde Symbol Baseline Alignment Fix
+   ========================================== */
+.tilde-sym {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  display: inline-block !important;
+  vertical-align: 2px !important;
+  font-weight: 400 !important;
+  margin-right: 2px !important;
+}
+
+/* ==========================================
+   Remove All Click Focus Outlines Site-Wide
+   ========================================== */
+*:focus,
+*:focus-visible,
+*:active,
+a:focus,
+a:focus-visible,
+a:active,
+button:focus,
+button:focus-visible,
+button:active,
+.theme-btn:focus,
+.theme-btn:focus-visible,
+.theme-btn:active,
+input:focus,
+input:focus-visible,
+select:focus,
+select:focus-visible,
+textarea:focus,
+textarea:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* ==========================================
+   Send Message Pill Button UI Theme
+   ========================================== */
+.theme-btn,
+a.theme-btn,
+button.theme-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  background-color: #00a5bd !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  padding: 6px 28px 6px 8px !important;
+  text-decoration: none !important;
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.theme-btn:hover {
+  background-color: #008fa4 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 165, 189, 0.25) !important;
+}
+
+.theme-btn .btn_inner {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.theme-btn .btn_icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background-color: #001A33 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  transition: transform 0.3s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.theme-btn:hover .btn_icon {
+  background-color: #0d1114 !important;
+  transform: scale(1.05) !important;
+}
+
+.theme-btn .btn_text span {
+  color: #ffffff !important;
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+
+/* ==========================================
+   About Page Layout Styling (feat/changes)
+   ========================================== */
+
+/* Eyebrow Badge */
+.eyebrow-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #00a5bd !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 16px !important;
+}
+
+/* Page Header Section (Who We Are) */
+.pageHeader {
+  padding: 80px 0 60px 0 !important;
+  background-color: #ffffff !important;
+}
+
+.pageHeader .content {
+  max-width: 960px !important;
+}
+
+.pageHeader h1.h2,
+.pageHeader h1 {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  line-height: 1.25 !important;
+  margin-bottom: 24px !important;
+}
+
+.pageHeader p.h4,
+.pageHeader p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16.5px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+}
+
+/* Our Approaches Feature Section */
+.feature-section {
+  padding: 80px 0 !important;
+  background-color: #f8fafc !important;
+}
+
+.feature__content {
+  display: flex !important;
+  align-items: center !important;
+  gap: 48px !important;
+}
+
+@media (max-width: 991px) {
+  .feature__content {
+    flex-direction: column !important;
+  }
+}
+
+.feature__media {
+  flex: 1 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 28px rgba(0, 26, 51, 0.08) !important;
+}
+
+.feature__media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+}
+
+.feature__body {
+  flex: 1 !important;
+}
+
+.feature__header {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 20px !important;
+}
+
+.feature__copy p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 15.5px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+  margin-bottom: 16px !important;
+}
+
+/* Global Reach Section */
+.ts-global-section {
+  padding: 80px 0 !important;
+  background-color: #ffffff !important;
+}
+
+.ts-global-section .section-header {
+  margin-bottom: 48px !important;
+  max-width: 860px !important;
+}
+
+.ts-global-section .section-title {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 16px !important;
+}
+
+.ts-global-section .section-lead {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px !important;
+  color: #4b5563 !important;
+  line-height: 1.8 !important;
+  text-align: justify !important;
+}
+
+/* Location Cards Grid */
+.ts-locations-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 32px !important;
+}
+
+@media (max-width: 768px) {
+  .ts-locations-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.ts-location-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ts-location-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 28px rgba(0, 26, 51, 0.08) !important;
+  border-color: #00a5bd !important;
+}
+
+.ts-location-img-wrap {
+  width: 100% !important;
+  height: 240px !important;
+  overflow: hidden !important;
+}
+
+.ts-location-img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.4s ease !important;
+}
+
+.ts-location-card:hover .ts-location-img-wrap img {
+  transform: scale(1.05) !important;
+}
+
+.ts-location-body {
+  padding: 28px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+}
+
+.ts-location-body h3 {
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  margin-bottom: 6px !important;
+}
+
+.ts-location-address {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 13.5px !important;
+  color: #00a5bd !important;
+  font-weight: 500 !important;
+  margin-bottom: 14px !important;
+  display: block !important;
+}
+
+.ts-location-body p {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px !important;
+  color: #4b5563 !important;
+  line-height: 1.65 !important;
+  margin-bottom: 20px !important;
+  text-align: justify !important;
+  flex-grow: 1 !important;
+}
+
+.ts-location-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #00a5bd !important;
+  font-family: 'Glacial Indifference', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: gap 0.2s ease !important;
+}
+
+.ts-location-card:hover .ts-location-link {
+  gap: 12px !important;
+  color: #001A33 !important;
+}

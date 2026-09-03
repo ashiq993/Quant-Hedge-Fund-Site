@@ -700,3 +700,75 @@ button.theme-btn:hover {
     padding-right: 20px !important;
   }
 }
+
+/* ==========================================
+   Header Navigation Bar & Sticky Scroll Behavior
+   ========================================== */
+header,
+header.header-1,
+.header-1,
+#header-sticky {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Sticky Header State when scrolling down */
+header.sticky,
+.header-1.sticky,
+#header-sticky.sticky,
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 99999 !important;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  animation: stickySlideDown 0.3s ease-in-out;
+}
+
+.header-main,
+.mega-menu-wrapper,
+.mean__menu-wrapper {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.header-1 .logo-text,
+.logo-text {
+  color: #001A33 !important;
+  font-weight: 700 !important;
+}
+
+.header-1 .main-menu nav ul li a,
+.header-1 .mean__menu-wrapper .main-menu ul li a,
+.main-menu ul li a,
+.mean__menu-wrapper ul li a {
+  color: #001A33 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  background: transparent !important;
+}
+
+.header-1 .main-menu nav ul li a:hover,
+.main-menu ul li a:hover,
+.mean__menu-wrapper ul li a:hover {
+  color: #00a5bd !important;
+}
+
+.header-1 .mean__menu-wrapper .main-menu ul li a i,
+.main-menu ul li a i {
+  color: #001A33 !important;
+}
