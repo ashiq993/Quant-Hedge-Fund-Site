@@ -848,6 +848,89 @@ body,
   }
 }
 
+/* Citadel 3-Up Layout & Section Intro */
+.layout-content_grid__three-up {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .layout-content_grid__three-up {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-content_grid__three-up {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.layout-content_grid__three-up .content-grid-card,
+.layout-content_grid__three-up .content-grid-card__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.layout-content_grid__three-up .content-grid-card:hover,
+.layout-content_grid__three-up .content-grid-card__inner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 26, 51, 0.1);
+  border-color: #00A5BD;
+  background: #ffffff;
+}
+
+.layout-content_grid__three-up .content-grid-card__content {
+  padding: 32px 28px 24px !important;
+  flex-grow: 1;
+}
+
+.layout-content_grid__three-up .content-grid-card__content__heading h3 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #001A33 !important;
+  line-height: 1.3 !important;
+  letter-spacing: -0.4px !important;
+  margin-bottom: 14px !important;
+}
+
+.layout-content_grid__three-up .content-grid-card__content p {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #475569 !important;
+  font-weight: 400 !important;
+  margin-bottom: 0 !important;
+}
+
+.layout-content_grid__three-up .content-grid-card__image-wrapper {
+  width: 100%;
+  height: 220px !important;
+  overflow: hidden;
+  background: #001A33;
+}
+
+.layout-content_grid__three-up .content-grid-card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.layout-content_grid__three-up .content-grid-card:hover .content-grid-card__image-wrapper img,
+.layout-content_grid__three-up .content-grid-card__inner:hover .content-grid-card__image-wrapper img {
+  transform: scale(1.05);
+}
+
 .content-grid-card__inner {
   display: flex;
   flex-direction: column;
@@ -2983,7 +3066,9 @@ html {
 
 .footer-bottom .footer-list li a:hover {
   color: #00A5BD !important;
-=======
+}
+
+/* ==========================================
    Two Sigma Insights Page Layout (Exact Skeleton)
    ========================================== */
 .ts-insights-hero {
@@ -3315,5 +3400,44 @@ html {
 .ts-btn-survey-submit:hover {
   background: #ffffff;
   color: #1d4ed8 !important;
->>>>>>> origin/feat/ashiq
 }
+
+/* ==========================================
+   Institutional Gated Portal Gateway / CTA Newsletter High-Contrast Typography
+   ========================================== */
+
+.cta-newsletter-section .cta-newsletter-wrapper p,
+.cta-newsletter-wrapper .newsletter-form p,
+.cta-newsletter-section .newsletter-form p,
+.newsletter-form p {
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+  font-size: 19px !important;
+  line-height: 1.6 !important;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45) !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.cta-newsletter-section .tx-title,
+.cta-newsletter-section .sec_title,
+.cta-newsletter-section h2 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+.cta-newsletter-section .tx-title span,
+.cta-newsletter-section .sec_title span,
+.cta-newsletter-section h2 span {
+  color: #00A5BD !important;
+}
+
+.cta-newsletter-wrapper .newsletter-form form input {
+  color: #0F172A !important;
+  font-weight: 500 !important;
+}
+
+.cta-newsletter-wrapper .newsletter-form form input::placeholder {
+  color: #64748B !important;
+  font-weight: 400 !important;
+}
+
