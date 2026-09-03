@@ -3637,3 +3637,160 @@ body.blog-details-page .breadcrumb-wrapper .page-heading {
 .newsletter-form form button[type="submit"]:hover {
   background: #00A5BD !important;
 }
+
+/* ==========================================
+   Fix About Page Location Link Button Text White on Hover
+   ========================================== */
+.ts-location-body .ts-location-link,
+.ts-location-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  background: #00A5BD !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  margin-top: auto !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 14px rgba(0, 165, 189, 0.25) !important;
+}
+
+.ts-location-body .ts-location-link span,
+.ts-location-link span {
+  color: #ffffff !important;
+}
+
+.ts-location-body .ts-location-link:hover,
+.ts-location-link:hover,
+.ts-location-card:hover .ts-location-link {
+  background: #001A33 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 26, 51, 0.2) !important;
+}
+
+.ts-location-body .ts-location-link:hover span,
+.ts-location-link:hover span,
+.ts-location-card:hover .ts-location-link span {
+  color: #ffffff !important;
+}
+
+.ts-location-link .explore-chevron-icon,
+.ts-location-link svg,
+.ts-location-link:hover .explore-chevron-icon,
+.ts-location-link:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* ==========================================
+   Fix Portal Gateway Text White & Mail Button Alignment
+   ========================================== */
+.cta-newsletter-section .tx-title span,
+.cta-newsletter-section .sec_title span,
+.cta-newsletter-section h2 span,
+.cta-newsletter-wrapper h2 span {
+  color: #FFFFFF !important;
+}
+
+.newsletter-form form {
+  background: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 4px 6px 4px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  height: 52px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.newsletter-form form input {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  color: #1e293b !important;
+  font-size: 14px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  flex: 1 !important;
+  padding: 0 10px 0 0 !important;
+  height: 100% !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.newsletter-form form button.email-btn,
+.newsletter-form form button[type="submit"] {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  border-radius: 50% !important;
+  background: #001A33 !important;
+  color: #ffffff !important;
+  border: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  transition: background 0.25s ease !important;
+}
+
+.newsletter-form form button.email-btn i,
+.newsletter-form form button[type="submit"] i {
+  font-size: 15px !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+/* ==========================================
+   Fix Solution & Securities Dark Box Body Text & Sidebar Link Hover
+   ========================================== */
+/* 1. Force white color on body paragraphs inside dark navy sidebar cards */
+div[style*="background: #001A33"] p,
+div[style*="background:#001A33"] p,
+div[style*="background: #0b111e"] p,
+div[style*="background:#0b111e"] p {
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+}
+
+/* 2. Fix All Products / All Securities Sidebar Link Hover Text (Cyan #00A5BD on hover) */
+.widget-categories ul li a:hover,
+.widget-categories ul li:hover a,
+.gt-main-sideber .gt-single-sideber-widget ul li a:hover,
+.gt-main-sideber .gt-single-sideber-widget ul li:hover a,
+.service-details-sidebar ul li a:hover,
+.service-details-sidebar ul li:hover a,
+.gt-category-list li:hover a,
+.gt-category-list li a:hover,
+ul li a[style*="color: #001A33"]:hover,
+ul li a[style*="color:#001A33"]:hover,
+ul li:hover a[style*="color: #001A33"],
+ul li:hover a[style*="color:#001A33"] {
+  color: #00A5BD !important;
+}
+
+.widget-categories ul li a:hover i,
+.widget-categories ul li:hover a i,
+.gt-main-sideber .gt-single-sideber-widget ul li a:hover i,
+.service-details-sidebar ul li a:hover i,
+ul li a[style*="color: #001A33"]:hover i,
+ul li:hover a[style*="color: #001A33"] i {
+  color: #00A5BD !important;
+  transform: translateX(4px) !important;
+}
+
+
