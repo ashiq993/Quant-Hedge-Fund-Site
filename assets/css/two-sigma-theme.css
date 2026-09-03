@@ -3421,3 +3421,219 @@ strong, b, th {
 .twosigma-stats-section .twosigma-stat-item h2 b {
   font-weight: 700 !important;
 }
+
+/* ==========================================
+   Who We Are Bold Title & Hover Text Contrast Fixes
+   ========================================== */
+.pageHeader h1,
+.pageHeader .h2,
+.pageHeader h1 span,
+.pageHeader .h2 span,
+.pageHeader h1 .fx-slide-up {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 700 !important; /* Enforce BOLD for Who We Are section title */
+  color: #001A33 !important;
+}
+
+/* Ensure hover text is always white on buttons & sidebar links */
+a.theme-btn:hover,
+button.theme-btn:hover,
+.theme-btn:hover span,
+.single-sidebar-widget a:hover,
+.single-sidebar-widget a:hover *,
+.main-sidebar a:hover,
+.main-sidebar a:hover * {
+  color: #ffffff !important;
+}
+
+/* Permanently disable loading screen / preloader site-wide */
+#preloader,
+.preloader,
+.animation-preloader,
+.loader {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Hide pagination navigation bar site-wide */
+.page-nav-wrap,
+.pagination,
+.gt-pagination {
+  display: none !important;
+}
+
+/* ==========================================
+   Decrease Breadcrumb Hero Title Font Size (4 Blog Pages Only)
+   ========================================== */
+body.blog-details-page .breadcrumb-wrapper .page-heading h1,
+body.blog-details-page .breadcrumb-sub-title h1,
+body.blog-details-page .page-heading h1 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 34px !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.5px !important;
+  text-transform: none !important;
+  max-width: 900px !important;
+  margin: 0 auto 16px auto !important;
+}
+
+body.blog-details-page .breadcrumb-wrapper {
+  padding: 50px 0 30px 0 !important;
+  min-height: auto !important;
+}
+
+body.blog-details-page .breadcrumb-wrapper .page-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+  body.blog-details-page .breadcrumb-wrapper .page-heading h1,
+  body.blog-details-page .breadcrumb-sub-title h1,
+  body.blog-details-page .page-heading h1 {
+    font-size: 26px !important;
+  }
+}
+
+/* ==========================================
+   Fix Tag Cloud Pill Overlapping & Spacing
+   ========================================== */
+.tagcloud,
+.tag-share-wrap .tagcloud {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tagcloud a,
+.tag-share-wrap .tagcloud a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 18px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #001A33 !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  margin: 0 !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  line-height: 1.4 !important;
+}
+
+.tagcloud a:hover,
+.tag-share-wrap .tagcloud a:hover {
+  background: #00a5bd !important;
+  color: #ffffff !important;
+  border-color: #00a5bd !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Hide tagcloud tags section across blog details pages */
+.tagcloud,
+.tag-share-wrap .tagcloud {
+  display: none !important;
+}
+
+/* ==========================================
+   Institutional Gated Portal Gateway (Reference Design Sync)
+   ========================================== */
+.cta-newsletter-section {
+  background-image: url('../img/home-1/cta-newsletter.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  padding: 60px 0 !important;
+  position: relative !important;
+}
+
+.cta-newsletter-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 30px !important;
+}
+
+.cta-newsletter-wrapper h2 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+.cta-newsletter-wrapper h2 span {
+  color: #00A5BD !important;
+}
+
+.newsletter-form {
+  max-width: 480px !important;
+  width: 100% !important;
+}
+
+.newsletter-form p {
+  color: #ffffff !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+  line-height: 1.4 !important;
+  text-shadow: none !important;
+}
+
+.newsletter-form form {
+  background: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 4px 6px 4px 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+}
+
+.newsletter-form form input {
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  color: #1e293b !important;
+  font-size: 14px !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  width: 100% !important;
+  padding: 10px 0 !important;
+}
+
+.newsletter-form form input::placeholder {
+  color: #94a3b8 !important;
+}
+
+.newsletter-form form button.email-btn,
+.newsletter-form form button[type="submit"] {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: #001A33 !important;
+  color: #ffffff !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  transition: background 0.25s ease !important;
+  padding: 0 !important;
+}
+
+.newsletter-form form button.email-btn:hover,
+.newsletter-form form button[type="submit"]:hover {
+  background: #00A5BD !important;
+}
