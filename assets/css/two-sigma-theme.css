@@ -1,18 +1,42 @@
 /* ==========================================
-   Glacial Indifference Local Font-Face Setup
+   Avenir Local Font-Face Setup
    ========================================== */
 @font-face {
-  font-family: 'Glacial Indifference';
-  src: url('../../fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Light/Avenir Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Regular/Avenir Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Glacial Indifference';
-  src: url('../../fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('opentype');
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Medium/Avenir Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Heavy/Avenir Heavy.ttf') format('truetype');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir Black/Avenir Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -34,9 +58,9 @@
   --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.05);
   --shadow-card-elevated: 0px 16px 32px rgba(0, 0, 0, 0.08);
   
-  --font-heading: 'Glacial Indifference', sans-serif !important;
-  --font-primary: 'Roboto', sans-serif !important;
-  --font-body: 'Roboto', sans-serif !important;
+  --font-heading: 'Avenir', 'Avenir Next', sans-serif !important;
+  --font-primary: 'Avenir', 'Avenir Next', sans-serif !important;
+  --font-body: 'Avenir', 'Avenir Next', sans-serif !important;
 }
 
 /* ==========================================
@@ -79,7 +103,7 @@ h1, h2, h3, h4, h5, h6,
 .pageHeader h1,
 .pageHeader h2,
 .header-main nav ul li a {
-  font-family: 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
 /* ==========================================
@@ -602,6 +626,16 @@ body,
   transform: translateY(-5px);
   box-shadow: var(--shadow-card-elevated) !important;
   border-color: var(--color-teal-500) !important;
+}
+
+/* Feature Box Items Hover State: Force ALL text & body content to white */
+.feature-box-items:hover,
+.feature-box-items:hover h6,
+.feature-box-items:hover h3,
+.feature-box-items:hover h3 a,
+.feature-box-items:hover p,
+.feature-box-items:hover span {
+  color: #ffffff !important;
 }
 
 /* ==========================================
@@ -1266,7 +1300,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 /* Custom Header & Footer logo text style */
 .logo-text {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -1332,7 +1366,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .featureGrid__title {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-black) !important;
@@ -1379,7 +1413,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .featureGrid__featureTitle {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 21px !important;
   font-weight: 700 !important;
   color: var(--color-black) !important;
@@ -1406,7 +1440,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .accordion__header h2 {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-white) !important;
@@ -1434,7 +1468,7 @@ button.testimonialsPanel__gridCell.is-selected {
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 24px 0;
   color: var(--color-white);
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   cursor: pointer;
@@ -1509,7 +1543,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .vtimeline-header h2 {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-black) !important;
@@ -1560,7 +1594,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .vtimeline-tab__text h3 {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 18px !important;
   font-weight: 800 !important;
   color: var(--color-teal-500) !important;
@@ -1600,7 +1634,7 @@ button.testimonialsPanel__gridCell.is-selected {
 
 /* Custom Header Logo Text and Spacing Overrides */
 .logo-text {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -1650,7 +1684,7 @@ button.testimonialsPanel__gridCell.is-selected {
 
 /* Color Palate Selector & Dark/Light Mode Buttons (Reactive to dark-body class) */
 .color-palate h6 {
-  font-family: 'Glacial Indifference', 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   margin-bottom: 12px !important;
@@ -2884,7 +2918,7 @@ header.sticky,
 }
 
 .career-stage-card h4 {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 19px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -2892,7 +2926,8 @@ header.sticky,
 }
 
 .career-stage-card p {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 14px !important;
   color: #4b5563 !important;
   line-height: 1.6 !important;
@@ -2901,7 +2936,7 @@ header.sticky,
 
 .career-stage-card .stage-link {
   color: #00a5bd !important;
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   text-decoration: none !important;
@@ -2952,7 +2987,7 @@ header.sticky,
 }
 
 .benefit-card h5 {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -2963,7 +2998,7 @@ header.sticky,
 .service-box-items h4,
 .service-box-items h3,
 .service-box-items .title {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-weight: 700 !important;
   font-size: 17.5px !important;
   white-space: nowrap !important;
@@ -2973,28 +3008,13 @@ header.sticky,
 }
 
 .benefit-card p {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 13.5px !important;
   color: #4b5563 !important;
   line-height: 1.55 !important;
   margin: 0 !important;
 }
-
-
-/* ==========================================
-   Tilde Symbol Baseline Alignment Fix
-   ========================================== */
-.tilde-sym {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  display: inline-block !important;
-  vertical-align: 2px !important;
-  font-weight: 400 !important;
-  margin-right: 2px !important;
-}
-
-/* ==========================================
-   Remove All Click Focus Outlines Site-Wide
-   ========================================== */
 *:focus,
 *:focus-visible,
 *:active,
@@ -3031,7 +3051,7 @@ button.theme-btn {
   border-radius: 9999px !important;
   padding: 6px 28px 6px 8px !important;
   text-decoration: none !important;
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -3073,7 +3093,7 @@ button.theme-btn {
 
 .theme-btn .btn_text span {
   color: #ffffff !important;
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px !important;
 }
@@ -3088,7 +3108,7 @@ button.theme-btn {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   color: #00a5bd !important;
@@ -3109,7 +3129,7 @@ button.theme-btn {
 
 .pageHeader h1.h2,
 .pageHeader h1 {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 38px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3119,7 +3139,8 @@ button.theme-btn {
 
 .pageHeader p.h4,
 .pageHeader p {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16.5px !important;
   color: #4b5563 !important;
   line-height: 1.8 !important;
@@ -3164,7 +3185,7 @@ button.theme-btn {
 }
 
 .feature__header {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 32px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3172,7 +3193,8 @@ button.theme-btn {
 }
 
 .feature__copy p {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 15.5px !important;
   color: #4b5563 !important;
   line-height: 1.8 !important;
@@ -3192,7 +3214,7 @@ button.theme-btn {
 }
 
 .ts-global-section .section-title {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 32px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3200,7 +3222,8 @@ button.theme-btn {
 }
 
 .ts-global-section .section-lead {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 16px !important;
   color: #4b5563 !important;
   line-height: 1.8 !important;
@@ -3261,7 +3284,7 @@ button.theme-btn {
 }
 
 .ts-location-body h3 {
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3269,7 +3292,8 @@ button.theme-btn {
 }
 
 .ts-location-address {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 13.5px !important;
   color: #00a5bd !important;
   font-weight: 500 !important;
@@ -3278,7 +3302,8 @@ button.theme-btn {
 }
 
 .ts-location-body p {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-weight: 300 !important;
   font-size: 14px !important;
   color: #4b5563 !important;
   line-height: 1.65 !important;
@@ -3292,7 +3317,7 @@ button.theme-btn {
   align-items: center !important;
   gap: 8px !important;
   color: #00a5bd !important;
-  font-family: 'Glacial Indifference', sans-serif !important;
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   text-decoration: none !important;
@@ -3302,4 +3327,97 @@ button.theme-btn {
 .ts-location-card:hover .ts-location-link {
   gap: 12px !important;
   color: #001A33 !important;
+}
+
+/* ==========================================
+   Global Body Text: Avenir Light (Weight 300)
+   ========================================== */
+body,
+p,
+span,
+li,
+td,
+.intro-text,
+.section-lead,
+.feature__copy p,
+.twosigma-hero p {
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 300 !important;
+}
+
+strong, b, th {
+  font-weight: 700 !important;
+}
+
+/* ==========================================
+   Two Sigma Stats Section Style (Avenir Light Spec)
+   ========================================== */
+.twosigma-stats-section {
+    background: #ffffff !important;
+    padding: 60px 0 !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item {
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-size: 54px !important;
+    font-weight: 300 !important; /* Numbers in Avenir Light 300 */
+    color: #000000 !important;
+    margin-bottom: 12px !important;
+    letter-spacing: -1.5px !important;
+    white-space: nowrap !important;
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 span.count,
+.twosigma-stats-section .twosigma-stat-item h2 span.tilde-sym {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-weight: 300 !important; /* Light weight for numbers & tilde */
+}
+
+.twosigma-stats-section .twosigma-stat-item h2 strong,
+.twosigma-stats-section .twosigma-stat-item h2 b {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-weight: 700 !important; /* Bold weight for B+ and PB */
+}
+
+.twosigma-stats-section .twosigma-stat-item p {
+    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-size: 14.5px !important;
+    font-weight: 300 !important; /* Light weight for subtext */
+    color: #64748b !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 991px) {
+    .twosigma-stats-section .twosigma-stat-item h2 {
+        font-size: 42px !important;
+    }
+}
+
+.twosigma-stats-section,
+.twosigma-stats-section *,
+.twosigma-stats-section .twosigma-stat-item h2,
+.twosigma-stats-section .twosigma-stat-item h2 span,
+.twosigma-stats-section .twosigma-stat-item h2 .count,
+.twosigma-stats-section .twosigma-stat-item h2 .tilde-sym,
+.twosigma-stats-section .twosigma-stat-item h2 strong,
+.twosigma-stats-section .twosigma-stat-item h2 b,
+.tilde-sym {
+  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Enforce BOLD (700) for ALL numbers, letters, and symbols in stats heading */
+.twosigma-stats-section .twosigma-stat-item h2,
+.twosigma-stats-section .twosigma-stat-item h2 *,
+.twosigma-stats-section .twosigma-stat-item h2 span,
+.twosigma-stats-section .twosigma-stat-item h2 span.count,
+.twosigma-stats-section .twosigma-stat-item h2 span.tilde-sym,
+.twosigma-stats-section .twosigma-stat-item h2 strong,
+.twosigma-stats-section .twosigma-stat-item h2 b {
+  font-weight: 700 !important;
 }
