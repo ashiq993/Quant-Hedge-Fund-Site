@@ -2,8 +2,17 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = 5176;
+const HOST = '0.0.0.0';
 const ROOT = __dirname;
+
+// Allowed hosts — add any IP or domain that should be permitted to access this server
+const ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '13.201.92.234',
+    'quant.adople.in',
+];
 
 const MIME_TYPES = {
     '.html': 'text/html; charset=UTF-8',
@@ -67,6 +76,14 @@ const LIVE_RELOAD_SCRIPT = `
 `;
 
 const server = http.createServer((req, res) => {
+    // Host header validation — block requests from unlisted hosts
+    const hostHeader = (req.headers['host'] || '').split(':')[0].toLowerCase();
+    if (!ALLOWED_HOSTS.includes(hostHeader)) {
+        res.writeHead(403, { 'Content-Type': 'text/plain' });
+        res.end(`Forbidden: Host "${hostHeader}" is not in the allowed hosts list.`);
+        return;
+    }
+
     // SSE Endpoint for Live Reload
     if (req.url === '/__livereload') {
         res.writeHead(200, {
@@ -139,13 +156,15 @@ const server = http.createServer((req, res) => {
 });
 
 function startServer(port) {
-    server.listen(port, () => {
+    server.listen(port, HOST, () => {
         console.log(`====================================================`);
         console.log(`🚀 Live Reload Dev Server is running at:`);
         console.log(`👉 http://localhost:${port}`);
-        console.log(`👉 http://localhost:${port}/index.html`);
+        console.log(`👉 http://13.201.92.234:${port}`);
+        console.log(`👉 http://quant.adople.in:${port}`);
         console.log(`🔥 Automatic Live Reload & Instant Refresh are ACTIVE`);
         console.log(`   (Any change to HTML/CSS/JS will reload the browser automatically)`);
+        console.log(`🔒 Allowed Hosts: ${ALLOWED_HOSTS.join(', ')}`);
         console.log(`====================================================`);
     }).on('error', (err) => {
         if (err.code === 'EADDRINUSE') {
