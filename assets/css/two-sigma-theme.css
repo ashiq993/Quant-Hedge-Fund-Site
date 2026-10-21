@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 /* ==========================================
    Avenir Local Font-Face Setup
    ========================================== */
@@ -41,8 +43,6 @@
   font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 /* ==========================================
    Two Sigma Brand Colors & Web Font Variables
    ========================================== */
@@ -58,9 +58,10 @@
   --shadow-card: 0px 8px 24px rgba(0, 0, 0, 0.05);
   --shadow-card-elevated: 0px 16px 32px rgba(0, 0, 0, 0.08);
   
-  --font-heading: 'Avenir', 'Avenir Next', sans-serif !important;
-  --font-primary: 'Avenir', 'Avenir Next', sans-serif !important;
-  --font-body: 'Avenir', 'Avenir Next', sans-serif !important;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
 
 /* ==========================================
@@ -79,8 +80,17 @@ i::after,
 }
 
 /* ==========================================
-   Headings, Header Navigation & Titles: Glacial Indifference
+   Global Typography: Inter Everywhere
    ========================================== */
+html,
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings, Header Navigation & Titles: Inter */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 .sec_title,
@@ -103,7 +113,7 @@ h1, h2, h3, h4, h5, h6,
 .pageHeader h1,
 .pageHeader h2,
 .header-main nav ul li a {
-  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
 
 .section-title .sub-title,
@@ -112,7 +122,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ==========================================
-   Content Sections, Body, Paragraphs & Lists: Roboto
+   Content Sections, Body, Paragraphs & Lists: Inter
    ========================================== */
 body, 
 p, 
@@ -129,7 +139,7 @@ ul li,
 input, 
 textarea, 
 select {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   font-weight: 400;
 }
 
@@ -193,7 +203,7 @@ select {
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
-  color: #00A5BD !important;
+  color: #6B7280 !important;
   margin-bottom: 18px !important;
 }
 
@@ -333,7 +343,7 @@ select {
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 1.5px !important;
-  color: #00A5BD !important;
+  color: #6B7280 !important;
   margin-bottom: 10px !important;
 }
 
@@ -818,18 +828,72 @@ a:hover {
 }
 
 .twosigma-banner h2 {
+  font-family: 'Inter', sans-serif !important;
   font-size: 38px !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   color: #ffffff !important;
-  margin-bottom: 20px;
+  margin: 0 !important;
+}
+
+.twosigma-banner h2 span {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
 }
 
 .twosigma-banner p {
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-size: 16px !important;
-  max-width: 600px;
-  margin-bottom: 30px !important;
+  font-family: 'Inter', sans-serif !important;
+  color: #ffffff !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  margin-bottom: 16px !important;
+}
+
+.twosigma-banner .newsletter-form form input {
+  width: 100% !important;
+  border: none !important;
+  outline: none !important;
+  background-color: #ffffff !important;
+  padding: 18px 65px 18px 24px !important;
+  border-radius: 48px !important;
+  line-height: 1.2 !important;
+  color: #0F172A !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12) !important;
+}
+
+.twosigma-banner .newsletter-form form input::placeholder {
+  color: #64748B !important;
+  font-weight: 400 !important;
+}
+
+.twosigma-banner .newsletter-form form .email-btn {
+  background: #001A33 !important;
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  color: #ffffff !important;
+  border: none !important;
+  position: absolute !important;
+  top: 6px !important;
+  right: 6px !important;
+  bottom: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.twosigma-banner .newsletter-form form .email-btn:hover {
+  background-color: #00a5bd !important;
+  transform: scale(1.05) !important;
 }
 
 .twosigma-banner-btn {
@@ -1199,7 +1263,7 @@ a:hover {
   font-size: 20px !important;
   line-height: 1.6 !important;
   color: #000000 !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   margin-bottom: 25px !important;
 }
 
@@ -1305,7 +1369,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 /* Custom Header & Footer logo text style */
 .logo-text {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -1371,7 +1435,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .featureGrid__title {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-black) !important;
@@ -1418,7 +1482,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .featureGrid__featureTitle {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 21px !important;
   font-weight: 700 !important;
   color: var(--color-black) !important;
@@ -1445,7 +1509,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .accordion__header h2 {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-white) !important;
@@ -1473,7 +1537,7 @@ button.testimonialsPanel__gridCell.is-selected {
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 24px 0;
   color: var(--color-white);
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   cursor: pointer;
@@ -1548,7 +1612,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .vtimeline-header h2 {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 36px !important;
   font-weight: 800 !important;
   color: var(--color-black) !important;
@@ -1599,7 +1663,7 @@ button.testimonialsPanel__gridCell.is-selected {
 }
 
 .vtimeline-tab__text h3 {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 18px !important;
   font-weight: 800 !important;
   color: var(--color-teal-500) !important;
@@ -1639,7 +1703,7 @@ button.testimonialsPanel__gridCell.is-selected {
 
 /* Custom Header Logo Text and Spacing Overrides */
 .logo-text {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
@@ -1689,7 +1753,7 @@ button.testimonialsPanel__gridCell.is-selected {
 
 /* Color Palate Selector & Dark/Light Mode Buttons (Reactive to dark-body class) */
 .color-palate h6 {
-  font-family: 'Avenir', 'Avenir Next', 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   margin-bottom: 12px !important;
@@ -2176,39 +2240,47 @@ html {
 
 .twosigma-minimal-card h3 {
     font-size: 24px !important;
-    font-weight: 600 !important;
+    font-weight: 700 !important;
     line-height: 1.3 !important;
     color: #000000 !important;
-    margin-bottom: 24px !important;
+    margin-bottom: 16px !important;
     letter-spacing: -0.5px !important;
+}
+
+.twosigma-minimal-card p {
+    font-size: 15px !important;
+    color: #334155 !important;
+    line-height: 1.65 !important;
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
 }
 
 .twosigma-minimal-card .card-arrow-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: #000000;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px !important;
+    font-weight: 600 !important;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .twosigma-minimal-card .card-arrow-link:hover {
     color: #00a5bd;
-    gap: 12px;
+    gap: 14px;
 }
 
 .twosigma-minimal-card .card-arrow-link i {
-    width: 24px;
-    height: 24px;
+    width: 28px !important;
+    height: 28px !important;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #000000;
     border-radius: 50%;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 11px !important;
     transition: all 0.3s ease;
 }
 
@@ -2282,11 +2354,13 @@ html {
 }
 
 .twosigma-section-title p {
-    font-size: 18px !important;
-    color: #666666 !important;
-    line-height: 1.6 !important;
-    max-width: 700px !important;
+    font-size: 19px !important;
+    color: #1e293b !important;
+    font-weight: 500 !important;
+    line-height: 1.65 !important;
+    max-width: 760px !important;
     margin: 0 auto !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 @media (max-width: 767px) {
@@ -2881,26 +2955,139 @@ header.sticky,
   border: none !important;
 }
 
+/* ==========================================
+   Header Navigation Bar & Alignment Fix
+   ========================================== */
+.header-1 .container {
+  max-width: 1480px !important;
+  width: 100% !important;
+}
+
+.header-1 .header-main {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+}
+
 .header-1 .logo-text,
 .logo-text {
   color: #001A33 !important;
   font-weight: 700 !important;
+  font-size: 20px !important;
+  white-space: nowrap !important;
 }
 
-.header-1 .main-menu nav ul li a,
-.header-1 .mean__menu-wrapper .main-menu ul li a,
-.main-menu ul li a,
-.mean__menu-wrapper ul li a {
-  color: #001A33 !important;
-  font-weight: 600 !important;
+.header-1 .mean__menu-wrapper,
+.mean__menu-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  flex-shrink: 0 !important;
+  gap: 0 !important;
+}
+
+.header-1 .main-menu nav > ul,
+.header-1 .mean__menu-wrapper .main-menu nav > ul,
+.main-menu nav > ul,
+.header-main .main-menu ul {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+}
+
+.header-1 .main-menu nav > ul > li,
+.header-1 .mean__menu-wrapper .main-menu nav > ul > li,
+.main-menu nav > ul > li,
+.header-main .main-menu ul > li {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  margin-inline-end: 0 !important;
+  padding: 0 !important;
+}
+
+.header-1 .main-menu nav > ul > li > a,
+.header-1 .mean__menu-wrapper .main-menu nav > ul > li > a,
+.main-menu nav > ul > li > a,
+.header-main .main-menu ul > li > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #001A33 !important;
+  padding: 24px 12px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
   background: transparent !important;
+  transition: color 0.25s ease !important;
 }
 
-.header-1 .main-menu nav ul li a:hover,
-.main-menu ul li a:hover,
-.mean__menu-wrapper ul li a:hover {
+.header-1 .main-menu nav > ul > li > a:hover,
+.header-1 .mean__menu-wrapper .main-menu nav > ul > li > a:hover,
+.main-menu nav > ul > li > a:hover,
+.header-main .main-menu ul > li > a:hover {
   color: #00a5bd !important;
+}
+
+.header-1 .main-menu nav > ul > li > a i,
+.header-1 .mean__menu-wrapper .main-menu nav > ul > li > a i,
+.main-menu nav > ul > li > a i,
+.header-main .main-menu ul > li > a i {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  margin-left: 5px !important;
+  margin-top: 1px !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ensure dropdown submenus remain styled properly */
+.header-main .main-menu ul li .submenu,
+.header-1 .mean__menu-wrapper .main-menu ul li .submenu {
+  display: block !important;
+  white-space: normal !important;
+}
+
+.header-main .main-menu ul li .submenu li,
+.header-1 .mean__menu-wrapper .main-menu ul li .submenu li {
+  display: block !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+}
+
+.header-main .main-menu ul li .submenu li a,
+.header-1 .mean__menu-wrapper .main-menu ul li .submenu li a {
+  display: flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  padding: 10px 24px !important;
+  line-height: 1.4 !important;
+  font-size: 14px !important;
+  color: #001A33 !important;
 }
 
 /* ==========================================
@@ -2923,7 +3110,7 @@ header.sticky,
 }
 
 .career-stage-card h4 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 19px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -2931,17 +3118,17 @@ header.sticky,
 }
 
 .career-stage-card p {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
-  font-size: 14px !important;
-  color: #4b5563 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14.5px !important;
+  color: #334155 !important;
   line-height: 1.6 !important;
   margin-bottom: 16px !important;
 }
 
 .career-stage-card .stage-link {
   color: #00a5bd !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   text-decoration: none !important;
@@ -2992,7 +3179,7 @@ header.sticky,
 }
 
 .benefit-card h5 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3003,7 +3190,7 @@ header.sticky,
 .service-box-items h4,
 .service-box-items h3,
 .service-box-items .title {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 700 !important;
   font-size: 17.5px !important;
   white-space: nowrap !important;
@@ -3013,10 +3200,10 @@ header.sticky,
 }
 
 .benefit-card p {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
-  font-size: 13.5px !important;
-  color: #4b5563 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: #334155 !important;
   line-height: 1.55 !important;
   margin: 0 !important;
 }
@@ -3056,7 +3243,7 @@ button.theme-btn {
   border-radius: 9999px !important;
   padding: 6px 28px 6px 8px !important;
   text-decoration: none !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -3098,7 +3285,7 @@ button.theme-btn {
 
 .theme-btn .btn_text span {
   color: #ffffff !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 700 !important;
   font-size: 15px !important;
 }
@@ -3113,10 +3300,10 @@ button.theme-btn {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
-  color: #00a5bd !important;
+  color: #6B7280 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
   margin-bottom: 16px !important;
@@ -3134,7 +3321,7 @@ button.theme-btn {
 
 .pageHeader h1.h2,
 .pageHeader h1 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 38px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3144,10 +3331,10 @@ button.theme-btn {
 
 .pageHeader p.h4,
 .pageHeader p {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
   font-size: 16.5px !important;
-  color: #4b5563 !important;
+  color: #334155 !important;
   line-height: 1.8 !important;
   text-align: justify !important;
 }
@@ -3190,7 +3377,7 @@ button.theme-btn {
 }
 
 .feature__header {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 32px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3198,10 +3385,10 @@ button.theme-btn {
 }
 
 .feature__copy p {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
   font-size: 15.5px !important;
-  color: #4b5563 !important;
+  color: #334155 !important;
   line-height: 1.8 !important;
   text-align: justify !important;
   margin-bottom: 16px !important;
@@ -3219,7 +3406,7 @@ button.theme-btn {
 }
 
 .ts-global-section .section-title {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 32px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3227,10 +3414,10 @@ button.theme-btn {
 }
 
 .ts-global-section .section-lead {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
   font-size: 16px !important;
-  color: #4b5563 !important;
+  color: #334155 !important;
   line-height: 1.8 !important;
   text-align: justify !important;
 }
@@ -3289,7 +3476,7 @@ button.theme-btn {
 }
 
 .ts-location-body h3 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
   color: #001A33 !important;
@@ -3297,8 +3484,7 @@ button.theme-btn {
 }
 
 .ts-location-address {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 13.5px !important;
   color: #00a5bd !important;
   font-weight: 500 !important;
@@ -3307,10 +3493,10 @@ button.theme-btn {
 }
 
 .ts-location-body p {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
   font-size: 14px !important;
-  color: #4b5563 !important;
+  color: #334155 !important;
   line-height: 1.65 !important;
   margin-bottom: 20px !important;
   text-align: justify !important;
@@ -3322,7 +3508,7 @@ button.theme-btn {
   align-items: center !important;
   gap: 8px !important;
   color: #00a5bd !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   text-decoration: none !important;
@@ -3335,19 +3521,19 @@ button.theme-btn {
 }
 
 /* ==========================================
-   Global Body Text: Avenir Light (Weight 300)
+   Global Body Text & Legibility: Inter (Weight 400 Regular)
    ========================================== */
 body,
 p,
-span,
-li,
+span:not([class^="fa-"]):not([class*=" fa-"]):not(.fa-solid):not(.fa-regular):not(.fal):not(.far):not(.fas),
+li:not([class^="fa-"]):not([class*=" fa-"]),
 td,
 .intro-text,
 .section-lead,
 .feature__copy p,
 .twosigma-hero p {
-  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
 }
 
 strong, b, th {
@@ -3368,9 +3554,9 @@ strong, b, th {
 }
 
 .twosigma-stats-section .twosigma-stat-item h2 {
-    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     font-size: 54px !important;
-    font-weight: 300 !important; /* Numbers in Avenir Light 300 */
+    font-weight: 700 !important;
     color: #000000 !important;
     margin-bottom: 12px !important;
     letter-spacing: -1.5px !important;
@@ -3379,21 +3565,21 @@ strong, b, th {
 
 .twosigma-stats-section .twosigma-stat-item h2 span.count,
 .twosigma-stats-section .twosigma-stat-item h2 span.tilde-sym {
-    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-    font-weight: 300 !important; /* Light weight for numbers & tilde */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-weight: 700 !important;
 }
 
 .twosigma-stats-section .twosigma-stat-item h2 strong,
 .twosigma-stats-section .twosigma-stat-item h2 b {
-    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
-    font-weight: 700 !important; /* Bold weight for B+ and PB */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-weight: 700 !important;
 }
 
 .twosigma-stats-section .twosigma-stat-item p {
-    font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     font-size: 14.5px !important;
-    font-weight: 300 !important; /* Light weight for subtext */
-    color: #64748b !important;
+    font-weight: 400 !important;
+    color: #475569 !important;
     line-height: 1.5 !important;
     margin: 0 !important;
 }
@@ -3413,7 +3599,7 @@ strong, b, th {
 .twosigma-stats-section .twosigma-stat-item h2 strong,
 .twosigma-stats-section .twosigma-stat-item h2 b,
 .tilde-sym {
-  font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 /* Enforce BOLD (700) for ALL numbers, letters, and symbols in stats heading */
@@ -3435,7 +3621,7 @@ strong, b, th {
 .pageHeader h1 span,
 .pageHeader .h2 span,
 .pageHeader h1 .fx-slide-up {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-weight: 700 !important; /* Enforce BOLD for Who We Are section title */
   color: #001A33 !important;
 }
@@ -3476,7 +3662,7 @@ button.theme-btn:hover,
 body.blog-details-page .breadcrumb-wrapper .page-heading h1,
 body.blog-details-page .breadcrumb-sub-title h1,
 body.blog-details-page .page-heading h1 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 34px !important;
   line-height: 1.3 !important;
   font-weight: 700 !important;
@@ -3503,7 +3689,7 @@ body.compact-header .breadcrumb-sub-title h1,
 body.compact-header .page-heading h1,
 .breadcrumb-wrapper.compact-header .page-heading h1,
 .breadcrumb-wrapper.compact-header .breadcrumb-sub-title h1 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 52px !important;
   line-height: 1.25 !important;
   font-weight: 700 !important;
@@ -3566,7 +3752,7 @@ body.compact-header .breadcrumb-wrapper .page-heading,
   align-items: center !important;
   justify-content: center !important;
   padding: 8px 18px !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   color: #001A33 !important;
@@ -3613,7 +3799,7 @@ body.compact-header .breadcrumb-wrapper .page-heading,
 }
 
 .cta-newsletter-wrapper h2 {
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 38px !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
@@ -3656,7 +3842,7 @@ body.compact-header .breadcrumb-wrapper .page-heading,
   background: transparent !important;
   color: #1e293b !important;
   font-size: 14px !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   width: 100% !important;
   padding: 10px 0 !important;
 }
@@ -3696,7 +3882,7 @@ body.compact-header .breadcrumb-wrapper .page-heading,
   align-items: center !important;
   justify-content: center !important;
   gap: 10px !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 14.5px !important;
   font-weight: 700 !important;
   color: #ffffff !important;
@@ -3767,7 +3953,7 @@ body.compact-header .breadcrumb-wrapper .page-heading,
   background: transparent !important;
   color: #1e293b !important;
   font-size: 14px !important;
-  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   flex: 1 !important;
   padding: 0 10px 0 0 !important;
   height: 100% !important;
@@ -3841,5 +4027,167 @@ ul li:hover a[style*="color: #001A33"] i {
   color: #00A5BD !important;
   transform: translateX(4px) !important;
 }
+
+/* ==========================================================================
+   Priority Sections High-Legibility & Inter Font Enforcement:
+   - Trust, Security & Compliance
+   - Client Portal
+   - Privacy Policy
+   - Terms & Conditions
+   - Insights
+   - Technology & Infrastructure
+   - Careers & Culture
+   ========================================================================== */
+.service-details-content,
+.service-details-wrapper,
+.career-section,
+.insights-section {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+.service-details-content p,
+.service-details-content li,
+.service-details-content ul li,
+.service-list-items li,
+.service-list-items ul li,
+.service-box-items p,
+.career-stage-card p,
+.benefit-card p,
+.about-content p,
+.about-content li,
+.content-grid-card p,
+.content-grid-card__description,
+.news-details-content p,
+.news-details-content li,
+.blog-details-content p,
+.blog-details-content li {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.8 !important;
+  color: #334155;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+.service-details-content strong,
+.service-details-content b,
+.service-list-items strong,
+.service-box-items strong,
+.career-stage-card strong,
+.about-content strong {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 700 !important;
+  color: #0f172a;
+}
+
+.service-details-content h1,
+.service-details-content h2,
+.service-details-content h3,
+.service-details-content h4,
+.service-details-content h5,
+.service-details-content h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 700 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* ==========================================
+   Partnerships Logo Strip Section (Continuous Smooth Marquee)
+   ========================================== */
+.twosigma-partnerships-section {
+  background: #ffffff !important;
+  padding: 30px 0 !important;
+  border-top: 1px solid #f1f5f9 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+.partners-marquee-container {
+  overflow: hidden !important;
+  position: relative !important;
+  width: 100% !important;
+  display: flex !important;
+}
+
+.partners-marquee-container::before,
+.partners-marquee-container::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 90px !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+}
+
+.partners-marquee-container::before {
+  left: 0 !important;
+  background: linear-gradient(to right, #ffffff 15%, rgba(255, 255, 255, 0)) !important;
+}
+
+.partners-marquee-container::after {
+  right: 0 !important;
+  background: linear-gradient(to left, #ffffff 15%, rgba(255, 255, 255, 0)) !important;
+}
+
+.partners-marquee-track {
+  display: flex !important;
+  width: max-content !important;
+  animation: continuousPartnersMarquee 26s linear infinite !important;
+  will-change: transform !important;
+}
+
+.partners-marquee-track:hover {
+  animation-play-state: paused !important;
+}
+
+.partners-marquee-group {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  gap: 52px !important;
+  padding: 0 26px !important;
+  flex-shrink: 0 !important;
+}
+
+.partner-logo-box {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 54px !important;
+  padding: 0 10px !important;
+  flex-shrink: 0 !important;
+}
+
+.partner-logo-box img {
+  max-width: 175px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+  opacity: 0.95 !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.partner-logo-box:hover img {
+  opacity: 1 !important;
+  transform: scale(1.08) !important;
+}
+
+@keyframes continuousPartnersMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
 
 
