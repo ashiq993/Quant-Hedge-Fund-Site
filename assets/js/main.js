@@ -857,10 +857,8 @@
         ================================ */
         $windowOn.on('scroll', function () {
             var windowScrollTop = $(this).scrollTop();
-            var windowHeight = $(window).height();
-            var documentHeight = $(document).height();
 
-            if (windowScrollTop + windowHeight >= documentHeight - 10) {
+            if (windowScrollTop > 250) {
                 $("#back-top").addClass("show");
             } else {
                 $("#back-top").removeClass("show");
