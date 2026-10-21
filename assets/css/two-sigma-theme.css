@@ -106,6 +106,11 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
 }
 
+.section-title .sub-title,
+.sub-title {
+  color: #6B7280 !important;
+}
+
 /* ==========================================
    Content Sections, Body, Paragraphs & Lists: Roboto
    ========================================== */
@@ -1095,9 +1100,9 @@ a:hover {
 }
 
 .twosigma-insights-card .category {
-  color: #00d2f1 !important;
+  color: #ffffff !important;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700 !important;
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
@@ -3465,8 +3470,9 @@ button.theme-btn:hover,
 }
 
 /* ==========================================
-   Decrease Breadcrumb Hero Title Font Size (4 Blog Pages Only)
+   Section Header & Blog Breadcrumb Hero
    ========================================== */
+/* Blog Details Pages (Specific compact sizing) */
 body.blog-details-page .breadcrumb-wrapper .page-heading h1,
 body.blog-details-page .breadcrumb-sub-title h1,
 body.blog-details-page .page-heading h1 {
@@ -3488,6 +3494,36 @@ body.blog-details-page .breadcrumb-wrapper {
 body.blog-details-page .breadcrumb-wrapper .page-heading {
   margin-top: 0 !important;
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Section Header Pages (Proportional size matching service.html reference) */
+body.compact-header .breadcrumb-wrapper .page-heading h1,
+body.compact-header .breadcrumb-sub-title h1,
+body.compact-header .page-heading h1,
+.breadcrumb-wrapper.compact-header .page-heading h1,
+.breadcrumb-wrapper.compact-header .breadcrumb-sub-title h1 {
+  font-family: 'Avenir', 'Avenir Next', sans-serif !important;
+  font-size: 52px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.8px !important;
+  text-transform: none !important;
+  max-width: 1000px !important;
+  margin: 0 auto 18px auto !important;
+}
+
+body.compact-header .breadcrumb-wrapper,
+.breadcrumb-wrapper.compact-header {
+  padding: 95px 0 65px 0 !important;
+  min-height: auto !important;
+}
+
+body.compact-header .breadcrumb-wrapper .page-heading,
+.breadcrumb-wrapper.compact-header .page-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 @media (max-width: 767px) {
@@ -3495,6 +3531,19 @@ body.blog-details-page .breadcrumb-wrapper .page-heading {
   body.blog-details-page .breadcrumb-sub-title h1,
   body.blog-details-page .page-heading h1 {
     font-size: 26px !important;
+  }
+
+  body.compact-header .breadcrumb-wrapper .page-heading h1,
+  body.compact-header .breadcrumb-sub-title h1,
+  body.compact-header .page-heading h1,
+  .breadcrumb-wrapper.compact-header .page-heading h1,
+  .breadcrumb-wrapper.compact-header .breadcrumb-sub-title h1 {
+    font-size: 34px !important;
+  }
+
+  body.compact-header .breadcrumb-wrapper,
+  .breadcrumb-wrapper.compact-header {
+    padding: 65px 0 45px 0 !important;
   }
 }
 
