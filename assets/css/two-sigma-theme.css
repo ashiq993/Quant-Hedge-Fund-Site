@@ -213,10 +213,12 @@ select {
 }
 
 .content-grid-header .intro-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-size: 21px !important;
   line-height: 1.75 !important;
   color: #0F172A !important;
-  font-weight: 450 !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
   letter-spacing: -0.2px !important;
   margin-bottom: 0 !important;
   -webkit-font-smoothing: antialiased;
