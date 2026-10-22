@@ -3291,7 +3291,7 @@ span {
 }
 
 .breadcrumb-wrapper .page-heading .breadcrumb-items li a i {
-  color: var(--theme);
+  color: #ffffff;
   margin-right: 9px;
 }
 
@@ -3301,7 +3301,7 @@ span {
 }
 
 .breadcrumb-wrapper .page-heading .breadcrumb-items li a i {
-  color: var(--theme);
+  color: #ffffff;
   margin-right: 5px;
 }
 
