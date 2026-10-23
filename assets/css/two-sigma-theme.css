@@ -3282,6 +3282,10 @@ ul.submenu li .submenu {
   margin-bottom: 16px !important;
 }
 
+.career-stage-card p:last-child {
+  margin-bottom: 0 !important;
+}
+
 .career-stage-card .stage-link {
   color: #007084 !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
